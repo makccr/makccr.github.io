@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content="style,html,css,page,headers"/>
+  <meta name="description" content="A quick page that I made to play with my website's styling."/>
+  <meta name="author" content="Mackenzie Criswell"/>
+  <meta name="robots" content="index, follow"/>
+  <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+  <link href="images/favicons/favicon.ico" rel="icon" type="image/ico"/>
+  <link href="images/favicons/favicon.png" rel="icon" type="image/png"/>
+  <link href="images/favicons/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="images/favicons/ios-ipad-144x144.png" sizes="144x144" rel="apple-touch-icon-precomposed"/>
+  <link href="images/favicons/ios-iphone-114x144.png" sizes="114x114" rel="apple-touch-icon-precomposed"/>
+  <link href="images/favicons/ios-default-homescreen-57x57.png" sizes="57x57" rel="apple-touch-icon-precomposed"/>
+  <title>Style Sheet - MAKC</title>
+  <link rel="stylesheet" type="text/css" id="pageStyle" href="css/main.css" />
+  <style>
+   div#background {
+     background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("images/super19.jpg" );
+     padding-top: 20.5em;
+     padding-bottom: 17em;
+     height: 100%;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-bottom: 150px;
+   }
+   @media only screen and (max-width: 800px) {
+     div#background {
+       padding: 30vh 0vw;
+       background-attachment: scroll;
+       height: auto;
+       width: 100%;
+     }
+   }
+  </style>
+  <script src="script/script.js"></script>
+</head>
+<body>
+  <header>
+    <div id="mobileHam">
+      <div class="mobileHamChev" onclick="mobileHamX()"><i class="fas fa-chevron-down"></i></div>
+      <a href="https://kit.com/makccr" target="_blank"><div class="mobileHamSmallLink">Gear I Use</div></a>
+      <a href="bugs.html"><div class="mobileHamSmallLink">Bug Report</div></a>
+      <a href="terms.html"><div class="mobileHamSmallLink">Terms of Service</div></a>
+      <a href="privacy.html"><div class="mobileHamSmallLink">Privacy Policy</div></a>
+      <a href="sitemap.xml"><div class="mobileHamSmallLink">Sitemap</div></a>
+      <a href="about.html"><div class="mobileHamSmallLink">About</div></a>
+      <a href="contact.html"><div class="mobileHamSmallLink">Contact</div></a>
+        <div class="mobileHamLine2"></div>
+      <a href="https://youtube.com/mackenziegcriswell" target="_blank"><div class="mobileHamBigLink">Videos</div></a>
+      <a href="portfolio.html"><div class="mobileHamBigLink">Portfolio</div></a>
+      <a href="downloads.html"><div class="mobileHamBigLink">Downloads</div></a>
+      <a href="merch.html"><div class="mobileHamBigLink">Merch</div></a>
+        <div class="mobileHamSpace"></div>
+        <div class="mobileHamLine"></div>
+    </div>
+      <a href="index.html"><div id="logo"></div></a>
+        <div class="header-line-left"></div>
+        <div class="nav-space"></div>
+      <a href="https://www.youtube.com/user/mackenziegcriswell" target="_blank" class="nav" title="Clicking will take you to YouTube">Videos</a>
+        <div class="nav-line"></div>
+      <a href="portfolio.html" class="nav">Portfolio</a>
+        <div class="nav-line"></div>
+      <a href="downloads.html" class="nav">Downloads</a>
+        <div class="nav-line"></div>
+      <a href="merch.html" class="nav">Merch</a>
+        <div class="head-social-nav">
+          <a class="head-nav" onclick="mobileHam()">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+      <div class="header-line-nav"></div>
+  </header>
+    <div id="background">
+      <h1 class="header">Style Sheet</h1>
+      <p class="header">nexus:~ makc.co$ /styling.html</p>
+    </div>
+    <div class="mobileSpacer"></div>
+    <h2>Hey...</h2>
+    <h3>😳</h3>
+  <p>
+    This is an odd page to explain the existence of on my website. Which is why the page is not really available by any normal method. There are no links to this page from navigation, external links, or any other location. So, if you've managed to find the page, bravo🥳, or thanks for watching the "Let's Code: Web Design" series on my YouTube channel. <br><br>
+    If you're not familiar with the concept behind this page, or my YouTube series, I guess I could go ahead and explain, since, well... you've already made it this far anyway:<br><br>
+    So, the idea behind this page is actually pretty simple. Like most people, pretty much all of the styling for my website exists inside of one CSS page that I link to from every HTML page. So in order to try and make the whole process easier, I started not, by designing HTML alone, but CSS & HTML in tandem before proceeding to any other step. This page, is the result of that process. Every class, every id, every little element that is incorporated at any point in my site, lives here, or at least a cousin of those elements live here. <br><br>
+    This is actually one of my most cherished web design techniques. Even before I learned how to write my webiste myself, I still utalized a "Styling Page" or "Style Sheet" or whatever I decided to finally call the page before I uploaded it. It's a good way to get your barrings, at least ascetically speaking, before you even start building the bulk of your website. It's especially useful with online web design services like <a href="https://www.squarespace.com/" target="_blank">Squarespace</a>, or <a href="https://www.wix.com/" target="_blank">Wix</a>. But, I've also had a good amount of luck using the same technique with HTML & CSS. <br><br>
+    Anyway I did go ahead and upload this page on the final, live version of my website, mostly just as a means for me to quickly acess it. So if you get any benifit from the page, cool, if not, just pretend you never found it and, (keep it secret, keep it safe).
+  </p>
+  <div class="line"></div>
+  <h1>One is the loneliest number</h1>
+  <h2>Two can be as bad as one</h2>
+  <h3>It's the loneliest number</h3>
+  <h4>Since the number one</h4>
+  <p class="center">(h4 isn't a bug, it has no margins for a reason)</p>
+  <p>
+    <strong>Bold Text</strong><br><br>
+    <em>Italics Text</em><br><br>
+    <a href="https://google.com" target="_blank">Hyperlink</a>
+  </p>
+  <h5>Header 5</h5>
+  <h6>Looks like I found a use for more headers after all</h6>
+  <article>
+    <p>
+      This book is largely concerned with Hobbits, and from its pages a reader may discover much of their character and a little of their history. Further information will also be found in the selection from the Red Book of Westmarch that has already been published, under the title of The Hobbit. That story was derived from the earlier chapters of the Red Book, composed by Bilbo himself, the first Hobbit to become famous in the world at large, and called by him There and Back Again, since they told of his journey into the East and his return: an adventure which later involved all the Hobbits in the great events of that Age that are here related.
+    </p>
+    <p>
+    Many, however, may wish to know more about this remarkable people from the outset, while some may not possess the earlier book. For such readers a few notes on the more important points are here collected from Hobbit-lore, and the first adventure is briefly recalled.
+    </p>
+    <p>
+      Hobbits are an unobtrusive but very ancient people, more numerous formerly than they are today; for they love peace and quiet and good tilled earth: a well-ordered and well-farmed countryside was their favourite haunt. They do not and did not understand or like machines more complicated than a forge -bellows, a water-mill, or a hand-loom, though they were skilful with tools. Even in ancient days they were, as a rule, shy of 'the Big Folk', as they call us, and now they avoid us with dismay and are becoming hard to find. They are quick of hearing and sharp-eyed, and though they are inclined to be fat and do not hurry unnecessarily, they are nonetheless nimble and deft in their movements. They possessed from the first the art of disappearing swiftly and silently, when large folk whom they do not wish to meet come blundering by; and this an they have developed until to Men it may seem magical. But Hobbits have never, in fact, studied magic of any kind, and their elusiveness is due solely to a professional skill that heredity and practice, and a close friendship with the earth, have rendered inimitable by bigger and clumsier races.
+    </p>
+    <p>
+      The quick brown fox jumps over the lazy dog.
+    </p>
+  </article>
+  <img src="images/super2.jpg" class="float-center"></img>
+  <div class="line"></div>
+      <h3>Bug Report</h3>
+  <form method="post" enctype="text/plain" action="mailto:mackenziegcriswell@gmail.com?subject=bugReport">
+    <input type="text" placeholder="Lincoln Chaffee" name="name" autocomplete="on"></input><br>
+    <input type="email" placeholder="whoami@whydoiexist.gov" name="email" autocomplete="on"></input><br>
+      <select name="issueType">
+        <option value="dMode">Dark Mode</option>
+        <option value="looks">Appearance</option>
+        <option value="spellGrammar">Spelling & Grammar</option>
+        <option value="404Nav">404, Links, Navigation</option>
+        <option value="other">Something Else</option>
+      </select>
+    <br>
+    <textarea placeholder="Lydia is dead. But they don't know this yet. All anyone knows is this simple innocuous fact, Lydia is late for breakfast..." rows="5" name="description"></textarea><br>
+    <button>Submit</button>
+  </form>
+  <div class="line"></div>
+  <blockquote>
+    Do not go gentle into that good night, old age shoud burn and rave at burn of day.
+  </blockquote>
+  <blockquote class="author">
+    Dylan Thomas
+  </blockquote>
+  <div class="line"></div>
+  <code>
+    <span class="red">code<span class="orange">.class</span></span> {<br>
+    &nbsp;&nbsp;font-family: <span class="green">"Source Code Pro", <span class="orange">monospace</span></span>;<br>
+    &nbsp;&nbsp;color: <span class="orange">#</span><span class="blue">5F5F5F</span>;<br>
+  }
+  </code>
+  <br>
+  <br>
+    <div class="upWork"></div>
+    <div class="truelancer"></div>
+    <div class="freelancer"></div>
+  <div class="line"></div>
+<div class="cardGrid">
+    <div class="cardContainer">
+      <div class="card">
+        <img src="images/downloadsAlfred.jpg"/>
+        <h4 class="card">Alfred Themes</h4>
+        <p class="card">A collection of four different themes I designed for Alfred.<br><em>Themes include:</em> Transparent Light/Dark & Solarized Light/Dark.</p>
+        <p class="sub">Works with Alfred 3 and Above</p>
+        <a href="downloads/alfredThemes.zip"><button>Download Now</button></a>
+      </div>
+    </div>
+    <div class="cardContainer">
+      <div class="card">
+        <img src="images/downloadsFilm.jpg"/>
+        <h4 class="card">Shoot on Film</h4>
+        <p class="card">A set of presets designed for Adobe After Effects which emulates the look of 8, 16, & 35mm film. Available for free from the link below</p>
+        <p class="sub">Works with AE CS6 and Above</p>
+        <a href="downloads/shootOnFilm.zip"><button>Download Now</button></a>
+      </div>
+    </div>
+    <div class="cardContainer">
+      <div class="card">
+        <img src="images/downloadsClarity.jpg"/>
+        <h4 class="card">AE Clarity</h4>
+        <p class="card">A preset for Adobe After Effects that emulates the popular midtone contrast (Clarity) effect found in software like Lightroom.</p>
+        <p class="sub">Works with AE CS6 and Above</p>
+        <a href="downloads/clarity.zip"><button>Download Now</button></a>
+      </div>
+    </div>
+    <div class="cardContainer">
+      <div class="card">
+        <img src="images/downloadsUlysses.jpg"/>
+        <h4 class="card">Ulysses</h4>
+        <p class="card">Ulysses is far and away my favorite writing app for Markdown & Rich text. Natrually I've made some custom themes for the app.</p>
+        <p class="sub">Works with Ulysses</p>
+        <a href="downloads/ulyssesThemes.zip"><button>Download Now</button></a>
+      </div>
+    </div>
+    <div class="cardContainer">
+      <div class="card">
+        <img src="images/downloadsMazer.jpg"/>
+        <h4 class="card">Folder Maze</h4>
+        <p class="card">A handy folder maze I designed pretty much as a joke to hide items no one should see. <em>For best results make the parent folder hidden.</em></p>
+        <p class="sub">Works on MacOS, Windows & Linux</p>
+        <a href="downloads/folderMaze.zip"><button>Download Now</button></a>
+      </div>
+    </div>
+    <div class="cardContainer">
+      <div class="card">
+        <img src="images/downloadsColor.jpg"/>
+        <h4 class="card">AE Color</h4>
+        <p class="card">Just a few more After Effects Presets that are designed to serve as a starting point for a number of common color grading set-ups. </p>
+        <p class="sub">Works with AE CS6 and Above</p>
+        <a href="downloads/colorCorrection.zip"><button>Download Now</button></a>
+      </div>
+    </div>
+</div>
+  <footer>
+    <div id="footer">
+      <a href="https://kit.com/makccr" target="_blank" class="footer">Gear I Use</a>
+      <a href="bugs.html" class="footer">Bug Report</a>
+      <a href="terms.html" class="footer">Terms of Service</a>
+      <a href="privacy.html" class="footer">Privacy Policy</a>
+      <a href="sitemap.html" class="footer">Sitemap</a>
+      <a href="about.html" class="footer">About</a>
+      <a href="contact.html" class="footer">Contact</a>
+    </div>
+    <h3 id="footer">Social Links</h3>
+    <div id="icon-container">
+      <a href="https://twitter.com/makccr" target="_blank" class="icons" title="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/makccr/" target="_blank" class="icons" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/makccr/" target="_blank" class="icons" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.snapchat.com/add/mack_criswell" target="_blank" class="icons" title="Snapchat">
+        <i class="fab fa-snapchat-ghost"></i>
+      </a>
+      <a href="https://www.reddit.com/user/mack_criswell" target="_blank" class="icons" title="Reddit">
+        <i class="fab fa-reddit-alien"></i>
+      </a>
+      <a href="https://www.behance.net/makccr/" target="_blank" class="icons" title="Behance">
+        <i class="fab fa-behance"></i>
+      </a>
+      <a href="https://github.com/makccr" target="_blank" class="icons" title="Github">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://stackoverflow.com/users/11381583/makccr" target="_blank" class="icons" title="Stack Overflow">
+        <i class="fab fa-stack-overflow"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/makccr" target="_blank" class="icons" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <p class="center">&copy;Copyright 2012-2019 Mackenzie Criswell<br>All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
