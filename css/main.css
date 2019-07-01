@@ -391,7 +391,7 @@ input, textarea, select {
   padding-left: 1em;
   padding-right: 1em;
   width: 50%;
-  background-color: #0A0C0E;
+  background-color: #1a1a1a;
   border-color: #1c1e24;
   border-style: solid;
   border-width: 1px;
@@ -404,6 +404,7 @@ input, textarea, select {
 }
 
   input:hover, textarea:hover, select:hover {
+    background-color: #1e1e1e;
     border-color: #3e4253;
     border-radius: 5px;
   }
@@ -925,7 +926,10 @@ div.contact {
     color: #5F5F5F;
   }
 
-  input:hover, textarea:hover, select:hover {border-color: #BBB}
+  input:hover, textarea:hover, select:hover {
+    border-color: #BBB;
+    background-color: #fcfcfc;
+  }
 
   select {color:#757575;}
 
