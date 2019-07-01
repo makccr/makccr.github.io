@@ -10,4 +10,4 @@ This is accomplished by designing the website in dark mode first, and then using
 
 ----
 
-Also if you're interested I have a set of videos where I go over the building of my website in detail, available [**here**:](https://www.youtube.com/playlist?list=PLIYVhRocqRoT6yvieIyNehUz6VnB6hXhF "Let's Code Playlist") 
+Also if you're interested I have a set of videos where I go over the building of my website in detail, available [**here**:](https://www.youtube.com/playlist?list=PLIYVhRocqRoT6yvieIyNehUz6VnB6hXhF "Let's Code Playlist")
