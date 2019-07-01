@@ -646,6 +646,7 @@ div.switcherContainer {
   border-radius: 15px;
   display: inline-block;
   margin-bottom: 3em;
+  padding: 0em .5em;
 }
 
 div.switcherContainer p{
