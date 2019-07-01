@@ -21,13 +21,8 @@
   <title>Terms of Service - MAKC</title>
   <link rel="stylesheet" type="text/css" id="pageStyle" href="css/main.css" />
   <style>
-   div#background {
-     background:
-      linear-gradient(
-        rgba(0, 0, 0, 0.0),
-        rgba(0, 0, 0, 0.0)
-      ),
-      url("images/super9.jpg" );
+   header {
+     background: linear-gradient(to right, #43cea2, #185a9d);
      padding-top: 20.5em;
      padding-bottom: 17em;
      height: 100%;
@@ -38,7 +33,7 @@
      margin-bottom: 150px;
    }
    @media only screen and (max-width: 800px) {
-     div#background {
+     header {
        padding: 30vh 0vw;
        background-attachment: scroll;
        height: auto;
@@ -49,47 +44,46 @@
   <script src="script/script.js"></script>
 </head>
 <body>
-  <header>
-    <div id="mobileHam">
-      <div class="mobileHamChev" onclick="mobileHamX()"><i class="fas fa-chevron-down"></i></div>
-      <a href="https://kit.com/makccr" target="_blank"><div class="mobileHamSmallLink">Gear I Use</div></a>
-      <a href="bugs.html"><div class="mobileHamSmallLink">Bug Report</div></a>
-      <a href="terms.html"><div class="mobileHamSmallLink">Terms of Service</div></a>
-      <a href="privacy.html"><div class="mobileHamSmallLink">Privacy Policy</div></a>
-      <a href="sitemap.xml"><div class="mobileHamSmallLink">Sitemap</div></a>
-      <a href="about.html"><div class="mobileHamSmallLink">About</div></a>
-      <a href="contact.html"><div class="mobileHamSmallLink">Contact</div></a>
-        <div class="mobileHamLine2"></div>
-      <a href="https://youtube.com/mackenziegcriswell" target="_blank"><div class="mobileHamBigLink">Videos</div></a>
-      <a href="portfolio.html"><div class="mobileHamBigLink">Portfolio</div></a>
-      <a href="downloads.html"><div class="mobileHamBigLink">Downloads</div></a>
-      <a href="merch.html"><div class="mobileHamBigLink">Merch</div></a>
-        <div class="mobileHamSpace"></div>
-        <div class="mobileHamLine"></div>
-    </div>
-      <a href="index.html"><div id="logo"></div></a>
-        <div class="header-line-left"></div>
-        <div class="nav-space"></div>
-      <a href="https://www.youtube.com/user/mackenziegcriswell" target="_blank" class="nav" title="Clicking will take you to YouTube">Videos</a>
-        <div class="nav-line"></div>
-      <a href="portfolio.html" class="nav">Portfolio</a>
-        <div class="nav-line"></div>
-      <a href="downloads.html" class="nav">Downloads</a>
-        <div class="nav-line"></div>
-      <a href="merch.html" class="nav">Merch</a>
-        <div class="head-social-nav">
-          <a class="head-nav" onclick="mobileHam()">
-            <i class="fas fa-bars"></i>
-          </a>
-        </div>
-      <div class="header-line-nav"></div>
-  </header>
-    <div id="background">
-      <h1 class="header">Terms of Service</h1>
-      <p class="header">nexus:~ makc.co$ /terms.html</p>
-    </div>
-    <div class="mobileSpacer"></div>
-    <article>
+<nav>
+  <div id="mobileHam">
+    <div class="mobileHamChev" onclick="mobileHamX()"><i class="fas fa-chevron-down"></i></div>
+    <a href="https://kit.com/makccr" target="_blank"><div class="mobileHamSmallLink">Gear I Use</div></a>
+    <a href="bugs.html"><div class="mobileHamSmallLink">Bug Report</div></a>
+    <a href="terms.html"><div class="mobileHamSmallLink">Terms of Service</div></a>
+    <a href="privacy.html"><div class="mobileHamSmallLink">Privacy Policy</div></a>
+    <a href="sitemap.xml"><div class="mobileHamSmallLink">Sitemap</div></a>
+    <a href="about.html"><div class="mobileHamSmallLink">About</div></a>
+    <a href="contact.html"><div class="mobileHamSmallLink">Contact</div></a>
+      <div class="mobileHamLine2"></div>
+    <a href="https://youtube.com/mackenziegcriswell" target="_blank"><div class="mobileHamBigLink">Videos</div></a>
+    <a href="portfolio.html"><div class="mobileHamBigLink">Portfolio</div></a>
+    <a href="downloads.html"><div class="mobileHamBigLink">Downloads</div></a>
+    <a href="merch.html"><div class="mobileHamBigLink">Merch</div></a>
+      <div class="mobileHamSpace"></div>
+      <div class="mobileHamLine"></div>
+  </div>
+    <a href="index.html"><div id="logo"></div></a>
+      <div class="header-line-left"></div>
+      <div class="nav-space"></div>
+    <a href="https://www.youtube.com/user/mackenziegcriswell" target="_blank" class="nav" title="Clicking will take you to YouTube">Videos</a>
+      <div class="nav-line"></div>
+    <a href="portfolio.html" class="nav">Portfolio</a>
+      <div class="nav-line"></div>
+    <a href="downloads.html" class="nav">Downloads</a>
+      <div class="nav-line"></div>
+    <a href="merch.html" class="nav">Merch</a>
+      <div class="head-social-nav">
+        <a class="head-nav" onclick="mobileHam()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+    <div class="header-line-nav"></div>
+</nav>
+<header>
+  <h1 class="header">Terms of Service</h1>
+  <p class="header">nexus:~ makc.co$ /terms.html</p>
+</header>
+<article>
        <ul>
          <li><h4>Introduction</h4>
            I spent a lot of time researching how to properly write a terms of service thing, and frankly it was just really complicated and I didn’t want to spend a ton of time fishing through what I felt was mostly just random garbage. I didn’t mind doing the privacy policy, it made a lot of sense and was really easy to write because I understand why it was important. But honest this seems like a big waste of time & I’m honestly still not sure if I even need this on my website. None the less, I’ll make an effort.
@@ -145,46 +139,50 @@
          </li>
        </ul>
 </article>
-  <footer>
-    <div id="footer">
-      <a href="https://kit.com/makccr" target="_blank" class="footer">Gear I Use</a>
-      <a href="bugs.html" class="footer">Bug Report</a>
-      <a href="terms.html" class="footer">Terms of Service</a>
-      <a href="privacy.html" class="footer">Privacy Policy</a>
-      <a href="sitemap.html" class="footer">Sitemap</a>
-      <a href="about.html" class="footer">About</a>
-      <a href="contact.html" class="footer">Contact</a>
-    </div>
-    <h3 id="footer">Social Links</h3>
-    <div id="icon-container">
-      <a href="https://twitter.com/makccr" target="_blank" class="icons" title="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://www.instagram.com/makccr/" target="_blank" class="icons" title="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.facebook.com/makccr/" target="_blank" class="icons" title="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.snapchat.com/add/mack_criswell" target="_blank" class="icons" title="Snapchat">
-        <i class="fab fa-snapchat-ghost"></i>
-      </a>
-      <a href="https://www.reddit.com/user/mack_criswell" target="_blank" class="icons" title="Reddit">
-        <i class="fab fa-reddit-alien"></i>
-      </a>
-      <a href="https://www.behance.net/makccr/" target="_blank" class="icons" title="Behance">
-        <i class="fab fa-behance"></i>
-      </a>
-      <a href="https://github.com/makccr" target="_blank" class="icons" title="Github">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://stackoverflow.com/users/11381583/makccr" target="_blank" class="icons" title="Stack Overflow">
-        <i class="fab fa-stack-overflow"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/makccr" target="_blank" class="icons" title="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <p class="center">&copy;Copyright 2012-2019 Mackenzie Criswell<br>All Rights Reserved.</p>
-    </footer>
+<footer>
+<!-- DESKTOP SECONDARY NAVIGATION -->
+  <div id="footer">
+    <a href="https://kit.com/makccr" target="_blank" class="footer">Gear I Use</a>
+    <a href="bugs.html" class="footer">Bug Report</a>
+    <a href="terms.html" class="footer">Terms of Service</a>
+    <a href="privacy.html" class="footer">Privacy Policy</a>
+    <a href="sitemap.html" class="footer">Sitemap</a>
+    <a href="about.html" class="footer">About</a>
+    <a href="contact.html" class="footer">Contact</a>
+  </div>
+<!-- SOCIAL LINKS -->
+  <h3 id="footer">Social Links</h3>
+  <div id="icon-container">
+    <a href="https://twitter.com/makccr" target="_blank" class="icons" title="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/makccr/" target="_blank" class="icons" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/makccr/" target="_blank" class="icons" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.snapchat.com/add/mack_criswell" target="_blank" class="icons" title="Snapchat">
+      <i class="fab fa-snapchat-ghost"></i>
+    </a>
+    <a href="https://www.reddit.com/user/mack_criswell" target="_blank" class="icons" title="Reddit">
+      <i class="fab fa-reddit-alien"></i>
+    </a>
+    <a href="https://www.behance.net/makccr/" target="_blank" class="icons" title="Behance">
+      <i class="fab fa-behance"></i>
+    </a>
+    <a href="https://github.com/makccr" target="_blank" class="icons" title="Github">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://stackoverflow.com/users/11381583/makccr" target="_blank" class="icons" title="Stack Overflow">
+      <i class="fab fa-stack-overflow"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/makccr" target="_blank" class="icons" title="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+<!-- BOTTOM COPY LINE -->
+  <p class="center">&copy;Copyright 2012-2019 Mackenzie Criswell<br>All Rights Reserved.</p>
+</footer>
 </body>
 </html>
