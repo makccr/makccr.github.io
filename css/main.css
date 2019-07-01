@@ -636,6 +636,30 @@ div.contact {
   margin: 4em;
 }
 
+div.switcherContainerGrid {
+  text-align: center;
+}
+
+div.switcherContainer {
+  text-align: center;
+  border: 1px solid #444;
+  border-radius: 15px;
+  display: inline-block;
+  margin-bottom: 3em;
+}
+
+div.switcherContainer p{
+  color: #ddd;
+  margin: 0em .1em;
+  padding: 0em .5em;
+  display: inline-block;
+  background-color: #transparent;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+  div.switcherContainer p:hover {background-color: #2a2a2a}
+
 /*DESIGN ELEMENT*/
 
 
