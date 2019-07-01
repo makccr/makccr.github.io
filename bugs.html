@@ -22,13 +22,8 @@
     <link rel="stylesheet" type="text/css" id="pageStyle" href="css/main.css" />
     <script src="script/script.js"></script>
   <style>
-   div#background {
-     background:
-      linear-gradient(
-        rgba(0, 0, 0, 0.0),
-        rgba(0, 0, 0, 0.0)
-      ),
-      url("images/super24.jpg" );
+   header {
+     background: linear-gradient(to right, #ff7e5f, #feb47b);
      padding: 20.5em 0em 17em 0em;
      height: 100%;
      background-attachment: fixed;
@@ -39,7 +34,7 @@
    }
 
      @media only screen and (max-width: 800px) {
-       div#background {
+       header {
          padding: 30vh 0vw;
          background-attachment: scroll;
          height: auto;
@@ -49,52 +44,52 @@
   </style>
 </head>
 <body>
-  <header>
-    <div id="mobileHam">
-      <div class="mobileHamChev" onclick="mobileHamX()"><i class="fas fa-chevron-down"></i></div>
-      <a href="https://kit.com/makccr" target="_blank"><div class="mobileHamSmallLink">Gear I Use</div></a>
-      <a href="bugs.html"><div class="mobileHamSmallLink">Bug Report</div></a>
-      <a href="terms.html"><div class="mobileHamSmallLink">Terms of Service</div></a>
-      <a href="privacy.html"><div class="mobileHamSmallLink">Privacy Policy</div></a>
-      <a href="sitemap.xml"><div class="mobileHamSmallLink">Sitemap</div></a>
-      <a href="about.html"><div class="mobileHamSmallLink">About</div></a>
-      <a href="contact.html"><div class="mobileHamSmallLink">Contact</div></a>
-        <div class="mobileHamLine2"></div>
-      <a href="https://youtube.com/mackenziegcriswell" target="_blank"><div class="mobileHamBigLink">Videos</div></a>
-      <a href="portfolio.html"><div class="mobileHamBigLink">Portfolio</div></a>
-      <a href="downloads.html"><div class="mobileHamBigLink">Downloads</div></a>
-      <a href="merch.html"><div class="mobileHamBigLink">Merch</div></a>
-        <div class="mobileHamSpace"></div>
-        <div class="mobileHamLine"></div>
-    </div>
-      <a href="index.html"><div id="logo"></div></a>
-        <div class="header-line-left"></div>
-        <div class="nav-space"></div>
-      <a href="https://www.youtube.com/user/mackenziegcriswell" target="_blank" class="nav" title="Clicking will take you to YouTube">Videos</a>
-        <div class="nav-line"></div>
-      <a href="portfolio.html" class="nav">Portfolio</a>
-        <div class="nav-line"></div>
-      <a href="downloads.html" class="nav">Downloads</a>
-        <div class="nav-line"></div>
-      <a href="merch.html" class="nav">Merch</a>
-        <div class="head-social-nav">
-          <a class="head-nav" onclick="mobileHam()">
-            <i class="fas fa-bars"></i>
-          </a>
-        </div>
-      <div class="header-line-nav"></div>
-  </header>
-    <div id="background">
-      <h1 class="header">Bug Report</h1>
-      <p class="header">nexus:~ makc.co$ /bugs.html</p>
-    </div>
-    <div class="mobileSpacer"></div>
-    <h2>Hey...</h2>
-    <p class="center">
-      Just because I know that it ends up being an issue a lot of the time, I took some time to go ahead and write down a few <em>known issues</em>. I've been hosting my website by myself since way before I knew, there was such a thing as <em>"best practices"</em>, nevermind what they actually were. So there's a few legacy issues that I've ironed out in the best way that I can, they just don't have a perfect solution.
-    </p>
-    <div class="line"></div>
-    <h3>It's also a feature request form!</h3>
+<nav>
+  <div id="mobileHam">
+    <div class="mobileHamChev" onclick="mobileHamX()"><i class="fas fa-chevron-down"></i></div>
+    <a href="https://kit.com/makccr" target="_blank"><div class="mobileHamSmallLink">Gear I Use</div></a>
+    <a href="bugs.html"><div class="mobileHamSmallLink">Bug Report</div></a>
+    <a href="terms.html"><div class="mobileHamSmallLink">Terms of Service</div></a>
+    <a href="privacy.html"><div class="mobileHamSmallLink">Privacy Policy</div></a>
+    <a href="sitemap.xml"><div class="mobileHamSmallLink">Sitemap</div></a>
+    <a href="about.html"><div class="mobileHamSmallLink">About</div></a>
+    <a href="contact.html"><div class="mobileHamSmallLink">Contact</div></a>
+      <div class="mobileHamLine2"></div>
+    <a href="https://youtube.com/mackenziegcriswell" target="_blank"><div class="mobileHamBigLink">Videos</div></a>
+    <a href="portfolio.html"><div class="mobileHamBigLink">Portfolio</div></a>
+    <a href="downloads.html"><div class="mobileHamBigLink">Downloads</div></a>
+    <a href="merch.html"><div class="mobileHamBigLink">Merch</div></a>
+      <div class="mobileHamSpace"></div>
+      <div class="mobileHamLine"></div>
+  </div>
+    <a href="index.html"><div id="logo"></div></a>
+      <div class="header-line-left"></div>
+      <div class="nav-space"></div>
+    <a href="https://www.youtube.com/user/mackenziegcriswell" target="_blank" class="nav" title="Clicking will take you to YouTube">Videos</a>
+      <div class="nav-line"></div>
+    <a href="portfolio.html" class="nav">Portfolio</a>
+      <div class="nav-line"></div>
+    <a href="downloads.html" class="nav">Downloads</a>
+      <div class="nav-line"></div>
+    <a href="merch.html" class="nav">Merch</a>
+      <div class="head-social-nav">
+        <a class="head-nav" onclick="mobileHam()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+    <div class="header-line-nav"></div>
+</nav>
+<header>
+  <h1 class="header">Bug Report</h1>
+  <p class="header">nexus1:~ makc.co$ /bugs.html</p>
+</header>
+<main>
+  <h2>Hey...</h2>
+  <p class="center">
+    Just because I know that it ends up being an issue a lot of the time, I took some time to go ahead and write down a few <em>known issues</em>. I've been hosting my website by myself since way before I knew, there was such a thing as <em>"best practices"</em>, nevermind what they actually were. So there's a few legacy issues that I've ironed out in the best way that I can, they just don't have a perfect solution.
+  </p>
+  <div class="line"></div>
+  <h3>It's also a feature request form!</h3>
   <form method="post" enctype="text/plain" action="mailto:mackenziegcriswell@gmail.com?subject=bugReport">
     <input type="text" placeholder="HAL" name="name" autocomplete="on"></input><br>
     <input type="email" placeholder="9000@discovery.gov" name="email" autocomplete="on"></input><br>
@@ -106,8 +101,7 @@
       <option>Spelling & Grammar</option>
       <option>Links / 404</option>
       <option>Feature Request</option>
-    </select>
-    <br>
+    </select><br>
     <textarea placeholder="It was a pleasure to burn..." rows="5" name="description"></textarea><br>
     <button>Submit</button>
   </form>
@@ -132,46 +126,51 @@
       Admitedley, for the time being however, this solution is a tiny bit janky. I'm only comfortable with it at all because I'm confident that most of my site's users are currently able to use this feature, or will be able to in the near future. That being said, if enough people really want a manual dark mode switcher, and leave a feature request above, I'll go ahead and add it. There's no reason that both methods can't be built into a site and function fine. I jsut skipped over it on the initial build of my website, because I thought the button looked kind of tacky when I was testing it out.
     </li>
   </ul>
+</main>
 <footer>
-    <div id="footer">
-      <a href="https://kit.com/makccr" target="_blank" class="footer">Gear I Use</a>
-      <a href="bugs.html" class="footer">Bug Report</a>
-      <a href="terms.html" class="footer">Terms of Service</a>
-      <a href="privacy.html" class="footer">Privacy Policy</a>
-      <a href="sitemap.html" class="footer">Sitemap</a>
-      <a href="about.html" class="footer">About</a>
-      <a href="contact.html" class="footer">Contact</a>
-    </div>
-    <h3 id="footer">Social Links</h3>
-    <div id="icon-container">
-      <a href="https://twitter.com/makccr" target="_blank" class="icons" title="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://www.instagram.com/makccr/" target="_blank" class="icons" title="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.facebook.com/makccr/" target="_blank" class="icons" title="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.snapchat.com/add/mack_criswell" target="_blank" class="icons" title="Snapchat">
-        <i class="fab fa-snapchat-ghost"></i>
-      </a>
-      <a href="https://www.reddit.com/user/mack_criswell" target="_blank" class="icons" title="Reddit">
-        <i class="fab fa-reddit-alien"></i>
-      </a>
-      <a href="https://www.behance.net/makccr/" target="_blank" class="icons" title="Behance">
-        <i class="fab fa-behance"></i>
-      </a>
-      <a href="https://github.com/makccr" target="_blank" class="icons" title="Github">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://stackoverflow.com/users/11381583/makccr" target="_blank" class="icons" title="Stack Overflow">
-        <i class="fab fa-stack-overflow"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/makccr" target="_blank" class="icons" title="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <p class="center">&copy;Copyright 2012-2019 Mackenzie Criswell<br>All Rights Reserved.</p>
-    </footer>
+<!-- DESKTOP SECONDARY NAVIGATION -->
+  <div id="footer">
+    <a href="https://kit.com/makccr" target="_blank" class="footer">Gear I Use</a>
+    <a href="bugs.html" class="footer">Bug Report</a>
+    <a href="terms.html" class="footer">Terms of Service</a>
+    <a href="privacy.html" class="footer">Privacy Policy</a>
+    <a href="sitemap.html" class="footer">Sitemap</a>
+    <a href="about.html" class="footer">About</a>
+    <a href="contact.html" class="footer">Contact</a>
+  </div>
+<!-- SOCIAL LINKS -->
+  <h3 id="footer">Social Links</h3>
+  <div id="icon-container">
+    <a href="https://twitter.com/makccr" target="_blank" class="icons" title="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/makccr/" target="_blank" class="icons" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/makccr/" target="_blank" class="icons" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.snapchat.com/add/mack_criswell" target="_blank" class="icons" title="Snapchat">
+      <i class="fab fa-snapchat-ghost"></i>
+    </a>
+    <a href="https://www.reddit.com/user/mack_criswell" target="_blank" class="icons" title="Reddit">
+      <i class="fab fa-reddit-alien"></i>
+    </a>
+    <a href="https://www.behance.net/makccr/" target="_blank" class="icons" title="Behance">
+      <i class="fab fa-behance"></i>
+    </a>
+    <a href="https://github.com/makccr" target="_blank" class="icons" title="Github">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://stackoverflow.com/users/11381583/makccr" target="_blank" class="icons" title="Stack Overflow">
+      <i class="fab fa-stack-overflow"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/makccr" target="_blank" class="icons" title="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+<!-- BOTTOM COPY LINE -->
+  <p class="center">&copy;Copyright 2012-2019 Mackenzie Criswell<br>All Rights Reserved.</p>
+</footer>
 </body>
 </html>
