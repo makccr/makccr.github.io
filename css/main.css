@@ -766,7 +766,7 @@ div.contact {
     display: block;
   }
 
-  header {
+  nav {
     bottom:0;
     top:auto;
     border-bottom: 0px;
@@ -971,7 +971,7 @@ div.contact {
     background-size: 40px 40px;
   }
 
-  header {
+  nav {
     background-color: #F5F5F5;
     border-bottom-color: #DDD;
     border-top-color: #DDD;
