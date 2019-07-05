@@ -9,5 +9,8 @@ If you're interested, I've set up the media query in a somewhat interesting way:
 This is accomplished by designing the website in dark mode first, and then using the media query to create a light mode. So I started by setting up the CSS to be the dark theme and then used ```@media (prefers-color-scheme: light){}```, to create the light theme.
 
 ----
+#### YouTube Series
 
-Also if you're interested I have a set of videos where I go over the building of my website in detail, available [**here**:](https://www.youtube.com/playlist?list=PLIYVhRocqRoT6yvieIyNehUz6VnB6hXhF "Let's Code Playlist")
+Also if you're interested I have a set of videos where I go over the building of my website in detail, available below:
+
+[![Let's Code: Web Design Playlist Link](http://i3.ytimg.com/vi/eonmkZtYB7g/maxresdefault.jpg)](https://www.youtube.com/playlist?list=PLIYVhRocqRoT6yvieIyNehUz6VnB6hXhF)
