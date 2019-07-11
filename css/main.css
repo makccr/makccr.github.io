@@ -153,28 +153,22 @@ code {
   padding-right: 1em;
   padding-top: .7em;
   padding-bottom: .7em;
-  border-color: #1c1e24;
+  border-color: #3A3A3A;
   border-style: solid;
   border-width: 1px;
   border-radius: 7px;
   background-color: #0A0C0E;
 }
 
-  span.red {
-    color: #D86872;
-  }
+  span.red {color: #D86872}
 
-  span.orange {
-    color: #9F7522;
-  }
+  span.orange {color: #E1AE02}
 
-  span.green {
-    color: #57A557;
-  }
+  span.green {color: #57A557}
 
-  span.blue {
-    color: #0D85BC;
-  }
+  span.blue {color: #0D85BC}
+
+  span.comment {color: #7F807F}
 /* GLOBAL PROPERTIES */
 
 /* HEADER */
@@ -187,6 +181,12 @@ nav {
   width: 100%;
   top: 0;
   border-bottom: solid #1C1E24 1px;
+}
+
+nav.blog {
+  position: static;
+  background-color: transparent;
+  border-bottom: transparent;
 }
 
 #logo {
@@ -416,12 +416,22 @@ input, textarea, select {
     display: inline-block;
   }
 
+  p.merch {
+    margin: 0em;
+    text-align: center;
+  }
+
   p.select {
     display: inline-block;
     margin: 0px;
     width: 10%;
     text-align: right;
     font-weight: 400;
+  }
+
+  p.select strong {
+    color: #A7A7A7;
+    letter-spacing: .05em;
   }
 
   button {
@@ -443,7 +453,14 @@ input, textarea, select {
 /*FORM*/
 
 /*DESIGN ELEMENT*/
-div.freeLance {
+iframe {
+  width: 1066px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 25px;
+  border: 1px solid #3A3A3A ;
 }
 
 div.truelancer {
@@ -525,14 +542,6 @@ img.center {
   border-radius: 10px;
   border: 1px solid #1C1E24;
 }
-
-img.social {
-  width: 125px;
-  display: inline-block;
-  margin: 4em 1em 0em 1em;
-}
-
-div.socialContainer {text-align: center;}
 
 div.card {
   display: inline-block;

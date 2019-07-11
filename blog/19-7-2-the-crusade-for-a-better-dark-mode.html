@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="about, bio, history, info, support, contact"/>
+    <meta name="description" content="Its a contact page. Not anything super exciting or anything, but it's here."/>
+    <meta name="author" content="Mackenzie Criswell"/>
+    <meta name="robots" content="index, follow"/>
+  <title>About - MAKC</title>
+    <link href="images/favicons/favicon.ico" rel="icon" type="image/ico"/>
+    <link href="images/favicons/favicon.png" rel="icon" type="image/png"/>
+    <link href="images/favicons/apple-touch-icon.png" rel="apple-touch-icon"/>
+    <link href="images/favicons/ios-ipad-144x144.png" sizes="144x144" rel="apple-touch-icon-precomposed"/>
+    <link href="images/favicons/ios-iphone-114x144.png" sizes="114x114" rel="apple-touch-icon-precomposed"/>
+    <link href="images/favicons/ios-default-homescreen-57x57.png" sizes="57x57" rel="apple-touch-icon-precomposed"/>
+  <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" id="pageStyle" href="../css/main.css" />
+    <script src="../script/script.js"></script>
+    <style>
+     header {
+       background: linear-gradient(
+       rgba(0,0,0,.0),
+       rgba(0,0,0,.0)),
+       url("../blog/images/19-7-2-a.jpg");
+       padding: 20.5em 0em 17em 0em;
+       height: 100%;
+       background-repeat: no-repeat;
+       background-size: cover;
+       margin-bottom: 150px;
+     }
+     @media only screen and (max-width: 800px) {
+       header {
+         padding: 30vh 0vw;
+         height: auto;
+         width: 100%;
+       }
+     }
+    </style>
+</head>
+<body>
+<nav class="blog">
+  <div id="mobileHam">
+    <div class="mobileHamChev" onclick="mobileHamX()"><i class="fas fa-chevron-down"></i></div>
+    <a href="https://kit.com/makccr" target="_blank"><div class="mobileHamSmallLink">Gear I Use</div></a>
+    <a href="bugs.html"><div class="mobileHamSmallLink">Bug Report</div></a>
+    <a href="terms.html"><div class="mobileHamSmallLink">Terms of Service</div></a>
+    <a href="privacy.html"><div class="mobileHamSmallLink">Privacy Policy</div></a>
+    <a href="sitemap.xml"><div class="mobileHamSmallLink">Sitemap</div></a>
+    <a href="about.html"><div class="mobileHamSmallLink">About</div></a>
+    <a href="contact.html"><div class="mobileHamSmallLink">Contact</div></a>
+      <div class="mobileHamLine2"></div>
+    <a href="https://youtube.com/mackenziegcriswell" target="_blank"><div class="mobileHamBigLink">Videos</div></a>
+    <a href="portfolio.html"><div class="mobileHamBigLink">Portfolio</div></a>
+    <a href="downloads.html"><div class="mobileHamBigLink">Downloads</div></a>
+    <a href="merch.html"><div class="mobileHamBigLink">Merch</div></a>
+      <div class="mobileHamSpace"></div>
+      <div class="mobileHamLine"></div>
+  </div>
+    <a href="index.html"><div id="logo"></div></a>
+      <div class="header-line-left"></div>
+      <div class="nav-space"></div>
+    <a href="https://www.youtube.com/user/mackenziegcriswell" target="_blank" class="nav" title="Clicking will take you to YouTube">Videos</a>
+      <div class="nav-line"></div>
+    <a href="portfolio.html" class="nav">Portfolio</a>
+      <div class="nav-line"></div>
+    <a href="downloads.html" class="nav">Downloads</a>
+      <div class="nav-line"></div>
+    <a href="merch.html" class="nav">Merch</a>
+      <div class="head-social-nav">
+        <a class="head-nav" onclick="mobileHam()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+    <div class="header-line-nav"></div>
+</nav>
+<header>
+  <h1 class="header">The Crusade for a Better Dark Mode</h1>
+  <p class="header">Tuesday, July 2, 2019</p>
+</header>
+<main>
+  <article>
+    <p>
+      I couldn&#39;t exactly tell you why, but I care a great deal about the <em>progress</em> of dark modes modern software platforms. But I kind of always have hated the way that this feature is baked into software and websites. Almost always, you open a new app, or website; and at some point you realize you&#39;d like to go into dark mode; so you fish around in the settings and menus looking for a button to do just that for you; or maybe you even get desperate and just Google the answer— the point is it&#39;s a frustrating process. Every app, every web site, ever OS has a manual button that you, the user, have to go and track down if you&#39;re interested. Of course that&#39;s just the process for enabling the dark mode, turning it back off it equally annoying.
+    </p>
+    <p>
+      Now, Apple actually did make a really great move back with the release of<em>MacOS Whatever It Was</em>, when they first implemented a system wide dark mode. They baked in one button that would change the theming for every system app and every little piece of UI (with a few tiny exceptions). Then Apple did the really smart thing buy giving developers a quick and easy way to sort of tap into that theme switching within their apps (and seriously, it actually is really easy, I&#39;ve only ever used Xcode in short spurts, working on iOS apps, and feel confident after reading the <a href='https://developer.apple.com/documentation/appkit/supporting_dark_mode_in_your_interface' title='Apple Support Page on the Developer Website'>Documentation</a> that I could get this working). Then, after a little delay Apple also handed this feature over to web developers. If you&#39;re interested you can build a website that will follow the system wide theme without any need to reload the page, or enable any weird features, it just works.
+    </p>
+    <p>
+      Now the biggest issue with this feature is that for it to <em>just work</em>, a lot of conditions have to be met. You have to be on a supported operating system (spoiler that means just MacOS), using a supported browser (for the longest time that was just Safari), and actually be a user who was running the latest software, and taking advantage of the new dark mode feature. Any yet, when it did work, this was, dare I say it, the absolute best implementation of any dark mode; no need to fish around for settings, no need to even care to pay attention to what was going on, if your&#39;e the end user, <em>it just worked</em>.
+    </p>
+    <img class="float-center" src="images/19-7-2-b.gif">
+    <p>
+      But now, a little over a year later, this functionality is becoming quite a bit more widely supported. The biggest sign of this is that both a new, system wide dark mode, as well as support for websites following the system dark mode is being added to the upcoming iOS 13; but that&#39;s far from the only additional support. Mozilla added this functionality to Firefox relatively recently. Google Chrome still doesn&#39;t actually support this theme switching in their official release of the browser but, both Chromium and Chrome Canary support this feature in their most recent updates; so I&#39;ve got to assume that this is coming to Chrome at some point in the near future. This really kind of leaves is up to Microsoft, who&#39;s Windows 10 does also now have a system wide dark mode, to either develop a similar system for web developers, or just join in with Apple; and the vast majority of web users will be able to get the most no-nonsense Dark Mode the world has ever known. (I&#39;m not ignoring Android and Linux users, I just think that Android will almost certainly implement this feature soon, and there are way to many Linux distributions for me to keep track of but most of them use Firefox or Chrome anyway)
+    </p>
+    <p>
+      But for now we&#39;re stuck in a relative corner where our new, amazing, dark mode, only works in a few places. So the way I see it, there are two options:
+    </p>
+    <ol>
+      <li>
+        Go ahead and enable a dark mode the old fashioned way with a button and a bit of Java Script. This isn&#39;t as terrible a solution as it may seem, you can actually enable both the manual dark mode with JS, and the automatic with media queries, and that will work fine.
+      </li>
+      <li>
+        The second option is basically to rely 100% on Apple&#39;s solution, and then just serve up a very specific version of your website on the platforms that don&#39;t support theme switching.
+      </li>
+    </ol>
+    <p>I&#39;m actually going with the second option for now, while working on the redesign of my <a href='https://www.youtube.com/playlist?list=PLIYVhRocqRoT6yvieIyNehUz6VnB6hXhF' title='My YouTube Series Where I Build My Website'>personal website</a>. I might end up actually adding a manual dark mode switcher, button thing, before it&#39;s live, but at least for now, I&#39;m kind of happy with the way that things work now. The way that I have this set up is to serve, by default, not the standard <em>light mode</em> of my site, but the <em>dark mode</em> version. Anyone on an unsupported platform will just see the dark version of my site. But when a user moves over to a supported browser, my site will follow the preference set by the OS. Setting this up is fairly straightforward. </p>
+    <p>
+      The first step is to decide what version of your site you want users to see by default, before you ever start writing it. This is important because whatever classes you set up in your CSS document at the top, will be what users in an unsupported browser will see. So in my case, since I want to serve the dark mode by default I might do something like:
+    </p>
+    <code>
+      <span class="red">html<span class="orange">,</span> body</span> <span class="green">{</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: <span class="blue">black</span>;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: <span class="blue">white</span>;
+        <br><span class="green">}</span>
+    </code>
+    <p>
+      Then we can use media queries to enable a dark mode, we have a few option here:
+    </p>
+    <code>
+      <span class="red">@media</span> <span class="green">(<span class="orange">prefers-color-scheme:</span><span class="blue"> light</span>)</span>
+      <span class="comment">/*will trigger when a user is in light mode*/</span>
+    </code>
+    <br>
+    <code>
+      <span class="red">@media</span> <span class="green">(<span class="orange">prefers-color-scheme:</span><span class="blue"> dark</span>)</span>
+      <span class="comment">/*will trigger when a user is in dark mode*/</span>
+    </code>
+    <p>In my case, I&#39;m wanting to enable a dark mode by default, and then use media queries to enable a light mode, which would look something like this:
+    </p>
+    <code>
+      <span class="red">@media</span> <span class="green">(<span class="orange">prefers-color-scheme:</span><span class="blue"> light</span>) {</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">body, html</span> <span class="green">{</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: <span class="blue">white</span>;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: <span class="blue">black</span>;<br><span class="green">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+      }</span></code>
+    <p>
+      I actually made a video talking about this same thing which you can watcher <a href=''>here</a> if your&#39;e interested. But the point is, for now at least, I think this is a really great solution for a modern, simple, clean dark mode experience for web users.
+    </p>
+  </article>
+  <iframe src="https://www.youtube.com/embed/oRuOwozgTiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</main>
+<footer>
+<!-- DESKTOP SECONDARY NAVIGATION -->
+  <div id="footer">
+    <a href="https://kit.com/makccr" target="_blank" class="footer">Gear I Use</a>
+    <a href="bugs.html" class="footer">Bug Report</a>
+    <a href="terms.html" class="footer">Terms of Service</a>
+    <a href="privacy.html" class="footer">Privacy Policy</a>
+    <a href="sitemap.html" class="footer">Sitemap</a>
+    <a href="about.html" class="footer">About</a>
+    <a href="contact.html" class="footer">Contact</a>
+  </div>
+<!-- SOCIAL LINKS -->
+  <h3 id="footer">Social Links</h3>
+  <div id="icon-container">
+    <a href="https://twitter.com/makccr" target="_blank" class="icons" title="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/makccr/" target="_blank" class="icons" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/makccr/" target="_blank" class="icons" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.snapchat.com/add/mack_criswell" target="_blank" class="icons" title="Snapchat">
+      <i class="fab fa-snapchat-ghost"></i>
+    </a>
+    <a href="https://www.reddit.com/user/mack_criswell" target="_blank" class="icons" title="Reddit">
+      <i class="fab fa-reddit-alien"></i>
+    </a>
+    <a href="https://www.behance.net/makccr/" target="_blank" class="icons" title="Behance">
+      <i class="fab fa-behance"></i>
+    </a>
+    <a href="https://github.com/makccr" target="_blank" class="icons" title="Github">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://stackoverflow.com/users/11381583/makccr" target="_blank" class="icons" title="Stack Overflow">
+      <i class="fab fa-stack-overflow"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/makccr" target="_blank" class="icons" title="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+<!-- BOTTOM COPY LINE -->
+  <p class="center">&copy;Copyright 2012-2019 Mackenzie Criswell<br>All Rights Reserved.</p>
+</footer>
+</body>
+</html>
