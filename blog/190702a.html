@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="keywords" content="about, bio, history, info, support, contact"/>
-    <meta name="description" content="Its a contact page. Not anything super exciting or anything, but it's here."/>
+    <meta name="keywords" content="tech, web design, opinion"/>
+    <meta name="description" content="I'm an avid fan of Dark Mode, but I'm frequentley dissapointed by it's implementation on the web."/>
     <meta name="author" content="Mackenzie Criswell"/>
     <meta name="robots" content="index, follow"/>
-  <title>About - MAKC</title>
+  <title>The Crusade for a Better Dark Mode - BLOG | MAKC</title>
     <link href="images/favicons/favicon.ico" rel="icon" type="image/ico"/>
     <link href="images/favicons/favicon.png" rel="icon" type="image/png"/>
     <link href="images/favicons/apple-touch-icon.png" rel="apple-touch-icon"/>
@@ -31,11 +31,14 @@
        height: 100%;
        background-repeat: no-repeat;
        background-size: cover;
+       background-attachment: fixed;
+       background-position: center;
        margin-bottom: 150px;
      }
      @media only screen and (max-width: 800px) {
        header {
          padding: 30vh 0vw;
+         background-attachment: scroll;
          height: auto;
          width: 100%;
        }
@@ -43,47 +46,38 @@
     </style>
 </head>
 <body>
-<nav class="blog">
-  <div id="mobileHam">
-    <div class="mobileHamChev" onclick="mobileHamX()"><i class="fas fa-chevron-down"></i></div>
-    <a href="https://kit.com/makccr" target="_blank"><div class="mobileHamSmallLink">Gear I Use</div></a>
-    <a href="bugs.html"><div class="mobileHamSmallLink">Bug Report</div></a>
-    <a href="terms.html"><div class="mobileHamSmallLink">Terms of Service</div></a>
-    <a href="privacy.html"><div class="mobileHamSmallLink">Privacy Policy</div></a>
-    <a href="sitemap.xml"><div class="mobileHamSmallLink">Sitemap</div></a>
-    <a href="about.html"><div class="mobileHamSmallLink">About</div></a>
-    <a href="contact.html"><div class="mobileHamSmallLink">Contact</div></a>
-      <div class="mobileHamLine2"></div>
-    <a href="https://youtube.com/mackenziegcriswell" target="_blank"><div class="mobileHamBigLink">Videos</div></a>
-    <a href="portfolio.html"><div class="mobileHamBigLink">Portfolio</div></a>
-    <a href="downloads.html"><div class="mobileHamBigLink">Downloads</div></a>
-    <a href="merch.html"><div class="mobileHamBigLink">Merch</div></a>
-      <div class="mobileHamSpace"></div>
-      <div class="mobileHamLine"></div>
-  </div>
+  <nav>
     <a href="index.html"><div id="logo"></div></a>
-      <div class="header-line-left"></div>
-      <div class="nav-space"></div>
     <a href="https://www.youtube.com/user/mackenziegcriswell" target="_blank" class="nav" title="Clicking will take you to YouTube">Videos</a>
-      <div class="nav-line"></div>
     <a href="portfolio.html" class="nav">Portfolio</a>
-      <div class="nav-line"></div>
     <a href="downloads.html" class="nav">Downloads</a>
-      <div class="nav-line"></div>
     <a href="merch.html" class="nav">Merch</a>
-      <div class="head-social-nav">
-        <a class="head-nav" onclick="mobileHam()">
-          <i class="fas fa-bars"></i>
-        </a>
+    <div class="head-social-nav">
+      <a class="head-nav" onclick="mobileHam()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+      <div id="mobileHam">
+        <a href="https://kit.com/makccr" target="_blank"><div class="mobileHamSmallLink">Gear I Use</div></a>
+        <a href="bugs.html"><div class="mobileHamSmallLink">Bug Report</div></a>
+        <a href="terms.html"><div class="mobileHamSmallLink">Terms of Service</div></a>
+        <a href="privacy.html"><div class="mobileHamSmallLink">Privacy Policy</div></a>
+        <a href="about.html"><div class="mobileHamSmallLink">About</div></a>
+        <a href="contact.html"><div class="mobileHamSmallLink">Contact</div></a>
+          <div class="mobileHamLine2"></div>
+        <a href="https://youtube.com/mackenziegcriswell" target="_blank"><div class="mobileHamBigLink">Videos</div></a>
+        <a href="portfolio.html"><div class="mobileHamBigLink">Portfolio</div></a>
+        <a href="downloads.html"><div class="mobileHamBigLink">Downloads</div></a>
+        <a href="merch.html"><div class="mobileHamBigLink">Merch</div></a>
+        <div class="mobileHamChev" onclick="mobileHamX()"><i class="fas fa-chevron-down"></i></div>
       </div>
-    <div class="header-line-nav"></div>
-</nav>
+  </nav>
 <header>
-  <h1 class="header">The Crusade for a Better Dark Mode</h1>
-  <p class="header">Tuesday, July 2, 2019</p>
 </header>
 <main>
+
   <article>
+    <h5>The Crusade for a Better Dark Mode</h5>
     <p>
       I couldn&#39;t exactly tell you why, but I care a great deal about the <em>progress</em> of dark modes modern software platforms. But I kind of always have hated the way that this feature is baked into software and websites. Almost always, you open a new app, or website; and at some point you realize you&#39;d like to go into dark mode; so you fish around in the settings and menus looking for a button to do just that for you; or maybe you even get desperate and just Google the answer— the point is it&#39;s a frustrating process. Every app, every web site, ever OS has a manual button that you, the user, have to go and track down if you&#39;re interested. Of course that&#39;s just the process for enabling the dark mode, turning it back off it equally annoying.
     </p>
