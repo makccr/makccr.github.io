@@ -717,6 +717,10 @@ div.switcherContainer p:hover {
     font-size: 1em;
   }
 
+  ul, ol {
+    padding-left: 5%;
+   }
+
   article > p{
     margin-left: 5%;
     margin-right: 5%;
