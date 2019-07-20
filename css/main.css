@@ -416,7 +416,7 @@ input, textarea, select {
   }
 
   p.merch {
-    margin: 0em 1em;
+    margin: 0% 30%;
     text-align: center;
     line-height: normal;
   }
@@ -917,6 +917,8 @@ div.switcherContainer p:hover {
     line-height: normal;
     margin: 1em;
   }
+
+  p.merch {margin: 0% 5%}
 }
 
 @media only screen and (max-width: 720px) {
