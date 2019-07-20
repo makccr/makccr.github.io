@@ -25,19 +25,13 @@
      background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
      padding-top: 12.5em;
      padding-bottom: 9em;
-     height: 100%;
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
      margin-bottom: 150px;
    }
    @media only screen and (max-width: 800px) {
      header {
-       padding: 30vh 0vw;
-       background-attachment: scroll;
-       height: auto;
        width: 100%;
+       padding-top: 18.5em;
+       padding-bottom: 15em;
      }
    }
   </style>
@@ -45,26 +39,9 @@
 </head>
 <body>
 <nav>
-  <div id="mobileHam">
-    <div class="mobileHamChev" onclick="mobileHamX()"><i class="fas fa-chevron-down"></i></div>
-    <a href="https://kit.com/makccr" target="_blank"><div class="mobileHamSmallLink">Gear I Use</div></a>
-    <a href="bugs.html"><div class="mobileHamSmallLink">Bug Report</div></a>
-    <a href="terms.html"><div class="mobileHamSmallLink">Terms of Service</div></a>
-    <a href="privacy.html"><div class="mobileHamSmallLink">Privacy Policy</div></a>
-    <a href="sitemap.xml"><div class="mobileHamSmallLink">Sitemap</div></a>
-    <a href="about.html"><div class="mobileHamSmallLink">About</div></a>
-    <a href="contact.html"><div class="mobileHamSmallLink">Contact</div></a>
-      <div class="mobileHamLine2"></div>
-    <a href="https://youtube.com/mackenziegcriswell" target="_blank"><div class="mobileHamBigLink">Videos</div></a>
-    <a href="portfolio.html"><div class="mobileHamBigLink">Portfolio</div></a>
-    <a href="downloads.html"><div class="mobileHamBigLink">Downloads</div></a>
-    <a href="merch.html"><div class="mobileHamBigLink">Merch</div></a>
-      <div class="mobileHamSpace"></div>
-      <div class="mobileHamLine"></div>
-  </div>
     <a href="index.html"><div id="logo"></div></a>
-      <div class="header-line-left"></div>
-      <div class="nav-space"></div>
+    <div class="header-line-left"></div>
+    <div class="nav-space"></div>
     <a href="https://www.youtube.com/user/mackenziegcriswell" target="_blank" class="nav" title="Clicking will take you to YouTube">Videos</a>
       <div class="nav-line"></div>
     <a href="portfolio.html" class="nav">Portfolio</a>
@@ -73,11 +50,29 @@
       <div class="nav-line"></div>
     <a href="merch.html" class="nav">Merch</a>
       <div class="head-social-nav">
-        <a class="head-nav" onclick="mobileHam()">
-          <i class="fas fa-bars"></i>
-        </a>
+    <a class="head-nav" onclick="mobileHam()">
+      <i class="fas fa-bars"></i>
+    </a>
       </div>
     <div class="header-line-nav"></div>
+    <div id="mobileHam">
+      <div class="mobileHamSpace"></div>
+      <div class="mobileHamLine"></div>
+      <br><br>
+      <a href="https://kit.com/makccr" target="_blank"><div class="mobileHamSmallLink">Gear I Use</div></a>
+      <a href="bugs.html"><div class="mobileHamSmallLink">Bug Report</div></a>
+      <a href="terms.html"><div class="mobileHamSmallLink">Terms of Service</div></a>
+      <a href="privacy.html"><div class="mobileHamSmallLink">Privacy Policy</div></a>
+      <a href="about.html"><div class="mobileHamSmallLink">About</div></a>
+      <a href="contact.html"><div class="mobileHamSmallLink">Contact</div></a>
+        <div class="mobileHamLine2"></div>
+      <a href="https://youtube.com/mackenziegcriswell" target="_blank"><div class="mobileHamBigLink">Videos</div></a>
+      <a href="portfolio.html"><div class="mobileHamBigLink">Portfolio</div></a>
+      <a href="downloads.html"><div class="mobileHamBigLink">Downloads</div></a>
+      <a href="merch.html"><div class="mobileHamBigLink">Merch</div></a>
+        <div class="mobileHamChev" onclick="mobileHamX()"><i class="fas fa-chevron-down"></i></div>
+
+    </div>
 </nav>
 <header>
   <h1 class="header">Merch</h1>

@@ -807,8 +807,7 @@ div.switcherContainer p:hover {
   }
 
   nav {
-    bottom:0;
-    top:auto;
+    top:0;
     border-bottom: 0px;
     border-top: solid #333 1px;
   }
@@ -895,6 +894,7 @@ div.switcherContainer p:hover {
     font-size: 1.3em;
     margin-bottom: 2em;
     color: #bec1c5;
+    transform: rotate(180deg);
   }
 
   div.card404 {
