@@ -8,16 +8,11 @@ body, html {
 html.p404, body.p404 { height: 100%}
 
 .p404 {
-  background: url("../images/super11.jpg");
+  background-image: linear-gradient(to bottom right, #56ab2f, #a8e063);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-strong {
-  color: #DC3232;
-  font-weight: 400;
 }
 
 h1 {
@@ -421,8 +416,9 @@ input, textarea, select {
   }
 
   p.merch {
-    margin: 0em;
+    margin: 0em 1em;
     text-align: center;
+    line-height: normal;
   }
 
   p.select {
@@ -651,6 +647,7 @@ div.contact {
 
 div.switcherContainerGrid {
   text-align: center;
+  transition: 0.3s;
 }
 
 div.switcherContainer {
@@ -660,6 +657,7 @@ div.switcherContainer {
   display: inline-block;
   margin-bottom: 3em;
   padding: 0em .5em;
+  transition: 0.3s;
 }
 
 div.switcherContainer p{
@@ -672,7 +670,10 @@ div.switcherContainer p{
   transition: 0.3s;
 }
 
-  div.switcherContainer p:hover {background-color: #2a2a2a}
+div.switcherContainer p:hover {
+  background-color: #2a2a2a;
+  transition: 0.3s;
+}
 
 /*DESIGN ELEMENT*/
 
@@ -901,8 +902,6 @@ div.switcherContainer p{
     margin: 0px;
   }
 
-  .p404 {background: url(#)}
-
   div.cardContainer404 {
     margin: 0px;
   }
@@ -911,6 +910,13 @@ div.switcherContainer p{
 
   h1.merch { margin-top: 1em}
 
+  div.switcherContainer p{
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: normal;
+    margin: 1em;
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -1040,4 +1046,13 @@ div.switcherContainer p{
   div.header-line-nav {border-left-color: #bbb}
 
   p.contact {color: #888}
+
+  div.switcherContainer {border: 1px solid #bbb}
+
+  div.switcherContainer p {color: #777}
+
+  div.switcherContainer p:hover {color: #666}
+
+  div.switcherContainer p:hover {background-color: #eee}
+
 }
