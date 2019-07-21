@@ -341,10 +341,11 @@ footer {
   border-top-style: solid;
   border-top-width: .1px;
   margin-top: 150px;
+  text-align: right;
 }
 
 div#footer {
-  text-align: center;
+  text-align: inherit;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   margin-bottom: 2em;
@@ -352,8 +353,8 @@ div#footer {
 }
 
 a.footer {
-  padding-left: .3em;
-  padding-right: .3em;
+  padding-left: .6em;
+  padding-right: 0em;
   border: 0px solid transparent;
 }
   a.footer:hover {
@@ -361,7 +362,7 @@ a.footer {
   }
 
 div#icon-container {
-  text-align: center;
+  text-align: inherit;
 }
 
 a.icons {
@@ -376,6 +377,14 @@ p.center {
   text-align: center;
   font-size: 1em;
   line-height: normal;
+}
+
+p#footer {
+  text-align: inherit;
+  font-size: 1em;
+  line-height: normal;
+  margin: 0px;
+  margin-top: 1em;
 }
 
 p.center-small {
@@ -395,6 +404,7 @@ p.center-big {
 h3#footer {
   margin: 0px;
   margin-bottom: .7em;
+  text-align: inherit;
 }
 
 span.foot-line {
