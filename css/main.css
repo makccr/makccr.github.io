@@ -65,7 +65,7 @@ h5 {
   font-size: 3em;
   color: #E4E5E8;
   font-weight: normal;
-  margin: 0px 15% 1em 15%;
+  margin: 200px 15% 1em 15%;
   letter-spacing: .03em;
 }
 
@@ -106,6 +106,34 @@ article > p {
   text-align: justify;
   text-indent: 3em;
   letter-spacing: .03em;
+}
+
+article > ul, ol {
+  font-family: "Amiri", serif;
+  font-size: 1.3em;
+  text-align: justify;
+  letter-spacing: .03em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+p.share {
+  text-align: center;
+  border-color: #444;
+  border-width: 1px;
+  border-style: solid;
+  display: inline-block;
+  padding: 0em .5em;
+  border-radius: 17px;
+  margin: 0em;
+}
+
+.share-icon {
+  display: inline-block;
+  color: #ccc;
+  font-size: 1.3em;
+  margin-right: .1em;
+  width: 27px;
 }
 
 a:link,
@@ -348,6 +376,20 @@ p.center {
   text-align: center;
   font-size: 1em;
   line-height: normal;
+}
+
+p.center-small {
+  text-align: center;
+  font-size: 1em;
+  line-height: normal;
+  font-family: "Amiri, serif";
+}
+
+p.center-big {
+  text-align: center;
+  font-size: 1.3em;
+  line-height: normal;
+  font-family: "Amiri, serif";
 }
 
 h3#footer {
@@ -674,10 +716,24 @@ div.switcherContainer p:hover {
   transition: 0.3s;
 }
 
+
+
 /*DESIGN ELEMENT*/
 
 
 /*RESPONSIVE*/
+@media only screen and (max-width: 1066px) {
+  iframe {
+    width: 480px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 25px;
+    border: 1px solid #3A3A3A ;
+  }
+}
+
 @media only screen and (max-width: 840px) {
 
   h1 {
@@ -702,11 +758,13 @@ div.switcherContainer p:hover {
     font-size: 1.5em;
   }
 
-  h5 {font-size: 2em;
-    margin: 0px 5% 1em 5%;
+  h5 {
+    font-size: 2em;
+    margin: 200px 5% 1em 5%;
   }
 
-  h6 {font-size: 1.5em;
+  h6 {
+    font-size: 1.5em;
     font-weight: normal;
     margin: 0px 5% 1em 5%;
   }
@@ -922,6 +980,8 @@ div.switcherContainer p:hover {
   div.card {width: 90%;}
 
   div.cardGrid {width: 100%;}
+
+  iframe {width: 95%}
 }
 
 @media (prefers-color-scheme: light) {
