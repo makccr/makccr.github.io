@@ -222,7 +222,6 @@ nav.blog {
   transition: 0.3s;
   opacity: 1;
   margin: .5em 1em;
-  display: inline-block;
   float: left;
   margin-left: 2em;
 }
@@ -669,6 +668,19 @@ div.cardContainer {
   margin-right: auto;
 }
 
+div.cardContainerPort {
+  display: inline-block;
+  margin-left: 1em; 
+  margin-right: 1em; 
+  margin-top: 2em; 
+}
+
+img.portfolio {
+  height: 14rem; 
+  display: block;
+  border-radius: 10px;
+}
+
 div.cardContainer404 {
   display: block;
   text-align: center;
@@ -676,7 +688,7 @@ div.cardContainer404 {
 
 div.cardGrid {
   text-align: center;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
@@ -716,7 +728,7 @@ div.switcherContainer p{
   margin: 0em .1em;
   padding: 0em .5em;
   display: inline-block;
-  background-color: #transparent;
+  background-color: transparent;
   border-radius: 15px;
   transition: 0.3s;
 }
@@ -725,6 +737,7 @@ div.switcherContainer p:hover {
   background-color: #2a2a2a;
   transition: 0.3s;
 }
+
 
 
 
@@ -896,7 +909,6 @@ div.switcherContainer p:hover {
     position: fixed;
     right: .5em;
     float: right;
-    display: inline-block;
   }
 
   div.header-line-nav {
@@ -984,6 +996,13 @@ div.switcherContainer p:hover {
   }
 
   p.merch {margin: 0% 5%}
+
+  img.portfolio {
+    height: auto; 
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
 }
 
 @media only screen and (max-width: 720px) {
