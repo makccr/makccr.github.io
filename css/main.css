@@ -562,6 +562,12 @@ div.line {
   margin-bottom: 7em;
 }
 
+img.50 {
+  width: 100px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 img.float-left {
   float: left;
   height: 25em;
