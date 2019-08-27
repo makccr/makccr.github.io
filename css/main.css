@@ -670,13 +670,13 @@ div.cardContainer {
 
 div.cardContainerPort {
   display: inline-block;
-  margin-left: 1em; 
-  margin-right: 1em; 
-  margin-top: 2em; 
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 2em;
 }
 
 img.portfolio {
-  height: 14rem; 
+  height: 14rem;
   display: block;
   border-radius: 10px;
 }
@@ -907,8 +907,8 @@ div.switcherContainer p:hover {
     font-size: 2em;
     margin: .24em auto;
     position: fixed;
+    display: inline-block;
     right: .5em;
-    float: right;
   }
 
   div.header-line-nav {
@@ -998,7 +998,7 @@ div.switcherContainer p:hover {
   p.merch {margin: 0% 5%}
 
   img.portfolio {
-    height: auto; 
+    height: auto;
     width: 100%;
     display: block;
     border-radius: 10px;
