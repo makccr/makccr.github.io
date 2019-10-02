@@ -11,7 +11,7 @@ a:link,a:active,a:visited {
 html {
     background-color: #ffffff;
     color: #6c6c6c; /*Main background and text color*/
-} footer,header,code,select,textarea,input {
+} footer,header,code,select,textarea,input,#mobile-menu {
     background-color: #fbfbfb;
     border: 1px solid #dfdfdf; /*Secondary bg, borders*/
 } h1,h2,h3,h4,h5,h6,.author,button {color: #4c4c4c;} /*Headers*/
@@ -47,6 +47,8 @@ header {
     margin: auto;
     transition: .3s;
 } #logo:hover {opacity: .8;} /*Logo Settings */
+.fa-bars {display:none;}
+#mobile-menu {display:none;}
 #spacer {margin-top: 150px;}
 footer {
     margin-top: 50px;
@@ -126,6 +128,23 @@ button {
 
     footer nav a:link,header nav a:link {display:none;}
     #spacer {margin-top: 90px;} /*Footer & header settings*/
+    .fa-bars {
+        font-size: 18pt;
+        position: fixed; 
+        display: block; 
+        top: 0px; 
+        margin: .7em; 
+    } #mobile-menu {
+        display: none;
+        margin-top: 57px; 
+        padding: 1em; 
+    } #mobile-menu a:link {
+        text-decoration: none; 
+        text-transform: uppercase; 
+    } div#mobile-menu h4 {
+        text-align: left; 
+        margin: 0em; 
+    }
 } /*Mobile site settings*/
 
 /*-------Dark Mode Settings------------*/
@@ -133,7 +152,7 @@ button {
     html {
         background-color: #000;
         color: #a4a4a4; /*Main background and text color*/
-    } footer,header,code,select,textarea,input {
+    } footer,header,code,select,textarea,input,#mobile-menu {
         background-color: #131313;
         border: 1px solid #262626; /*Secondary bg, borders*/
     } h1,h2,h3,h4,h5,h6,.author,button {color: #bcbcbc;} /*Headers*/
