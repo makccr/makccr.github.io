@@ -136,8 +136,7 @@ button {
         margin: .7em; 
     } #mobile-menu {
         display: none;
-        margin-top: 57px; 
-        padding: 1em; 
+        padding: 80px 1em; 
     } #mobile-menu a:link {
         text-decoration: none; 
         text-transform: uppercase; 
