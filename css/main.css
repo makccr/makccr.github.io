@@ -8,18 +8,19 @@ a:link,a:active,a:visited {
     transition: 0.3s; /*Links*/
 } /*Global settings*/
 
-html {
+html { /*Color settings*/
     background-color: #ffffff;
     color: #6c6c6c; /*Main background and text color*/
-} footer,header,code,select,textarea,input,#mobile-menu {
+} footer,header,code,#mobile-menu,input,textarea,.card {
     background-color: #fbfbfb;
     border: 1px solid #dfdfdf; /*Secondary bg, borders*/
-} h1,h2,h3,h4,h5,h6,.author,button {color: #4c4c4c;} /*Headers*/
+} h1,h2,h3,h4,h5,h6,blockquote {color: #4c4c4c;} /*Headers*/
 a:hover,.author em {color: #dc3232;}
-input:hover, textarea:hover, select:hover {border-color: #cacaca;}
+input:hover, textarea:hover {border-color: #cacaca;}
 button {
-    color: #fff;
+    color: #fff; 
     background-color: #dc3232;
+    transition: .3s; 
 } button:hover {background-color: #dc5050;}
 .red {color: #cc241d;}
 .green {color: #98971a;}
@@ -29,26 +30,26 @@ button {
 .aqua {color: #689d6a;} /*Color controlers*/
 
 /*--------Header & Footer-----------*/
-footer nav a:link,header nav a:link {
+footer nav a:link, header nav a:link {
     text-transform: uppercase;
     text-decoration: none;
     padding: 0em .3em;
-} header,footer {text-align: center;} /*H&F Align*/
+} footer, header {text-align: center;} /*H&F Align*/
 header {
-    top: 0px;
-    position: fixed;
-    width: 100%;
-    padding: .5em 0em; /*main header settings*/
+    top: 0px; 
+    position: fixed; 
+    width: 100%; 
+    padding: .5em 0em;
 } #logo {
     background: url('../images/m-dark.png');
     width: 40px;
-    height: 40px;
-    background-size: 40px 40px;
-    margin: auto;
-    transition: .3s;
-} #logo:hover {opacity: .8;} /*Logo Settings */
-.fa-bars {display:none;}
-#mobile-menu {display:none;}
+    height: 40px; 
+    background-size: 40px 40px; 
+    margin: auto; 
+    transition: .3s; 
+} #logo:hover {opacity: .8} /*Logo settings*/
+.fab-bars {display: none;}
+#mobile-menu {display: none;}
 #spacer {margin-top: 150px;}
 footer {
     margin-top: 50px;
@@ -60,7 +61,7 @@ footer {
 } footer div h4 {text-align: inherit;} /*footer h4*/
 
 /*---------------Typefaces---------------*/
-h1,h2,h3,h4,h5,h6,.author,button {
+h1,h2,h3,h4,h5,h6,button,.author {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-align: center;
@@ -69,7 +70,7 @@ h1,h2,h3,h4,h5,h6,.author,button {
     h2 {font-size: 34pt;}
     h3 {font-size: 28pt;}
     h4 {font-size: 22pt;}
-p, code, input, textarea, select,footer nav:first-child,
+p,input,textarea,footer nav:first-child,
 header nav:last-child {
     font-family: 'Lato', sans-serif;
     text-align: inherit;
@@ -78,39 +79,52 @@ header nav:last-child {
     line-height: 1.5em;
 } blockquote {
     font-family: 'EB Garamond', serif;
-    font-size: 24pt;
-    margin: 1em 20%;
+    font-size: 24pt; 
+    margin: 1em 20%; 
     font-weight: 400;
 } .author {
-    font-size: 18pt;
-    text-align: right;
+    font-size: 14pt; 
+    text-align: right; 
     margin: 1em 20%;
-} .author em {margin: 0em .3em;}
+} .author em {margin: 0em .2em;}
+code {
+    font-family: 'Source Code Pro', monospace;
+    display: block; 
+}
 
 /*--------------Main Settings--------------*/
-code,input,textarea,select {
-    margin: 1em auto;
+code,input,textarea{
+    margin: 1em auto; 
     width: 50%;
+    padding: .3em 1em; 
     border-radius: 5px;
-    padding: .3em 1em;
-} code {
-    font-family: 'Source Code Pro', monospace;
-    display: block;
-} input, textarea, select {
+} input,textarea {
     margin: .5em 0em;
-    transition: 0.3s;
-    overflow: none;
-    resize: none;
-    text-align: left;
-} form {text-align: center;}
+    transition: .3s; 
+    overflow: none; 
+    resize: none; 
+    text-align: left; 
+} button:hover {border-radius: 10px;}
 button {
-    border: 0px;
-    border-radius: 5px;
-    text-align: center;
-    padding: 1em 2.5em;
-    font-size: 18px;
-    transition: .3s;
-} /*Form, button & code block settings*/
+    border: 0px; 
+    border-radius: 5px; 
+    text-align: center; 
+    padding: 1em 2.5em; 
+    font-size: 10pt; 
+} form {text-align: center;}
+.cardContainer {
+    margin-top: 3em; 
+    text-align: center; 
+} .card {
+    width: 275px; 
+    display: inline-block; 
+    margin: 1em .5em; 
+    padding: .5em .5em 1em .5em; 
+    border-radius: 5px; 
+} .card img {
+    width: 100%; 
+    border-radius: 5px; 
+}
 
 /*--------Mobile Site Settings-----------*/
 @media only screen and (max-width: 640px) {
@@ -120,30 +134,30 @@ button {
     h3 {font-size: 22pt;}
     h4 {font-size: 20pt;} /*Headings*/
     blockquote, .author {
-        font-size: 18pt;
-        margin: 1em 5%;
-    } .author {font-size: 14pt;} /*blockquote styles*/
+        font-size: 18pt; 
+        margin: 1em; 5%; 
+    } .author {font-size: 14pt;}
 
-    code,input,textarea,select {width: 90%;} /*form & code*/
+    code,input,textarea {width: 90%;}
 
-    footer nav a:link,header nav a:link {display:none;}
-    #spacer {margin-top: 90px;} /*Footer & header settings*/
+    footer nav a:link, header nav a:link {display:none;}
     .fa-bars {
-        font-size: 18pt;
+        font-size: 18pt; 
         position: fixed; 
         display: block; 
         top: 0px; 
         margin: .7em; 
     } #mobile-menu {
-        display: none;
-        padding: 80px 1em; 
+        display: none; 
+        margin-top: 57px; 
+        padding: 1em; 
     } #mobile-menu a:link {
         text-decoration: none; 
         text-transform: uppercase; 
-    } div#mobile-menu h4 {
+    } #mobile-menu h4 {
         text-align: left; 
         margin: 0em; 
-    }
+    } .card {width: 90%;}
 } /*Mobile site settings*/
 
 /*-------Dark Mode Settings------------*/
@@ -151,15 +165,12 @@ button {
     html {
         background-color: #000;
         color: #a4a4a4; /*Main background and text color*/
-    } footer,header,code,select,textarea,input,#mobile-menu {
+    } footer,header,code,input,textarea,#mobile-menu,.card {
         background-color: #131313;
         border: 1px solid #262626; /*Secondary bg, borders*/
-    } h1,h2,h3,h4,h5,h6,.author,button {color: #bcbcbc;} /*Headers*/
-    input:hover, textarea:hover, select:hover {border-color: #444;}
+    } h1,h2,h3,h4,h5,h6,blockquote {color: #bcbcbc;} /*Headers*/
     #logo {
-       background: url('../images/m.png');
-       width: 40px;
-       height: 40px;
-       background-size: 40px 40px;
-   } /*Swapping to light logo*/
+        background: url('../images/m-light.png');
+        background-size: 40px 40px; 
+    }
 } /*Subscribe to Pewdiepie*/
