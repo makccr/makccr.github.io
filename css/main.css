@@ -42,7 +42,7 @@ header {
     width: 100%; 
     padding: .5em 0em;
 } #logo {
-    background: url('../images/m-dark.png');
+    background: url('../images/m-dark.svg');
     width: 40px;
     height: 40px; 
     background-size: 40px 40px; 
@@ -55,9 +55,6 @@ header {
 footer {
     margin-top: 50px;
     padding: 3em 5%; /*main footer settings*/
-    display: block; 
-    bottom: 0px; 
-    width: 100%; 
 } footer nav,footer p,footer div {margin: 1em 0em;}
 .fab {
     font-size: 20pt;
@@ -94,7 +91,10 @@ header nav:last-child {
 code {
     font-family: 'Source Code Pro', monospace;
     display: block; 
-} .aside {text-align: center;}
+} .aside {
+    text-align: center;
+    font-size: 11pt; 
+}
 
 /*--------------Main Settings--------------*/
 code,input,textarea{
@@ -174,7 +174,7 @@ button {
         border: 1px solid #262626; /*Secondary bg, borders*/
     } h1,h2,h3,h4,h5,h6,blockquote {color: #bcbcbc;} /*Headers*/
     #logo {
-        background: url('../images/m-light.png');
+        background: url('../images/m-light.svg');
         background-size: 40px 40px; 
     }
 } /*Subscribe to Pewdiepie*/
