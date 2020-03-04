@@ -55,6 +55,9 @@ header {
 footer {
     margin-top: 50px;
     padding: 3em 5%; /*main footer settings*/
+    display: block; 
+    bottom: 0px; 
+    width: 100%; 
 } footer nav,footer p,footer div {margin: 1em 0em;}
 .fab {
     font-size: 20pt;
