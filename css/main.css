@@ -16,7 +16,7 @@ html { /*Color settings*/
     border: 1px solid #dfdfdf; /*Secondary bg, borders*/
 } h1,h2,h3,h4,h5,h6,blockquote {color: #4c4c4c;} /*Headers*/
 a:hover,.author em {color: #dc3232;}
-p.aside {color:#888}
+.aside {color:#888}
 input:hover, textarea:hover {border-color: #cacaca;}
 button {
     color: #fff; 
@@ -94,7 +94,7 @@ header nav:last-child {
 code {
     font-family: 'Source Code Pro', monospace;
     display: block; 
-} p.aside {text-align: center;}
+} .aside {text-align: center;}
 
 /*--------------Main Settings--------------*/
 code,input,textarea{
