@@ -122,12 +122,13 @@ button {
     width: 275px; 
     display: inline-block; 
     margin: 1em .5em; 
-    padding: .5em .5em 1em .5em; 
     border-radius: 5px; 
 } .card img {
     width: 100%; 
-    border-radius: 5px; 
-}
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+} .card p {padding: .0em .75em;}
+.card button {margin: 1.5em;}
 
 /*--------Mobile Site Settings-----------*/
 @media only screen and (max-width: 640px) {
