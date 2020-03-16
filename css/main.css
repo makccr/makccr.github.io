@@ -9,20 +9,19 @@ a:link,a:active,a:visited {
 } /*Global settings*/
 
 html { /*Color settings*/
-    background-color: #ffffff;
-    color: #6c6c6c; /*Main background and text color*/
+    background-color: #FFFEFB;
+    color: #504945; /*Main background and text color*/
 } footer,header,code,#mobile-menu,input,textarea,.card {
-    background-color: #fbfbfb;
-    border: 1px solid #dfdfdf; /*Secondary bg, borders*/
-} h1,h2,h3,h4,h5,h6,blockquote {color: #4c4c4c;} /*Headers*/
+    background-color: #FFFDF6;
+    border: 1px solid #fbf1c7; /*Secondary bg, borders*/
+} h1,h2,h3,h4,h5,h6,blockquote {color: #3c3836;} /*Headers*/
 a:hover,.author em {color: #dc3232;}
-.aside {color:#888}
-input:hover, textarea:hover {border-color: #cacaca;}
+input:hover, textarea:hover {border-color: #ebdbb2;}
 button {
-    color: #fff; 
+    color: #ebdbb2; 
     background-color: #dc3232;
     transition: .3s; 
-} button:hover {background-color: #dc5050;}
+} button:hover {background-color: #cc241d;}
 .red {color: #cc241d;}
 .green {color: #98971a;}
 .yellow {color: #d79921;}
@@ -167,14 +166,15 @@ button {
 /*-------Dark Mode Settings------------*/
 @media (prefers-color-scheme: dark) {
     html {
-        background-color: #000;
-        color: #a4a4a4; /*Main background and text color*/
+        background-color: #1d2021;
+        color: #a89984; /*Main background and text color*/
     } footer,header,code,input,textarea,#mobile-menu,.card {
-        background-color: #131313;
-        border: 1px solid #262626; /*Secondary bg, borders*/
-    } h1,h2,h3,h4,h5,h6,blockquote {color: #bcbcbc;} /*Headers*/
+        background-color: #282828;
+        border: 1px solid #3c3836; /*Secondary bg, borders*/
+    } h1,h2,h3,h4,h5,h6,blockquote {color: #ebdbb2;} /*Headers*/
+    input:hover, textarea:hover {border-color: #504945;}
     #logo {
         background: url('../images/m-light.svg');
         background-size: 40px 40px; 
     }
-} /*Subscribe to Pewdiepie*/
+} /*Fight the power*/
