@@ -41,7 +41,7 @@ header {
     width: 100%; 
     padding: .5em 0em;
 } #logo {
-    background: url('../images/m-dark.svg');
+    background: url('../images/m.svg');
     width: 40px;
     height: 40px; 
     background-size: 40px 40px; 
@@ -174,8 +174,4 @@ button {
         border: 1px solid #3c3836; /*Secondary bg, borders*/
     } h1,h2,h3,h4,h5,h6,blockquote {color: #ebdbb2;} /*Headers*/
     input:hover, textarea:hover {border-color: #504945;}
-    #logo {
-        background: url('../images/m-light.svg');
-        background-size: 40px 40px; 
-    }
 } /*Fight the power*/
