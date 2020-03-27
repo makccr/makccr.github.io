@@ -9,7 +9,7 @@ a:link,a:active,a:visited {
 } /*Global settings*/
 
 html { /*Color settings*/
-    background-color: #ADADAD;
+    background-color: #FFFFFF;
     color: #504945; /*Main background and text color*/
 } footer,header,code,#mobile-menu,input,textarea,.card {
     background-color: #D6D6D6;
