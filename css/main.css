@@ -12,7 +12,7 @@ html { /*Color settings*/
     background-color: #FFFFFF;
     color: #504945; /*Main background and text color*/
 } footer,header,code,#mobile-menu,input,textarea,.card {
-    background-color: #EEEEEE;
+    background-color: #F5F5F5;
     border: 1px solid #FFFFFF; /*Secondary bg, borders*/
 } h1,h2,h3,h4,h5,h6,blockquote {color: #3c3836;} /*Headers*/
 a:hover,.author em {color: #dc3232;}
