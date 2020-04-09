@@ -10,11 +10,13 @@ a:link,a:active,a:visited {
 
 html { /*Color settings*/
     background-color: #1d2021;
-    background-image: url("/images/grain-dark.jpg");
+    background-image: url("../images/grain-dark-a.jpg");
     background-repeat: repeat; 
     color: #a89984; /*Main background and text color*/
 } footer,header,code,#mobile-menu,input,textarea,.card {
-    background-color: #282828;
+    background-color: #000000;
+    background-image: url("../images/grain-dark-b.jpg");
+    background-repeat: repeat; 
     border: 1px solid #3c3836; /*Secondary bg, borders*/
 } h1,h2,h3,h4,h5,h6,blockquote {color: #ebdbb2;} /*Headers*/
 a:hover,.author em {color: #dc3232;}
