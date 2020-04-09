@@ -7,7 +7,7 @@ a:link,a:active,a:visited {
     border-bottom: 4px solid #dc3232 ;
     background-color: transparent;
     transition: 0.3s; /*Links*/
-} /*Global settings*/
+}/*Global settings*/
 
 html { /*Color settings*/
     background-color: #1d2021;
@@ -36,7 +36,7 @@ button {
 .blue {color: #458588;}
 .purple {color: #b16286;}
 .aqua {color: #689d6a;} /*Color controlers*/
-footer a:link,footer a:active,footer a:visited, header a:link,header a:active,header a:visited {
+footer a:link,footer a:active,footer a:visited, header a:link,header a:active,header a:visited,div a:link,div a:active,div a:visited {
     border-bottom: 0px solid #000;
 }
 
@@ -98,6 +98,7 @@ header nav:last-child {
     text-align: right; 
     margin: 1em 20%;
 } .author em {margin: 0em .2em;}
+p.center {text-align:center;}
 code {
     font-family: 'Source Code Pro', monospace;
     display: block; 
@@ -125,6 +126,7 @@ button {
     text-align: center; 
     padding: 1em 2.5em; 
     font-size: 10pt; 
+    cursor: pointer; 
 } form {text-align: center;}
 .cardContainer {
     margin-top: 3em; 
