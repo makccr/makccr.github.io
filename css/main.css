@@ -14,7 +14,7 @@ html { /*Color settings*/
 } footer,header,code,#mobile-menu,input,textarea,.card {
     background-color: #282828;
     border: 1px solid #3c3836; /*Secondary bg, borders*/
-} h1,h2,h3,h4,h5,h6,blockquote {color: #3c3836;} /*Headers*/
+} h1,h2,h3,h4,h5,h6,blockquote {color: #ebdbb2;} /*Headers*/
 a:hover,.author em {color: #dc3232;}
 input:hover, textarea:hover {border-color: #504945;}
 button {
@@ -172,6 +172,6 @@ button {
     } footer,header,code,input,textarea,#mobile-menu,.card {
         background-color: #f5f5f5;
         border: 1px solid #ffffff; /*Secondary bg, borders*/
-    } h1,h2,h3,h4,h5,h6,blockquote {color: #ebdbb2;} /*Headers*/
+    } h1,h2,h3,h4,h5,h6,blockquote {color: #3c3836;} /*Headers*/
     input:hover, textarea:hover {border-color: #ebdbb2;}
 } /*Fight the power*/
