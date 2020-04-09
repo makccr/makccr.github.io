@@ -3,7 +3,8 @@
 main {margin: 0% 10%;}
 a:link,a:active,a:visited {
     color: inherit;
-    text-decoration: underline;
+    text-decoration: none; 
+    border-bottom: 4px solid #dc3232 ;
     background-color: transparent;
     transition: 0.3s; /*Links*/
 } /*Global settings*/
@@ -19,7 +20,10 @@ html { /*Color settings*/
     background-repeat: repeat; 
     border: 1px solid #3c3836; /*Secondary bg, borders*/
 } h1,h2,h3,h4,h5,h6,blockquote {color: #ebdbb2;} /*Headers*/
-a:hover,.author em {color: #dc3232;}
+a:hover,.author em {
+    color: #dc3232;
+    text-decoration: none; 
+}
 input:hover, textarea:hover {border-color: #504945;}
 button {
     color: #ebdbb2; 
@@ -32,6 +36,9 @@ button {
 .blue {color: #458588;}
 .purple {color: #b16286;}
 .aqua {color: #689d6a;} /*Color controlers*/
+footer a:link,footer a:active,footer a:visited, header a:link,header a:active,header a:visited {
+    border-bottom: 0px solid #000;
+}
 
 /*--------Header & Footer-----------*/
 footer nav a:link, header nav a:link {
