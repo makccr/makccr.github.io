@@ -10,6 +10,8 @@ a:link,a:active,a:visited {
 
 html { /*Color settings*/
     background-color: #1d2021;
+    background-image: url("/images/grain-dark.jpg");
+    background-repeat: repeat; 
     color: #a89984; /*Main background and text color*/
 } footer,header,code,#mobile-menu,input,textarea,.card {
     background-color: #282828;
