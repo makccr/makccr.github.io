@@ -173,8 +173,12 @@ button {
     html {
         background-color: #ffffff;
         color: #504945; /*Main background and text color*/
+        background-image: url("../images/grain-light-a.jpg");
+        background-repeat: repeat; 
     } footer,header,code,input,textarea,#mobile-menu,.card {
         background-color: #f5f5f5;
+        background-image: url("../images/grain-light-b.jpg");
+        background-repeat: repeat; 
         border: 1px solid #ffffff; /*Secondary bg, borders*/
     } h1,h2,h3,h4,h5,h6,blockquote {color: #3c3836;} /*Headers*/
     input:hover, textarea:hover {border-color: #ebdbb2;}
