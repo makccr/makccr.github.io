@@ -1,7 +1,6 @@
 /*--------Global Settings / Controls-----------*/
 * {margin: 0px; padding: 0em;}
-main {margin: 0% 0%;}
-width {980px;}
+main {margin: 0% 10%;}
 a:link,a:active,a:visited {
     color: inherit;
     text-decoration: none; 
