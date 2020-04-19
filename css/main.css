@@ -105,7 +105,7 @@ code {
 } .aside {
     text-align: center;
     font-size: 11pt; 
-}
+} .left {text-align: left;}
 
 /*--------------Main Settings--------------*/
 code,input,textarea{
