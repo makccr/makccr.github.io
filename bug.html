@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'/> <!--Setting document to UTF-8-->
+        <meta content='width-device-width, initial-scale=1.0' name='viewport'/>
+        <meta name='keywords' content='style,html,css,page,headers'/> <!--Setting basic description & info-->
+        <meta name='description' content='If you find an error, of have a feature request, use this page.'/>
+        <meta name='author' content='Mackenzie Criswell'/>
+        <meta name='robots' content='index, follow'/>
+        <meta name="google-site-verification" content="zI4ReyW17rDregFpRqXQeuboyq1lW2IK5WiADOPwbJU" />
+        <title>Bug Report - MAKC</title>
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond:500,700&display=swap" rel="stylesheet">  <!--Google fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet'/>
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous'/> <!--Font awesome-->
+        <link href='/images/favicons/favicon.ico' rel='icon' type='image/ico'/> <!--Favicons-->
+        <link href='/images/favicons/favicon.png' rel='icon' type='image/png'/>
+        <link href='/images/favicons/apple-touch-icon.png' rel='apple-touch-icon'/>
+        <link href='/images/favicons/ios-ipad-144x144.png' sizes='144x144' rel='apple-touch-icon-precomposed'/>
+        <link href='/images/favicons/ios-iphone-114x144.png' sizes='114x114' rel='apple-touch-icon-precomposed'/>
+        <link href='/images/favicons/ios-default-homescreen-57x57.png' sizes='57x57' rel='apple-touch-icon-precomposed'/>
+        <link href='css/main.css' rel='stylesheet'/> <!--Linking CSS/JS-->
+        <script src="/script/main.js"></script> <!--Link to javascript-->
+    </head>
+    <body>
+
+        <header>
+            <a href='/index'>
+                <nav id="logo"></nav><!--Logo-->
+            </a>
+            <nav> <!--Main Site navigation-->
+                <a href='https://youtube.com/c/makccr' title='youtube.com/c/makccr'> Videos</a>
+                <a href='/portfolio' title='View my Portfolio'>Portfolio</a>
+                <a href='/downloads' title='Download Free Content'>Downloads</a>
+                <a href='/merch' title='Buy Some Merch'>Merch</a>
+            </nav>
+        </header> <!--Site Header-->
+        <div onclick="mobileMenu()">
+            <i class='fas fa-bars'></i>
+        </div>
+        <div id='mobile-menu'>
+            <a href='https://kit.co/makccr'><p>Gear I Use</p></a>
+            <a href='/bug'><p>Bug Report</p></a>
+            <a href='/terms'><p>Terms & Privacy</p></a>
+            <a href='/sitemap'><p>Sitemap</p></a>
+            <a href='/about'><p>About</p></a>
+            <a href='/contact'><p>Contact</p></a>
+            <br>
+            <a href='https://youtube.com/c/makccr'><h4>Videos</h4></a>
+            <a href='/portfolio'><h4>Portfolio</h4></a>
+            <a href='/downloads'><h4>Downloads</h4></a>
+            <a href='/merch'><h4>Merch</h4></a>
+        </div>
+        <div id="spacer"></div> <!--spacign for header-->
+
+        <main> <!--Placeholder text-->
+            <h1>Bug Report</h1>
+            <p class='center'>If you're using my site, and you notice any kind of issue in your experience, weather it be a broken link, a CSS issue, or just a typo; this is the place to direct that information. Furthermore, this form also serves as a <em>feature request</em> form. If you're using my site, and you think I should ad something to it, this is the place to let that be known. Thanks for the help!</p>
+            <br><br>
+            <form action='/script/main.php' method='post' enctype='text/plain'>
+                <input type='text' placeholder='Severus Snape' name='name' autocomplete='on'></input>
+                <input type='email' placeholder='s.snape@hogwarts.edu' name='email' autocomplete='on'></input>
+                <textarea placeholder='After all this time? ...Always.' rows='5' name='message'></textarea><br>
+                <button type='submit' name='submit'>Submit</button>
+            </form>
+            <br><br>
+            <p class='center'>If you're concerned with the way I handle the data sent through this form, or privacy more generally, take a look at my <a href='/terms' title='Open my Privacy Policy'>privacy policy</a>. It's not a long convoluded mess written by lawyers, I promise. Also, keep in mind that if you want to bypass any risk associated with sending data through this form; you can always just send an email to: <a href='mailto:m@makc.co' title='Send email to m@makc.co'>m@makc.co</a> (Just add "Bug Report" to the subject).</p>
+        </main>
+
+        <footer> <!--Setting for the site's footer-->
+            <nav> <!--Secondary Site navigation-->
+                <a href='https://kit.co/makccr' title='kit.co/makccr'>Gear I Use</a>
+                <a href='/bug' title='Submit a Bug Report'>Bug Report</a>
+                <a href='/terms' title='Read the Terms of Service & Privacy Policy'>Terms & Privacy</a>
+                <a href='/sitemap' title='Open the Sitemap'>Sitemap</a>
+                <a href='/about' title='Open the About Page'>About</a>
+                <a href='/contact' title='Open the Contact Page'>Contact</a>
+            </nav>
+            <div> <!--Social links, icons-->
+                <h4>Social <strong>Links</strong></h4>
+                <a href='https://twitter.com/makccr' title='twitter.com/makccr' target='_blank'><i class='fab fa-twitter'></i></a>
+                <a href='https://facebook.com/makccr/' title='facebook.com/makccr' target='_blank'><i class='fab fa-facebook-f'></i></a>
+                <a href='https://instagram.com/makccr/' title='instagram.com/makccr' target='_blank'><i class='fab fa-instagram'></i></a>
+                <a href='https://reddit.com/user/mack_criswell' title='reddit.com/mack_criswell' target='_blank'><i class='fab fa-reddit-alien'></i></a>
+                <a href='https://behance.net/makccr' title='behance.com/makccr' target='_blank'><i class='fab fa-behance'></i></a>
+                <a href='https://github.com/makccr' title='github.com/makccr' target='_blank'><i class='fab fa-github'></i></a>
+            </div>
+            <p>Copyright&copy; 2012 - 2020 Mackenzie Criswell <!--Copyright statement-->
+            <br>All Rights Reserved.</p>
+        </footer>
+
+    </body>
+</html> <!-- Vote for Bernie Sanders -->
