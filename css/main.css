@@ -1,10 +1,10 @@
 /*--------Global Settings / Controls-----------*/
 * {margin: 0px; padding: 0em;}
-main {margin: 0% 10%;}
+main { margin: 0% 10%; }
 a:link,a:active,a:visited {
     color: inherit;
     text-decoration: none; 
-    border-bottom: 4px solid #dc3232 ;
+    border-bottom: 2px solid #dc3232 ;
     background-color: transparent;
     transition: 0.3s; /*Links*/
 }/*Global settings*/
@@ -13,6 +13,7 @@ html { /*Color settings*/
     background-color: #1d2021;
     background-image: url("../images/grain-dark-a.jpg");
     background-repeat: repeat; 
+    height: 100%;
     color: #a89984; /*Main background and text color*/
 } footer,header,code,#mobile-menu,input,textarea,.card {
     background-color: #000000;
@@ -98,7 +99,10 @@ header nav:last-child {
     text-align: right; 
     margin: 1em 20%;
 } .author em {margin: 0em .2em;}
-p.center {text-align:center;}
+p.center {
+    text-align:center;
+    margin: auto 20%;
+} 
 code {
     font-family: 'Source Code Pro', monospace;
     display: block; 
@@ -154,6 +158,7 @@ button {
         font-size: 18pt; 
         margin: 1em; 5%; 
     } .author {font-size: 14pt;}
+    p.center {margin: auto 5%;}
 
     code,input,textarea {width: 90%;}
 
