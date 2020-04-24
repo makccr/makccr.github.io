@@ -82,6 +82,8 @@ h1,h2,h3,h4,h5,h6,button,.author {
     h2 {font-size: 34pt;}
     h3 {font-size: 28pt;}
     h4 {font-size: 22pt;}
+    h5 {font-size: 18pt;}
+    h6 {font-size: 14pt;}
 p,input,textarea,footer nav:first-child,
 header nav:last-child {
     font-family: 'Lato', sans-serif;
@@ -99,7 +101,7 @@ header nav:last-child {
     text-align: right; 
     margin: 1em 20%;
 } .author em {margin: 0em .2em;}
-p.center {
+.center {
     text-align:center;
     margin: auto 20%;
 } 
@@ -139,11 +141,8 @@ button {
     width: 275px; 
     display: inline-block; 
     margin: 1em .5em; 
-    border-radius: 5px; 
 } .card img {
     width: 100%; 
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 } .card p {padding: .0em .75em;}
 .card button {margin: 1.5em;}
 
