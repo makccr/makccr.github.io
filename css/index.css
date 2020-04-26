@@ -1,0 +1,62 @@
+*,html,main {margin: 0px;}
+main {
+    text-align: center;
+    margin: 10px;
+}
+#spacer {margin-top: 70px;}
+.spacer {margin-top: 10px;}
+footer {margin-top: 0px;}
+div.welcome {
+    background-image: url('/images/deskA.jpg'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    text-align: center;
+    width: 100%;
+    padding: 20em 0em;
+} h6 {
+    color: #FFF;
+    padding: 0% 35%;
+} h1 {
+    color: #FFFFFF;
+    margin: 0em; }
+
+div.youtube {
+    background-image: url('/images/deskB.jpg'); 
+    background-position: top; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    text-align: center;
+    width: 100%;
+    padding: 5em 0em; }
+
+div.downloads {
+    background-image: url('/images/deskC.jpg'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    text-align: center;
+    width: 100%;
+    padding: 5em 0em; }
+
+div.portfolio {
+    background-image: url('/images/deskD.jpg'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    text-align: center;
+    width: 100%;
+    padding: 5em 0em; }
+
+/*--------Mobile Site Settings-----------*/
+@media only screen and (max-width: 640px) {
+    h6 {padding: 0% 5%;}
+    div.welcome {
+        background-image: url('/images/deskA.jpg'); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        text-align: center;
+        width: 100%;
+        padding: 10em 0em; }
+} 
