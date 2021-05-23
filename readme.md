@@ -2,6 +2,7 @@
     <img src="https://makccr.github.io/images/github-header.svg" alt="MAKC lgoo" title="MAKC" align="right" height="60" />
 </a>
 
+# MAKC.CO
 This is the repository for my personal Website. This websites main goal is to serve as a hub, to link to all of my other social networks and on-line projects; to serve as a portfolio for my Motion Graphics and Graphic Design work; and finally to provide download links to content I've made over the years. 
 
 ## YouTube Series 
