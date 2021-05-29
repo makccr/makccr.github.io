@@ -77,6 +77,32 @@
             If you are here to leave a bug report, thanks; and please just send an email to <a href='mailto:m@makc.co' title='Send email to m@makc.co'>m@makc.co</a> with "Bug Report" as the subject.<br><br>
             If you are are having an issue with my <a href='https://github.com/makccr/dot' target='_blank' title='My dot files'>dot files</a>, or a script, or anything else from my <a href='https://github.com/makccr' target='_blank' title='My GitHub Page'>GitHub page</a>; you can send me an email here, but it's probably best to <a href='https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue' target='_blank' title='Create and Issue - Github Help'>open an issue</a> on GitHub so that any users having the same issue can see the eventual solution as well. Please and thank you.
             </p>
+            <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "411628885896811");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
         </main>
 
         <footer> <!--Setting for the site's footer-->
