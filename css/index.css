@@ -10,7 +10,7 @@ body, html {height: 100%;}
   background-size: cover;
   margin: auto;
 } .welcome {
-  width: 50%;
+  width: 100%;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -24,5 +24,7 @@ body, html {height: 100%;}
     text-decoration: none;
 }  h1 {font-size: 40pt;}
    p { padding-top: 2pt;
-     font-size: 10pt;
+     font-size: 14pt;
+     padding-left: 25%;
+     padding-right: 25%;
    }
