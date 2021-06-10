@@ -28,3 +28,7 @@ body, html {height: 100%;}
      padding-left: 25%;
      padding-right: 25%;
    }
+
+@media only screen and (max-width: 640px) {
+  p {padding-left: 5%; padding-right: 5%;}
+}
