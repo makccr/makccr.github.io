@@ -4,7 +4,18 @@ body, html {
   height: 100%;
   overflow: hidden;
   background-color: #000000;
+  text-align: center;
 }
+
+header {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  -ms-transform: translateY(-5%);
+  transform: translateY(-50%);
+  transition: 0.3s;
+} header a:hover {opacity: .7;}
 
 .bg {
   background-image: url("../images/index_bg.jpg");
@@ -20,7 +31,7 @@ body, html {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-} h1,p {
+} h1,p,a:link,a:hover,a:visited,a:active {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-align: center;
@@ -31,11 +42,37 @@ body, html {
      font-size: 14pt;
      padding-left: 25%;
      padding-right: 25%;
+   } a:link,a:hover,a:active,a:visited {
+     text-transform: uppercase;
+     font-weight: 500;
+   } .link {margin-top: 1em;}
+
+footer {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 95%;
+  -ms-transform: translateY(-95%);
+  transform: translateY(-50%);
+}
+   .icons {
+       font-size: 18pt;
+       display: block;
+       top: 0px;
+       text-align: center;
+   } a:active, a:link, a:visited {
+     color: #cccccc;
+     padding: .1em;
+     text-align: center;
+   }
+   a:hover {
+     color: #ffffff;
+     transition: 0.3s;
    }
 
 @media only screen and (max-width: 640px) {
   p {padding-left: 5%;
     padding-right: 5%;
-    font-size:32pt;
-  } h1 {font-size: 12pt;}
+    font-size:12pt;
+  } h1 {font-size: 32pt;}
 }
