@@ -1,6 +1,10 @@
 * {margin: 0px; padding: 0em;}
 
-body, html {height: 100%; overflow: hidden;}
+body, html {
+  height: 100%;
+  overflow: hidden;
+  background-color: #000000;
+}
 
 .bg {
   background-image: url("../images/index_bg.jpg");
@@ -30,5 +34,8 @@ body, html {height: 100%; overflow: hidden;}
    }
 
 @media only screen and (max-width: 640px) {
-  p {padding-left: 5%; padding-right: 5%;}
+  p {padding-left: 5%;
+    padding-right: 5%;
+    font-size:32pt;
+  } h1 {font-size: 12pt;}
 }
