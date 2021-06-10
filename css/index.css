@@ -11,8 +11,8 @@ header {
   width: 100%;
   margin: 0;
   position: absolute;
-  top: 5%;
-  -ms-transform: translateY(-5%);
+  top: 4em;
+  -ms-transform: translateY(50%);
   transform: translateY(-50%);
   transition: 0.3s;
 } header a:hover {opacity: .7;}
