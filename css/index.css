@@ -1,62 +1,11 @@
-*,html,main {margin: 0px;}
-main {
-    text-align: center;
-    margin: 10px;
+body, html {
+  height: 100%;
 }
-#spacer {margin-top: 70px;}
-.spacer {margin-top: 10px;}
-footer {margin-top: 0px;}
-div.welcome {
-    background-image: linear-gradient(to bottom, rgba(29,32,22,.3), rgba(29,32,22,.3)), url('/images/deskA.jpg'); 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    text-align: center;
-    width: 100%;
-    padding: 20em 0em;
-} h6 {
-    color: #FFF;
-    padding: 0% 35%;
-} h1 {
-    color: #FFFFFF;
-    margin: 0em; }
 
-div.youtube {
-    background-image: linear-gradient(to bottom, rgba(29,32,22,.3), rgba(29,32,22,.3)), url('/images/deskB.jpg'); 
-    background-position: top; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    text-align: center;
-    width: 100%;
-    padding: 5em 0em; }
-
-div.downloads {
-    background-image: linear-gradient(to bottom, rgba(29,32,22,.5), rgba(29,32,22,.5)), url('/images/deskC.jpg'); 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    text-align: center;
-    width: 100%;
-    padding: 5em 0em; }
-
-div.portfolio {
-    background-image: linear-gradient(to bottom, rgba(29,32,22,.3), rgba(29,32,22,.3)), url('/images/deskD.jpg'); 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    text-align: center;
-    width: 100%;
-    padding: 5em 0em; }
-
-/*--------Mobile Site Settings-----------*/
-@media only screen and (max-width: 640px) {
-    h6 {padding: 0% 5%;}
-    div.welcome {
-        background-image: url('/images/deskA.jpg'); 
-        background-position: center; 
-        background-repeat: no-repeat; 
-        background-size: cover; 
-        text-align: center;
-        width: 100%;
-        padding: 10em 0em; }
-} 
+.bg {
+  background-image: url("images\index_bg.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
