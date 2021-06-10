@@ -1,6 +1,6 @@
-body, html {
-  height: 100%;
-}
+* {margin: 0px; padding: 0em;}
+
+body, html {height: 100%;}
 
 .bg {
   background-image: url("../images/index_bg.jpg");
