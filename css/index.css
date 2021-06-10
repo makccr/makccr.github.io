@@ -8,4 +8,14 @@ body, html {height: 100%;}
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+} .welcome {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+} h1,p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
 }
