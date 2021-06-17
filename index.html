@@ -4,7 +4,7 @@
         <meta charset='utf-8'/> <!--Setting document to UTF-8-->
         <meta content='width-device-width, initial-scale=1.0' name='viewport'/>
         <meta name='keywords' content='style,html,css,page,headers'/> <!--Setting basic description & info-->
-        <meta name='description' content='Welcome to my website. Here you can download presets, look at my portfolio, and by merch.'/>
+        <meta name='description' content='Welcome to my website. Here you can download free stuff, look at my portfolio, buy merch, and more!'/>
         <meta name='author' content='Mackenzie Criswell'/>
         <meta name='robots' content='index, follow'/>
         <meta name="google-site-verification" content="zI4ReyW17rDregFpRqXQeuboyq1lW2IK5WiADOPwbJU" />
@@ -13,18 +13,21 @@
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'/>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet'/>
-        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous'/> <!--Font awesome-->
-        <link href='/images/favicons/favicon.ico' rel='icon' type='image/ico'/> <!--Favicons-->
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous'/>
+        <link href='/images/favicons/favicon.ico' rel='icon' type='image/ico'/>
         <link href='/images/favicons/favicon.png' rel='icon' type='image/png'/>
         <link href='/images/favicons/apple-touch-icon.png' rel='apple-touch-icon'/>
         <link href='/images/favicons/ios-ipad-144x144.png' sizes='144x144' rel='apple-touch-icon-precomposed'/>
         <link href='/images/favicons/ios-iphone-114x144.png' sizes='114x114' rel='apple-touch-icon-precomposed'/>
         <link href='/images/favicons/ios-default-homescreen-57x57.png' sizes='57x57' rel='apple-touch-icon-precomposed'/>
-        <link href='css/index.css' rel='stylesheet'/> <!--Linking CSS/JS-->
-        <script src="/script/main.js"></script> <!--Link to javascript-->
+        <link href='/css/main.css' rel='stylesheet'/>
+        <link href='/css/index.css' rel='stylesheet'/>
     </head>
-    <body>
-      <div class="bg">
+
+    <div>
+        <video autoplay muted loop id="bgBlue">
+            <source src="images/bgBlue.mp4" type="video/mp4">
+        </video>
         <header>
           <a href='/index'>
             <img src="images/mWhite.svg" width="40pt" height="40pt" alt="MAKC">
@@ -39,9 +42,9 @@
         </header>
         <main class ="welcome">
           <h1>Welcome</h1>
-          <p>I am a low-brow YouTuber, and freelance Motion Graphics & Graphic Designer. If you are here from my YouTube channel: Thanks for Watching!</p>
+          <p>I am a low-brow YouTuber, and something vaguely adjacent to a bad low-level developer. I'm sure you found this site by accident, but thanks for stopping by anyway.</p>
         </main>
-        <footer> <!--Setting for the site's footer-->
+                <footer> <!--Setting for the site's footer-->
             <div class="icons"> <!--Social links, icons-->
                 <a href='https://youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw' title='youtube/MACK' target='_blank'><i class="fab fa-youtube"></i></a>
                 <a href='https://reddit.com/user/mack_criswell' title='reddit.com/mack_criswell' target='_blank'><i class='fab fa-reddit-alien'></i></a>
@@ -51,7 +54,6 @@
                 <a href='https://instagram.com/makccr/' title='instagram/makccr' target='_blank'><i class='fab fa-instagram'></i></a>
             </div>
         </footer>
+    </div>
 
-      </div>
-    </body>
-</html> <!-- Vote for Bernie Sanders -->
+</html>
