@@ -1,4 +1,9 @@
 * {margin: 0px; padding: 0em;}
+body, html {
+  overflow: hidden;
+  background-color: #000000;
+  text-align: center;
+}
 #bgBlue {
   position: absolute;
   transform: translateX(-50%);
