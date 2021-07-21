@@ -144,6 +144,12 @@ button {
 } .card p {padding: .0em .75em;}
 .card button {margin: 1.5em;}
 
+iframe {
+    height:480pt;
+    width:100%;
+    border:none
+}
+
 /*--------Mobile Site Settings-----------*/
 @media only screen and (max-width: 640px) {
     main {margin: 0% 5%;} /*global settings*/
@@ -156,6 +162,7 @@ button {
         margin: 1em; 5%; 
     } .author {font-size: 14pt;}
     p.center {margin: auto 5%;}
+    iframe {height: 175pt;}
 
     code,input,textarea {width: 90%;}
 
