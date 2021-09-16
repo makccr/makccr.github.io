@@ -157,7 +157,7 @@ iframe {
     h2 {font-size: 28pt;}
     h3 {font-size: 22pt;}
     h4 {font-size: 20pt;} /*Headings*/
-    blockquote, .author {
+    .author {
         font-size: 18pt; 
         margin: 1em; 5%; 
     } .author {font-size: 14pt;}
