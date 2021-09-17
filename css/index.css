@@ -15,8 +15,6 @@ body { /* Header Text */
   line-height: 1.2;
   color: var(--fg-color);
   background-color: var(--bg-color);
-  overflow: hidden;
-  position: fixed;
 } .content {z-index: 10;}
 h1 {
   font-weight: 300;
