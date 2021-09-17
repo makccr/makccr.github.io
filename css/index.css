@@ -107,6 +107,35 @@ li {
   padding: .3rem;
 } /* Navigation */
 
+.bars { /* Mobile Navigation */
+  display: none;
+  position: absolute;
+  top: 2rem; 
+  right: 1.5rem;
+  z-index: 20;
+} 
+.fa-bars {
+  font-size: 2rem;
+  opacity: .8;
+}
+#mobile-links {
+  display: none;
+  position: fixed;
+  text-align: right;
+  background-color: rgba(0,0,0,0.8);
+  width: 100vw; 
+  height: 100vh; 
+  z-index: 15;
+}
+.mobile-links-container {
+  margin-top: 7rem; 
+  margin-right: 2rem;
+}
+.mobile {
+  font-size: 2rem;
+  line-height: 2;
+}
+
 /* Mobile Settings ---------------------------------------------------------- */
 @media only screen and (max-width: 850px) { /* Intermediate downscaling cleanup */
   h3 { /* Font adjustments */
@@ -124,4 +153,6 @@ li {
   .motion-bg { background: var(--bg-color) url(/images/index_bg_phone.jpg) no-repeat center center/cover; }
   .motion-bg video { display: none; }
   .motion-bg:after { background: rgba(0,0,0,0.5); }
+  .bars {display: block;}
+  .linksA, .linksB {display: none;}
 } /* Main phone settings */
