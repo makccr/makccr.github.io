@@ -3,6 +3,7 @@
 :root { /* Base Settings */
   --fg-color: #fff;
   --bg-color: #000;
+  --button-color: #080808;
 } /* Defining color scheme */
 * {
   box-sizing: border-box;
@@ -42,7 +43,7 @@ a { /* Social Links */
   text-decoration: none;
   color: var(--fg-color);
   transition: 0.3s;
-} a:hover { opacity: 0.6; }
+} a:hover { opacity: 0.8; }
 .social {
   color: var(--fg-color);
   font-size: 1.7rem;
@@ -136,8 +137,22 @@ li {
   line-height: 2;
 }
 
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: var(--fg-color);
+  background-color: var(--button-color);
+  border: 0px;
+  border-radius: 1rem;
+  padding: 1rem 2rem; 
+  cursor: pointer;
+  margin-top: 1.5rem;
+  mix-blend-mode: multiply;
+}
+
 /* Mobile Settings ---------------------------------------------------------- */
 @media only screen and (max-width: 850px) { /* Intermediate downscaling cleanup */
+  .motion-bg video { display: none; }
   h3 { /* Font adjustments */
     font-size: 1rem;
     padding-left: 5%;
