@@ -34,6 +34,7 @@ h6 {font-size: 1rem;}
 .headText { 
   margin-left: 25%;
   margin-right: 25%;
+  margin-bottom: 4rem;
 }
 p a {
     color: var(--link-color);
@@ -142,6 +143,17 @@ footer nav a {
 } footer nav a:hover {color: var(--link-hover);}
 footer nav {margin-bottom: 2rem;}
 
+.portfolio {
+  height: 20rem;
+  cursor: pointer;
+  border-radius: 1rem;;
+  transition: all .3s;
+  padding: .5rem;
+} .portfolio:hover { 
+  border-radius: 0rem;
+  opacity: 80%;
+}
+
 /* Light Mode Settings ------------------------------------------------------ */
 @media (prefers-color-scheme: light){
   :root {
@@ -169,4 +181,8 @@ footer nav {margin-bottom: 2rem;}
   footer p {font-weight: 400;}
   footer nav {display: none;}
   body {padding: 1rem 1rem}
+  .portfolio {
+    height: auto;
+    width: 100%;
+  }
 } /* Main phone settings */
