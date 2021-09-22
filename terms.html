@@ -1,134 +1,129 @@
 <!DOCTYPE html>
 <html lang='en'>
     <head>
+        <!-- Base Info -->
         <meta charset='utf-8'/> <!--Setting document to UTF-8-->
         <meta content='width-device-width, initial-scale=1.0' name='viewport'/>
         <meta name='keywords' content='style,html,css,page,headers'/> <!--Setting basic description & info-->
-        <meta name='description' content='Read through my privacy policy and terms of service.'/>
-        <meta name='author' content='Mackenzie Criswell'/>
+        <meta name='description' content='Welcome to my website. Here you can download free stuff, look at my portfolio, buy merch, and more!'/>
+        <meta name='author' content='Mack'/>
         <meta name='robots' content='index, follow'/>
-        <title>Privacy and Terms of Service - MAKC</title>
-        <link href="https://fonts.googleapis.com/css?family=EB+Garamond:500,700&display=swap" rel="stylesheet">  <!--Google fonts-->
-        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'/>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet'/>
-        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous'/> <!--Font awesome-->
-        <link href='/images/favicons/favicon.ico' rel='icon' type='image/ico'/> <!--Favicons-->
+        <meta name="google-site-verification" content="zI4ReyW17rDregFpRqXQeuboyq1lW2IK5WiADOPwbJU" />
+        <title>Privacy & Terms of Service - MAKC</title>
+        <!-- Favicons -->
+        <link href='/images/favicons/favicon.ico' rel='icon' type='image/ico'/>
         <link href='/images/favicons/favicon.png' rel='icon' type='image/png'/>
         <link href='/images/favicons/apple-touch-icon.png' rel='apple-touch-icon'/>
         <link href='/images/favicons/ios-ipad-144x144.png' sizes='144x144' rel='apple-touch-icon-precomposed'/>
         <link href='/images/favicons/ios-iphone-114x144.png' sizes='114x114' rel='apple-touch-icon-precomposed'/>
         <link href='/images/favicons/ios-default-homescreen-57x57.png' sizes='57x57' rel='apple-touch-icon-precomposed'/>
-        <link href='/css/main.css' rel='stylesheet'/> <!--Linking CSS/JS-->
-        <script src="/script/main.js"></script> <!--Link to javascript-->
+        <!-- Imports -->
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous'/>
+        <link href='/css/color.css' rel='stylesheet'/>
+        <link href='/css/style.css' rel='stylesheet'/>
+        <script src="/script/menu.js"></script>
     </head>
-    <body>
-
-        <header>
-            <a href='/index'>
-                <nav id="logo"></nav><!--Logo-->
-            </a>
-            <nav> <!--Main Site navigation-->
-                <a href='https://www.youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw/' title='YouTube Channel'> Videos</a>
-                <a href='https://www.behance.net/makccr' title='View my Portfolio on Behance'>Portfolio</a>
-                <a href='/downloads' title='Download Free Content'>Downloads</a>
-                <a href='/merch' title='Buy Some Merch'>Merch</a>
-            </nav>
-        </header> <!--Site Header-->
-        <div onclick="mobileMenu()">
-            <i class='fas fa-bars'></i>
+      <div class="bars" onclick="mobileMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div id="mobile-links">
+        <div class="mobile-links-container">
+          <ul>
+            <li class="mobile"><a href="https://www.youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw/" target="_blank" title="My YouTube Channel">Videos</a></li><br>
+            <li class="mobile"><a href="/portfolio.html" title="My Motion Graphics Work">Portfolio</a></li><br>
+            <li class="mobile"><a href="https://makccr.medium.com" target="_blank" title="My Medium Blog">Blog</a></li><br>
+            <li class="mobile"><a href="/downloads.html" title="Download free stuff">Downloads</a></li><br>
+          </ul>
         </div>
-        <div id='mobile-menu'>
-            <a href='https://airtable.com/shr6Cc8AFskdeaM0K'><p>Gear I Use</p></a>
-            <a href='/terms'><p>Terms & Privacy</p></a>
-            <a href='/contact'><p>Contact</p></a>
-            <a href='https://airtable.com/shrGNFkTaa2Usi4WL'><p>My Bar</p></a>
-            <a href='https://airtable.com/shr4G9f3ukuvCE6vf'><p>My Library</p></a>
-            <br>
-            <a href='https://www.youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw/'><h4>Videos</h4></a>
-                <a href='https://www.behance.net/makccr' title='View my Portfolio on Behance'>Portfolio</a>
-            <a href='/downloads'><h4>Downloads</h4></a>
-            <a href='/merch'><h4>Merch</h4></a>
+      </div>
+    <header>
+      <div class="header-flex">
+      <nav>
+        <ul class="linksA">
+          <li><a href="https://www.youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw/" target="_blank" title="My YouTube Channel">Videos</a></li>
+          <li><a href="/portfolio.html" title="My Motion Graphics Work">Portfolio</a></li>
+        </ul>
+      </nav>
+      <a href="/index.html" title="Homepage"><div class="logo"></div></a>
+      <nav>
+        <ul class="linksB">
+          <li><a href="https://makccr.medium.com" target="_blank" title="My Medium Blog">Blog</a></li>
+          <li><a href="/downloads.html" title="Download free stuff">Downloads</a></li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+    <div class="body-left">
+        <h1>Privacy Policy</h1>
+        <h5>as of April 18, 2020</h5>
+        <h4>Collection and Use of Personal Information</h4>
+        <p> I don't collect any personal information from users of this site. I take this quite seriously, I hate the modern web; and if for no other reason than the fact that I don't want hundreds of lines of Java Script slowing down my site, I don't participate in the standard data collection that we've come to expect from the web. There is no data collection happening on my site for any reason. I don't run ads, because I don't want any data collection happening that way. I don't collect any cookies, because I don't know how to. Don't believe me? Here's all of the JavaScript that runs in the background of my site: </p>
+        <div class="codeBlock">
+          <p>function mobileMenu() {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;var x = document.getElementById("mobile-links")<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;if (x.style.display === "none") {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x.style.display = "block";<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x.style.display = "none"; } }</p>
         </div>
-        <div id="spacer"></div> <!--spacign for header-->
-
-        <main> <!--Placeholder text-->
-            <h1>Privacy Policy</h1>
-            <h6>as of April 18, 2020</h6>
-            <br>
-            <h4 class='left'>Collection and Use of Personal Information</h4>
-            <p>
-            I don't collect any personal information from users of this site. I take this quite seriously, I hate the modern web; and if for no other reason than the fact that I don't want hundreds of lines of Java Script slowing down my site, I don't participate in the standard data collection that we've come to expect from the web. 
-            There is no data collection happening on my site for any reason. I don't run ads, because I don't want any data collection happening that way. I don't collect any cookies, because I don't know how to. Don't believe me? Here's all of the JavaScript that runs in the background of my site:<br><br>
-            <code>
-            <span class='aqua'>function</span> mobileMenu<span class='aqua'>()</span> {<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span class='yellow'>var</span> <span class='blue'>x</span> <span class='purple'>=</span> <span class='aqua'>document</span>.getElementById(<span class='green'>"mobile-menu"</span>)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span class='red'>if</span> (<span class='blue'>x.style.display</span> <span class='purple'>===</span> <span class='green'>"none"</span>) {<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='blue'>x.style.display</span> <span class='purple'>=</span> <span class='green'>"block"</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;} <span class='red'>else</span> {<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='blue'>x.style.display</span> <span class='purple'>=</span> <span class='green'>"none"</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-            }
-            </code>
-            If you don't write JavaScript, this is just a function that allows users to open and close the hamburger menu for navigation, when accessing the site on a mobile device. Furthermore, in the interest of transparency, my entire site is available on <a href='https://github.com/makccr/makccr.github.io' title='github.com/makccr/makccr.github.io'>GitHub</a>. Of course, as with any other website, user can just open up an inspector window and view all the HTML &amp; CSS for that controls my website. But if you look at the GitHub repository, you can view all the code, and all the assets that I've used to create this website, exactly as I have them organized. (It's also just slightly easier to parse through this info on a GitHub repo, rather than an inspector window.)
-            </p>
-            <h4 class='left'>Third Party Services</h4>
-            <p>
+        <p>If you don't write JavaScript, this is just a function that allows users to open and close the hamburger menu for navigation, when accessing the site on a mobile device. Furthermore, in the interest of transparency, my entire site is available on <a href="https://github.com/makccr/makccr.github.io">GitHub</a>. Of course, as with any other website, user can just open up an inspector window and view all the HTML & CSS for that controls my website. But if you look at the GitHub repository, you can view all the code, and all the assets that I've used to create this website, exactly as I have them organized. (It's also just slightly easier to parse through this info on a GitHub repo, rather than an inspector window.) </p>
+        <h4>Third Party Services</h4>
+        <p> There are a few third-party services which I use to help drive some parts of this website. As an example, I host this site use GitHub pages, a really great and easy to use platform that allows you to spin up a site based on a GitHub repo. Unfortunately, this does complicate things a bit. While I'm perfectly comfortable just dropping all the JavaScript for my entire site here, that's not the case with everyone. So I've compiled a list below of all the services that I use to drive any piece of this website, and corresponding links to Terms of Service & Privacy Policy pages on those site:</p>
+        <p>
             There are a few third-party services which I use to help drive some parts of this website. As an example, I host this site use GitHub pages, a really great and easy to use platform that allows you to spin up a site based on a GitHub repo. Unfortunately, this does complicate things a bit. While I'm perfectly comfortable just dropping all the JavaScript for my entire site here, that's not the case with everyone. So I've compiled a list below of all the services that I use to drive any piece of this website, and corresponding links to Terms of Service &amp; Privacy Policy pages on those site:<br><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>GitHub Pages</strong> (My hosting solution): <a href='https://help.github.com/en/github/site-policy/github-terms-of-service' title='View Terms of Service'>Terms of Service</a>, <a href='https://help.github.com/en/github/site-policy/github-privacy-statement' title='View Privacy Policy'>Privacy Policy</a>.<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Google Fonts</strong> (Powers all the Fonts on this site): <a href='https://policies.google.com/terms' title='View Terms of Service'>Terms of Service</a>, <a href='https://policies.google.com/privacy' title='View Privacy Policy'>Privacy Policy</a>.<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Font Awesome</strong> (Social Icons &amp; Hamburger Menu Icon): <a href='https://fontawesome.com/tos' title='View Terms of Service'>Terms of Service</a>, <a href='https://fontawesome.com/privacy' title='View Privacy Policy'>Privacy Policy</a>.<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Tee Public</strong> (Where I sell Merch): <a href='https://www.teepublic.com/terms' title='View Terms of Service'>Terms of Service</a>, <a href='https://www.teepublic.com/privacy_policy' title='View Privacy Policy'>Privacy Policy</a>.<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Airtable</strong> (Powers the Gear I Use Page): <a href='https://airtable.com/tos' title='View Terms of Service'>Terms of Service</a>, <a href='https://airtable.com/privacy' title='View Privacy Policy'>Privacy Policy</a>.<br>
+            <strong>GitHub Pages</strong> (My hosting solution): <a href='https://help.github.com/en/github/site-policy/github-terms-of-service' title='View Terms of Service'>Terms of Service</a>, <a href='https://help.github.com/en/github/site-policy/github-privacy-statement' title='View Privacy Policy'>Privacy Policy</a>.<br>
+            <strong>Google Fonts</strong> (Powers all the Fonts on this site): <a href='https://policies.google.com/terms' title='View Terms of Service'>Terms of Service</a>, <a href='https://policies.google.com/privacy' title='View Privacy Policy'>Privacy Policy</a>.<br>
+            <strong>Font Awesome</strong> (Social Icons &amp; Hamburger Menu Icon): <a href='https://fontawesome.com/tos' title='View Terms of Service'>Terms of Service</a>, <a href='https://fontawesome.com/privacy' title='View Privacy Policy'>Privacy Policy</a>.<br>
+            <strong>Tee Public</strong> (Where I sell Merch): <a href='https://www.teepublic.com/terms' title='View Terms of Service'>Terms of Service</a>, <a href='https://www.teepublic.com/privacy_policy' title='View Privacy Policy'>Privacy Policy</a>.<br>
+            <strong>Airtable</strong> (Powers the Gear I Use Page): <a href='https://airtable.com/tos' title='View Terms of Service'>Terms of Service</a>, <a href='https://airtable.com/privacy' title='View Privacy Policy'>Privacy Policy</a>.<br>
             <br>Furthermore, while I take a great deal of care in respecting my user's privacy, I would be lying if I pretended that every site in which I'm active on does the same. I have a YouTube channel, and a Twitter account; and to call these website's practices regarding privacy anything other than abominable; would be ridiculous. There are countless other social media type sites, that I link to from this very site. If you choose to interact with me on these third-party platforms, that's great, you're welcome to do so; but do so knowing what data collection is taking place on these sites; how to opt out of that collection if possible, and how to get around giving up you're data if it's not. Ad Blockers, Tracker Blockers &amp; HTTPS are all great. Run a VPN if you wan't to, though, far warning, the usefulness of something like that does tend to be <a href='https://youtu.be/WVDQEoe6ZWY' title='Watch Tom Scotts excelent video on this subject'>overstated</a> by marketing departments. <br><br>
             All that being said, in the interest of making controlling <em>your</em> data as painless as possible, I've also compiled a list that links to Privacy Policies and Terms of Service pages for every site you will every be redirected too from this website.<br><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Twitter:</strong> <a href='https://twitter.com/en/tos' title='View Terms of Service'>Terms of Service</a>, <a href='https://twitter.com/en/privacy' title='View Privacy Policy'>Privacy Policy</a>.<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Facebook:</strong> <a href='https://www.facebook.com/legal/terms' title='View Terms of Service'>Terms of Service</a>, <a href='https://www.facebook.com/privacy/explanation' title='View Privacy Policy'>Privacy Policy</a>.<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Instagram:</strong> <a href='https://help.instagram.com/581066165581870' title='View Terms of Service'>Terms of Service</a>, <a href='https://help.instagram.com/519522125107875' title='View Privacy Policy'>Privacy Policy</a>.<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Reddit:</strong> <a href='https://www.redditinc.com/policies/user-agreement' title='View Terms of Service'>User Agreement</a>, <a href='https://www.redditinc.com/policies/privacy-policy' title='View Privacy Policy'>Privacy Policy</a>.<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Behance (Adobe):</strong> <a href='https://www.adobe.com/legal/terms.html' title='View Terms of Service'>Terms of Use</a>, <a href='https://www.adobe.com/privacy.html' title='View Privacy Policy'>Privacy Policy</a>.<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>GitHub:</strong> <a href='https://help.github.com/en/github/site-policy/github-terms-of-service' title='View Terms of Service'>Terms of Service</a>, <a href='https://help.github.com/en/github/site-policy/github-privacy-statement' title='View Privacy Policy'>Privacy Policy</a>.<br>
+            <strong>Twitter:</strong> <a href='https://twitter.com/en/tos' title='View Terms of Service'>Terms of Service</a>, <a href='https://twitter.com/en/privacy' title='View Privacy Policy'>Privacy Policy</a>.<br>
+            <strong>YouTube:</strong> <a href='https://www.youtube.com/static?template=terms' title='View Terms of Service'>Terms of Service</a>, <a href='https://www.youtube.com/howyoutubeworks/user-settings/privacy/' title='View Privacy Policy'>Privacy Policy</a>.<br>
+            <strong>Odysee (LBRY):</strong> <a href='https://lbry.com/termsofservice' title='View Terms of Service'>Terms of Service</a>, <a href='https://lbry.com/privacypolicy' title='View Privacy Policy'>Privacy Policy</a>.<br>
+            <strong>Reddit:</strong> <a href='https://www.redditinc.com/policies/user-agreement' title='View Terms of Service'>User Agreement</a>, <a href='https://www.redditinc.com/policies/privacy-policy' title='View Privacy Policy'>Privacy Policy</a>.<br>
+            <strong>Behance (Adobe):</strong> <a href='https://www.adobe.com/legal/terms.html' title='View Terms of Service'>Terms of Use</a>, <a href='https://www.adobe.com/privacy.html' title='View Privacy Policy'>Privacy Policy</a>.<br>
+            <strong>GitHub:</strong> <a href='https://help.github.com/en/github/site-policy/github-terms-of-service' title='View Terms of Service'>Terms of Service</a>, <a href='https://help.github.com/en/github/site-policy/github-privacy-statement' title='View Privacy Policy'>Privacy Policy</a>.<br>
+            <strong>Snapchat:</strong> <a href='https://www.snap.com/en-US/terms' title='View Terms of Service'>Terms of Service</a>, <a href='https://www.snap.com/en-US/privacy/privacy-policy' title='View Privacy Policy'>Privacy Policy</a>.<br>
             </p>
-            <br><br><br><br>
+            <br>
             <h1>Terms of Service</h1>
-            <h4 class='left'>Ownership of Site; Agreement to Terms of Use</h4>
+            <h5>as of September 22, 2021</h5>
+            <h4>Ownership of Site; Agreement to Terms of Use</h4>
+            <p> These Terms and Conditions of User apply to my (Mackenzie Criswell) personal website located at <a href="https://makc.co">https://makc.co</a>. This site is the property of me (Mackenzie Criswell). BY USING THIS WEBSITE, YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT USE THIS WEBSITE. </p>
+            <h4>Your Use of this Site</h4>
+            <p>You may use any "deep-link", "page-scrape", "robot", "spider" or other automatic device, program, algorithm or methodology, or any similar or equivalent manual process, to access, acquire, copy or monitor any portion of the Site or any Content, or in any way reproduce or circumvent the navigational structure or presentation of the Site or any Content, to obtain or attempt to obtain any materials, documents or information through any means not purposely made available through the Site. For all intents and purposes, just consider this site open source. I don't care what you do with the data, and/or assets, available on this site.
+            <br><br>
+            You may attempt to gain unauthorized access to any portion or feature of the Site, or any other systems or networks connected to the Site, by hacking, password "mining" or any other illegitimate means. There are no unauthorized parts of this website, have fun.
+            <br><br>
+            All of that being said, feel free to explore and have fun, but please don't try to take my site down. </p>
+            <h4>Accessibility</h4>
             <p>
-            These Terms and Conditions of User apply to my (Mackenzie Criswell) personal website located at <a href='https://makc.co' title='makc.co'>https://makc.co</a>. This site is the property of me (Mackenzie Criswell). BY USING THIS WEBSITE, YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT USE THIS WEBSITE.
+            As mentioned in the above section, any user is free to use any automated system to crawl this website, for whatever reason. In the context of accessibility, I'm mainly talking about screen readers. But this section doesn't exist just for me to say that users have the right to use a screen reader, that should be assumed. Mainly I just want to mention the things I've done with my site to try and make it more accessible. If you have any additional ideas, as to how I can make my site more accessible, please feel free to direct those to the <a href='/contact.html' title='Open bug report page'>bug report</a> page.
+            <br><br>
+            So what have I done to make the site more accessible? The main focus is making sure that my site is easy to navigate via they keyboard. This mainly involved adding title &lt;tags&gt; to any links, so that they can be read by screen-readers; and adding alternate text to &lt;image&gt; tags, for the same reason. I've also but some effort into the color-scheme on this site. I wan't to provide a reasonable amount of contrast for users with vision impairments. The site also functions with both a light and dark theme, that is triggered via a CSS media query, and should follow the operating system setting for the end user.
             </p>
-            <h4 class='left'>Your Use of this Site</h4>
-            <p>
-            You may use any "deep-link", "page-scrape", "robot", "spider" or other automatic device, program, algorithm or methodology, or any similar or equivalent manual process, to access, acquire, copy or monitor any portion of the Site or any Content, or in any way reproduce or circumvent the navigational structure or presentation of the Site or any Content, to obtain or attempt to obtain any materials, documents or information through any means not purposely made available through the Site. For all intents and purposes, just consider this site <em>open source</em>. I don't care what you do with the data, and/or assets, available on this site.<br><br>
-            You may attempt to gain unauthorized access to any portion or feature of the Site, or any other systems or networks connected to the Site or to any Apple server, or to any of the services offered on or through the Site, by hacking, password "mining" or any other illegitimate means. There are no unauthorized parts of this website, have fun. <br><br>
-            All of that being said, please don't try to take my site down.
-            </p>
-            <h4 class='left'>Accessibility</h4>
-            <p>
-            As mentioned in the above section, any user is free to use any automated system to crawl this website, for whatever reason. In the context of accessibility, I'm mainly talking about screen readers. But this section doesn't exist just for me to say that users have the right to use a screen reader, that should be assumed. Mainly I just want to mention the things I've done with my site to try and make it more accessible. If you have any additional ideas, as to how I can make my site more accessible, please feel free to direct those to the <a href='/bug' title='Open bug report page'>bug report</a> page.<br><br>
-            So what have I done to make the site more accessible? The main focus is making sure that my site is easy to navigate via they keyboard. This mainly involved adding title &lt;tags&gt; to any links, so that they can be read by screen-readers; and adding alternate text to &lt;image&gt; tags, for the same reason. I've also but some effort into the color-scheme on this site. I wan't to provide a reasonable amount of contrast for users with vision impairments. The site also functions with both a light and dark theme, that is triggered via a CSS media query, and should follow the operating system setting for the end user. 
-            </p>
-        </main>
+    </div>
 
-        <footer> <!--Setting for the site's footer-->
-            <nav> <!--Secondary Site navigation-->
-                <a href='https://airtable.com/shr6Cc8AFskdeaM0K'>Gear I Use</a>
-                <a href='/terms'>Terms & Privacy</a>
-                <a href='/contact'>Contact</a>
-                <a href='https://airtable.com/shrGNFkTaa2Usi4WL'>My Bar</a>
-                <a href='https://airtable.com/shr4G9f3ukuvCE6vf'>My Library</a>
-            </nav>
-            <div> <!--Social links, icons-->
-                <h4>Social <strong>Links</strong></h4>
-                <a href='https://youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw' title='youtube/MACK' target='_blank'><i class="fab fa-youtube"></i></a>
-                <a href='https://reddit.com/user/mack_criswell' title='reddit.com/mack_criswell' target='_blank'><i class='fab fa-reddit-alien'></i></a>
-                <a href='https://github.com/makccr' title='github/makccr' target='_blank'><i class='fab fa-github'></i></a>
-                <a href='https://snapchat.com/add/mack_criswell' title='snapchat/mack_criswell' target='_blank'><i class="fab fa-snapchat-ghost"></i></a>
-                <a href='https://twitter.com/makccr' title='twitter/makccr' target='_blank'><i class='fab fa-twitter'></i></a>
-                <a href='https://instagram.com/makccr/' title='instagram/makccr' target='_blank'><i class='fab fa-instagram'></i></a>
-                <a href='https://open.spotify.com/playlist/0py1J5FB6qM9bQBe8lLC1n' title='Pickled Red Onions' target='_blank'><i class='fab fa-spotify'></i></a>
-            </div>
-            <p>Copyright&copy; 2012 - 2021 Mackenzie Criswell <!--Copyright statement-->
-            <br>All Rights Reserved.</p>
-        </footer>
-
-    </body>
-</html> <!-- Vote for Bernie Sanders -->
+    <footer>
+      <nav> <!--Secondary Site navigation-->
+        <a href='https://airtable.com/shr6Cc8AFskdeaM0K'>Gear I Use</a>
+        <a href='/terms.html'>Terms & Privacy</a>
+        <a href='/contact.html'>Contact</a>
+        <a href='https://airtable.com/shrGNFkTaa2Usi4WL'>My Bar</a>
+        <a href='https://airtable.com/shr4G9f3ukuvCE6vf'>My Library</a>
+        <a href='https://www.teepublic.com/user/makc'>Merch</a>
+      </nav>
+      <h4>Social Links</h4>
+      <div class="social">
+        <a href='https://youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw' title='youtube/MACK' target='_blank'><i class="fab fa-youtube"></i></a>
+        <a href='https://github.com/makccr' title='github/makccr' target='_blank'><i class='fab fa-github'></i></a>
+        <a href='https://reddit.com/user/mack_criswell' title='reddit/mack_criswell' target='_blank'><i class='fab fa-reddit-alien'></i></a>
+        <a href='https://twitter.com/makccr' title='twitter/makccr' target='_blank'><i class='fab fa-twitter'></i></a>
+        <a href='https://snapchat.com/add/mack_criswell' title='snapchat/mack_criswell' target='_blank'><i class="fab fa-snapchat-ghost"></i></a>
+        <a href='https://odysee.com/@makc:a' title='Odysee Channel' target='_blank'><i class="fas fa-book-open"></i></a>
+        <a href='https://open.spotify.com/playlist/0py1J5FB6qM9bQBe8lLC1n' title='Pickled Red Onions' target='_blank'><i class='fab fa-spotify'></i></a>
+      </div>
+      <p>Copyright© 2012 - 2021 Mackenzie Criswell<br>All Rights Reserved.</p>
+    </footer>
+</html>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;600&display=swap');
 
 :root { /* Base Settings */
   --fg-color: #f9f9f7;
@@ -25,6 +26,16 @@ body {
   text-align: center; 
   padding: 1rem 5rem;
 }
+.body-left { text-align: left; }
+.body-left h4 { 
+  margin-top:2rem;
+  margin-bottom: 1rem;
+}
+.body-left p {
+  margin-bottom: 1rem;
+}
+.body-left h1 {text-align:center}
+.body-left h5 {text-align:center}
 h1 {font-size: 3.5rem;}
 h2 {font-size: 3rem;}
 h3 {font-size: 2.5rem;}
@@ -121,7 +132,7 @@ li {
 }
 
 footer {
-  margin-top: 4rem;
+  margin-top: 8rem;
   margin-bottom: 3rem;
 } .social a {
   font-size: 1.7rem;
@@ -182,6 +193,11 @@ footer nav {margin-bottom: 2rem;}
   width: 28.5%; 
   padding: .5rem;
   border-radius: 1rem;
+} 
+.codeBlock p { 
+  margin: 2rem 4rem; 
+  font-family: 'Noto Sans Mono', monospace;
+  color: var(--fg-color);
 }
 
 /* Light Mode Settings ------------------------------------------------------ */
@@ -223,5 +239,5 @@ footer nav {margin-bottom: 2rem;}
   .portfolio {
     height: auto;
     width: 100%;
-  }
+  } .codeBlock p {margin: 1rem 0rem}
 } /* Main phone settings */
