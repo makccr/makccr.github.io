@@ -142,7 +142,6 @@ footer {
 } 
 footer a:hover { opacity: 80%; }
 .social {margin-bottom: 2rem; }
-footer p {font-weight: 600;}
 footer nav a {
   font-family: 'Montserrat', sans-serif;
   color: var(--fg-color);
@@ -233,7 +232,6 @@ footer nav {margin-bottom: 2rem;}
 @media only screen and (max-width: 640px) { /* Main phone settings */
   .bars {display: block;}
   .linksA, .linksB {display: none;}
-  footer p {font-weight: 400;}
   footer nav {display: none;}
   body {padding: 1rem 1rem}
   .portfolio {
