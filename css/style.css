@@ -57,7 +57,7 @@ button {
     padding: 1rem 2rem;
     border-radius: 5px;
     transition: all .3s;
-    margin: 3rem;
+    margin: 1rem 1rem;
 } button:hover {background-color: var(--button-hover);}
 
 header { 
@@ -154,6 +154,36 @@ footer nav {margin-bottom: 2rem;}
   opacity: 80%;
 }
 
+.image-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image-flex p {
+  width: 50%;
+  margin: 0rem 3rem;
+}
+.full-size-image { 
+  width: 100%; 
+  padding: .5rem;
+  border-radius: 1rem;
+}
+.half-size-image { 
+  width: 50%; 
+  padding: .5rem;
+  border-radius: 1rem;
+}
+.third-size-image { 
+  width: 33%; 
+  padding: .5rem;
+  border-radius: 1rem;
+}
+.fourth-size-image { 
+  width: 28.5%; 
+  padding: .5rem;
+  border-radius: 1rem;
+}
+
 /* Light Mode Settings ------------------------------------------------------ */
 @media (prefers-color-scheme: light){
   :root {
@@ -169,10 +199,19 @@ footer nav {margin-bottom: 2rem;}
 
 /* Mobile Settings ---------------------------------------------------------- */
 @media only screen and (max-width: 850px) { /* Intermediate downscaling */
-  .headText {
-    margin-left: 0;
-    margin-right: 0;
-  }
+  .headText { margin-left: 0; margin-right: 0; }
+  .image-flex { display: block; }
+  .image-flex p {
+    width: 100%;
+    margin: 0rem;
+    margin-bottom: 1rem;
+  } .full-size-image { padding: .2rem; border-radius: .5rem; }
+  .half-size-image { 
+    padding: .2rem; 
+    border-radius: .5rem; 
+    width: 100%;
+  } .third-size-image { padding: .2rem; border-radius: .5rem; }
+  .fourth-size-image { padding: .2rem; border-radius: .5rem; }
 } /* Intermediate downscaling cleanup */
 
 @media only screen and (max-width: 640px) { /* Main phone settings */
