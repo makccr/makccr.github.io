@@ -266,6 +266,7 @@ body iframe {
   } .third-size-image { padding: .2rem; border-radius: .5rem; }
   .fourth-size-image { padding: .2rem; border-radius: .5rem; }
   body iframe { height: 25rem;}
+  .contact-container { display: block; }
 } /* Intermediate downscaling cleanup */
 
 @media only screen and (max-width: 640px) { /* Main phone settings */
