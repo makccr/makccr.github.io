@@ -19,133 +19,31 @@
         <link href='/images/favicons/ios-ipad-144x144.png' sizes='144x144' rel='apple-touch-icon-precomposed'/>
         <link href='/images/favicons/ios-iphone-114x144.png' sizes='114x114' rel='apple-touch-icon-precomposed'/>
         <link href='/images/favicons/ios-default-homescreen-57x57.png' sizes='57x57' rel='apple-touch-icon-precomposed'/>
-        <link href='/css/main.css' rel='stylesheet'/> <!--Linking CSS/JS-->
-        <script src="/script/main.js"></script> <!--Link to javascript-->
     </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+        #myShop {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+    </style>
 
-    <body>
-        <header>
-            <a href='/index'>
-                <nav id="logo"></nav><!--Logo-->
-            </a>
-            <nav> <!--Main Site navigation-->
-                <a href='https://www.youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw/' title='YouTube Channel'> Videos</a>
-                <a href='https://www.behance.net/makccr' title='View my Portfolio on Behance'>Portfolio</a>
-                <a href='/downloads' title='Download Free Content'>Downloads</a>
-                <a href='/merch' title='Buy Some Merch'>Merch</a>
-            </nav>
-        </header> <!--Site Header-->
-        <div onclick="mobileMenu()">
-            <i class='fas fa-bars'></i>
-        </div>
-        <div id='mobile-menu'>
-            <a href='https://airtable.com/shr6Cc8AFskdeaM0K'><p>Gear I Use</p></a>
-            <a href='/terms'><p>Terms & Privacy</p></a>
-            <a href='/contact'><p>Contact</p></a>
-            <a href='https://airtable.com/shrGNFkTaa2Usi4WL'><p>My Bar</p></a>
-            <a href='https://airtable.com/shr4G9f3ukuvCE6vf'><p>My Library</p></a>
-            <br>
-            <a href='https://www.youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw/'><h4>Videos</h4></a>
-                <a href='https://www.behance.net/makccr' title='View my Portfolio on Behance'>Portfolio</a>            <a href='/downloads'><h4>Downloads</h4></a>
-            <a href='/merch'><h4>Merch</h4></a>
-        </div>
-        <div id="spacer"></div> <!--spacign for header-->
+    <div id="myShop">
+    <a href="https://makccr.myspreadshop.com">makccr</a>
+    </div>
 
-        <main> <!--Placeholder text-->
-            <h1>Merch</h1>
-            <p class='center'>
-            If you wan't to support my <a href='https://www.youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw/' title='youtube.com/c/makccr'>YouTube channel</a>, or you just want some dope t-shirts; you're in the right place.<br><br>
-            There are t-shirts pictured in the images below, but I sell all of these through <a target='_blank' href='https://www.teepublic.com/user/makc' title='Open my Teepublic storefront'>Teepublic</a>, so you can buy hoodies, pillows, mugs &amp; all sort of random crap with all of these designs on it.
-            </p>
-            <div class="cardContainer">
-                <div class="card">
-                    <img src="/images/merch/makc-red.jpg"/>
-                    <h4>MAKC (Red)</h4>
-                    <a href='https://www.teepublic.com/t-shirt/9389501-makc-logo-red-2020'>
-                        <button>Buy Now</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="/images/merch/makc-white.jpg"/>
-                    <h4>MAKC (White)</h4>
-                    <a href='https://www.teepublic.com/t-shirt/3151128-mack-official-logo'>
-                        <button>Buy Now</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="/images/merch/spew.jpg"/>
-                    <h4>S.P.E.W.</h4>
-                    <a href='https://www.teepublic.com/t-shirt/3152036-spew-dark'>
-                        <button>Buy Now</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="/images/merch/bloodslide.jpg"/>
-                    <h4>Bloodslide</h4>
-                    <a href='https://www.teepublic.com/t-shirt/7503168-do-you-wanna-be-a-bloodslide'>
-                        <button>Buy Now</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="/images/merch/parker.jpg"/>
-                    <h4>Pig Parker</h4>
-                    <a href='https://www.teepublic.com/t-shirt/6621597-pig-parker'>
-                        <button>Buy Now</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="/images/merch/dont-be.jpg"/>
-                    <h4>Don't Be A Dick</h4>
-                    <a href='https://www.teepublic.com/t-shirt/4421374-dont-be-a-dick-youre-only-helping-the-russians'>
-                        <button>Buy Now</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="/images/merch/3000.jpg"/>
-                    <h4>I Love You 3000</h4>
-                    <a href='https://www.teepublic.com/t-shirt/4774511-i-love-you-3000'>
-                        <button>Buy Now</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="/images/merch/quit.jpg"/>
-                    <h4>Quit Your Shit</h4>
-                    <a href='https://www.teepublic.com/t-shirt/3305686-quit-your-shit'>
-                        <button>Buy Now</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="/images/merch/grades.jpg"/>
-                    <h4>Higher Grades</h4>
-                    <a href='https://www.teepublic.com/t-shirt/3206874-slightly-higher-grades'>
-                        <button>Buy Now</button>
-                    </a>
-                </div>
-            </div>
-        </main>
+    <script>
+        var spread_shop_config = {
+        shopName: 'makccr',
+        locale: 'us_US',
+        prefix: 'https://makccr.myspreadshop.com',
+        baseId: 'myShop'
+    };
+    </script>
 
-        <footer> <!--Setting for the site's footer-->
-            <nav> <!--Secondary Site navigation-->
-                <a href='https://airtable.com/shr6Cc8AFskdeaM0K'>Gear I Use</a>
-                <a href='/terms'>Terms & Privacy</a>
-                <a href='/contact'>Contact</a>
-                <a href='https://airtable.com/shrGNFkTaa2Usi4WL'>My Bar</a>
-                <a href='https://airtable.com/shr4G9f3ukuvCE6vf'>My Library</a>
-            </nav>
-            <div> <!--Social links, icons-->
-                <h4>Social <strong>Links</strong></h4>
-                <a href='https://youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw' title='youtube/MACK' target='_blank'><i class="fab fa-youtube"></i></a>
-                <a href='https://reddit.com/user/mack_criswell' title='reddit.com/mack_criswell' target='_blank'><i class='fab fa-reddit-alien'></i></a>
-                <a href='https://github.com/makccr' title='github/makccr' target='_blank'><i class='fab fa-github'></i></a>
-                <a href='https://snapchat.com/add/mack_criswell' title='snapchat/mack_criswell' target='_blank'><i class="fab fa-snapchat-ghost"></i></a>
-                <a href='https://twitter.com/makccr' title='twitter/makccr' target='_blank'><i class='fab fa-twitter'></i></a>
-                <a href='https://instagram.com/makccr/' title='instagram/makccr' target='_blank'><i class='fab fa-instagram'></i></a>
-                <a href='https://open.spotify.com/playlist/0py1J5FB6qM9bQBe8lLC1n' title='Pickled Red Onions' target='_blank'><i class='fab fa-spotify'></i></a>
-            </div>
-            <p>Copyright&copy; 2012 - 2021 Mackenzie Criswell <!--Copyright statement-->
-            <br>All Rights Reserved.</p>
-        </footer>
+    <script type="text/javascript"
+        src="https://makccr.myspreadshop.com/shopfiles/shopclient/shopclient.nocache.js">
+    </script>
 
-    </body>
 </html> <!-- Vote for Bernie Sanders -->
 
