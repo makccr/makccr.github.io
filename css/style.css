@@ -21,6 +21,7 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--fg-color);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    padding-bottom: .5rem;
 }
 body { 
   text-align: center; 
@@ -78,7 +79,7 @@ header {
 .header-flex {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 li {
   display: inline-block;
@@ -104,9 +105,9 @@ li {
 .bars { /* Mobile Navigation */
   display: none;
   position: absolute;
-  top: 3rem; 
-  right: 1.5rem;
-  z-index: 20;
+  top: 1.5rem;
+  right: 1rem;
+  z-index: 25;
 } 
 .fa-bars {
   font-size: 2rem;
@@ -254,6 +255,8 @@ body iframe {
 @media only screen and (max-width: 850px) { /* Intermediate downscaling */
   .headText { margin-left: 0; margin-right: 0; }
   .image-flex { display: block; }
+  .bars {display: block;}
+  .linksA, .linksB {display: none;}
   .image-flex p {
     width: 100%;
     margin: 0rem;
@@ -267,17 +270,14 @@ body iframe {
   .fourth-size-image { padding: .2rem; border-radius: .5rem; }
   body iframe { height: 25rem;}
   .contact-container { display: block; }
+  header {padding: 0rem;}
+  .logo {margin: 0}
 } /* Intermediate downscaling cleanup */
 
 @media only screen and (max-width: 640px) { /* Main phone settings */
-  .bars {display: block;}
-  .linksA, .linksB {display: none;}
   footer nav {display: none;}
   body {padding: 1rem 1rem}
-  .portfolio {
-    height: auto;
-    width: 100%;
-  } 
+  .portfolio { height: auto; width: 100%; } 
   .codeBlock p {margin: 1rem 0rem}
   .card { width: 90%; }
   body iframe { height: 13rem;}

@@ -16,7 +16,7 @@ body { /* Header Text */
   line-height: 1.2;
   color: var(--fg-color);
   background-color: var(--bg-color);
-} .content {z-index: 10;}
+} .content {z-index: 5;}
 h1 {
   font-weight: 300;
   font-size: 4rem;
@@ -82,21 +82,18 @@ a { /* Social Links */
 header { /* Navigation */
   display: block;
   position: fixed; 
+  width: 100%;
   top: 1.5rem;
   z-index: 10;
 }
 .header-flex {
   display: flex;
-  justify-content: center ;
   align-items: center;
+  justify-content: space-between ;
+  margin-right: 7rem;
+  margin-left: 7rem;
+  margin-top: 1rem;
 }
-.logo {
-  width: 3rem; 
-  cursor: pointer;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  transition: 0.3s;
-} .logo:hover {opacity: .8;}
 li {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -108,13 +105,23 @@ li {
   padding: .3rem;
 } /* Navigation */
 
+.logo {
+  background: url(/images/mWhite.svg);
+  width: 3rem;
+  height: 3rem;
+  transition: all .3s;
+  margin-left: 3rem;
+  margin-right: 3rem;
+} .logo:hover {opacity: .8;}
+
 .bars { /* Mobile Navigation */
   display: none;
   position: absolute;
-  top: 2rem; 
+  top: .5rem; 
   right: 1.5rem;
-  z-index: 20;
+  z-index: 35;
 } 
+
 .fa-bars {
   font-size: 2rem;
   opacity: .8;
@@ -126,7 +133,7 @@ li {
   background-color: rgba(0,0,0,0.8);
   width: 100vw; 
   height: 100vh; 
-  z-index: 15;
+  z-index: 10;
 }
 .mobile-links-container {
   margin-top: 7rem; 
@@ -150,6 +157,7 @@ button {
   mix-blend-mode: multiply;
 }
 
+
 /* Mobile Settings ---------------------------------------------------------- */
 @media only screen and (max-width: 850px) { /* Intermediate downscaling cleanup */
   .motion-bg video { display: none; }
@@ -158,6 +166,10 @@ button {
     padding-left: 5%;
     padding-right: 5%;
   } h1 {font-size: 3em;} 
+  .bars {display: block;}
+  .linksA, .linksB {display: none;}
+  .logo { margin: 0; }
+  .header-flex { margin: 0rem 1.5rem; }
 } /* Intermediate downscaling cleanup */
 
 @media only screen and (max-width: 640px) { /* Main phone settings */
@@ -168,6 +180,4 @@ button {
   .motion-bg { background: var(--bg-color) url(/images/index_bg_phone.jpg) no-repeat center center/cover; }
   .motion-bg video { display: none; }
   .motion-bg:after { background: rgba(0,0,0,0.5); }
-  .bars {display: block;}
-  .linksA, .linksB {display: none;}
 } /* Main phone settings */
