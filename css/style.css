@@ -199,8 +199,29 @@ footer nav {margin-bottom: 2rem;}
   color: var(--fg-color);
 }
 
+.cardContainer { text-align: center; } 
+.card {
+  width: 17rem; 
+  display: inline-block; 
+  margin: 1em .5em; 
+  border: 1px solid var(--button-hover);
+  border-radius: 1rem;
+} .card h4 { margin: 1rem 0rem; }
+.card img {
+  width: 100%; 
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+} .card p {padding: .0em .75em;}
+body iframe {
+  border: none;
+  width: 100%;
+  height: 40rem;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+}
+
 /* Light Mode Settings ------------------------------------------------------ */
-@media (prefers-color-scheme: light){
+@media (prefers-color-scheme: light) {
   :root {
     --fg-color: #444;
     --fg2-color: #666;
@@ -227,6 +248,7 @@ footer nav {margin-bottom: 2rem;}
     width: 100%;
   } .third-size-image { padding: .2rem; border-radius: .5rem; }
   .fourth-size-image { padding: .2rem; border-radius: .5rem; }
+  body iframe { height: 25rem;}
 } /* Intermediate downscaling cleanup */
 
 @media only screen and (max-width: 640px) { /* Main phone settings */
@@ -237,5 +259,8 @@ footer nav {margin-bottom: 2rem;}
   .portfolio {
     height: auto;
     width: 100%;
-  } .codeBlock p {margin: 1rem 0rem}
-} /* Main phone settings */
+  } 
+  .codeBlock p {margin: 1rem 0rem}
+  .card { width: 90%; }
+  body iframe { height: 13rem;}
+}
