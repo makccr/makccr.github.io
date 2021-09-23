@@ -140,7 +140,7 @@ footer {
   padding: .1rem;
   transition: all .3s;
 } 
-footer a:hover { opacity: 80%; }
+footer a:hover { opacity: 70%; }
 .social {margin-bottom: 2rem; }
 footer nav a {
   font-family: 'Montserrat', sans-serif;
@@ -152,6 +152,7 @@ footer nav a {
   transition: all .3s;
 } footer nav a:hover {color: var(--link-hover);}
 footer nav {margin-bottom: 2rem;}
+.social a:hover { opacity: 70%; }
 
 .portfolio {
   height: 20rem;
@@ -219,6 +220,22 @@ body iframe {
   margin-bottom: 4rem;
   border-radius: 1rem;
 }
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.contact {
+  margin: 1rem;
+  text-align: center;
+} 
+.contact a {
+  text-decoration: none;
+  color: var(--fg-color);
+  transition: all .3s;
+} .contact a:hover { color: var(--link-hover); }
 
 /* Light Mode Settings ------------------------------------------------------ */
 @media (prefers-color-scheme: light) {
