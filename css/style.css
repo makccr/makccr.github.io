@@ -195,6 +195,11 @@ footer nav {margin-bottom: 2rem;}
   padding: .5rem;
   border-radius: 1rem;
 } 
+.fourth-size-video { 
+  width: 32.3%; 
+  padding: .5rem;
+  border-radius: 1rem;
+} 
 .codeBlock p { 
   margin: 2rem 4rem; 
   font-family: 'Noto Sans Mono', monospace;
@@ -266,8 +271,14 @@ body iframe {
     padding: .2rem; 
     border-radius: .5rem; 
     width: 100%;
+    margin: 2rem 0rem;
   } .third-size-image { padding: .2rem; border-radius: .5rem; }
   .fourth-size-image { padding: .2rem; border-radius: .5rem; }
+  .fourth-size-video { 
+    padding: .2rem; 
+    border-radius: .5rem; 
+    width: 100%;
+  }
   body iframe { height: 25rem;}
   .contact-container { display: block; }
   header {padding: 0rem;}
