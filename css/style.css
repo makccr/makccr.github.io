@@ -56,7 +56,7 @@ p a {
 p {
     color: var(--fg2-color);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.5;
 }
 button {
@@ -87,7 +87,7 @@ li {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-size: .9rem;
-  font-weight: 400;
+  font-weight: 600;
 } li a {
   text-decoration: none;
   color: var(--fg-color);
@@ -140,11 +140,13 @@ footer {
   color: var(--fg-color);
   padding: .1rem;
   transition: all .3s;
+  font-weight: 600;
 } 
 footer a:hover { opacity: 70%; }
 .social {margin-bottom: 2rem; }
 footer nav a {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   color: var(--fg-color);
   font-size: 1rem;
   text-decoration: none;
@@ -272,7 +274,7 @@ body iframe {
     border-radius: .5rem; 
     width: 100%;
     margin: 2rem 0rem;
-  } .third-size-image { padding: .2rem; border-radius: .5rem; }
+  } .third-size-image { padding: .2rem; border-radius: .5rem; width: 100%; }
   .fourth-size-image { padding: .2rem; border-radius: .5rem; }
   .fourth-size-video { 
     padding: .2rem; 
