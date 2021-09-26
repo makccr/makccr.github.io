@@ -62,6 +62,7 @@ p {
 button {
     color: var(--fg2-color);
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
     background-color: var(--button-color);
@@ -208,13 +209,18 @@ footer nav {margin-bottom: 2rem;}
   color: var(--fg-color);
 }
 
-.cardContainer { text-align: center; } 
+.cardContainer { 
+  text-align: center; 
+  display: inline-block;
+  margin-bottom: 3rem;
+} 
 .card {
   width: 17rem; 
   display: inline-block; 
   margin: 1em .5em; 
   border: 1px solid var(--button-hover);
   border-radius: 1rem;
+  text-align: center;
 } .card h4 { margin: 1rem 0rem; }
 .card img {
   width: 100%; 
