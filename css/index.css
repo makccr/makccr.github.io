@@ -76,7 +76,7 @@ a { /* Social Links */
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,.3);
 } /* Video BG */
 
 header { /* Navigation */
@@ -96,7 +96,7 @@ header { /* Navigation */
 }
 li {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--fg-color);
   text-transform: uppercase;
   font-size: .9rem;
@@ -130,7 +130,7 @@ li {
   display: none;
   position: fixed;
   text-align: right;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,1.0);
   width: 100vw; 
   height: 100vh; 
   z-index: 10;

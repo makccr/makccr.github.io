@@ -173,6 +173,7 @@ footer nav {margin-bottom: 2rem;}
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 3rem 0rem;
 }
 .image-flex p {
   width: 50%;
