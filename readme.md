@@ -2,12 +2,9 @@
     <img src="https://makccr.github.io/images/github-header.svg" alt="MAKC lgoo" title="MAKC" align="right" height="50" />
 </a>
 
-# My Personal Site
+# makc.co
 This is the repository for my personal Website. This websites main goal is to serve as a hub, to link to all of my other social networks and on-line projects; to serve as a portfolio for my Motion Graphics and Graphic Design work; and finally to provide download links to content I've made over the years. 
 
-## YouTube Series 
-After years of working with [Adobe Muse](http://muse.adobe.com/), [Squarespace](https://www.squarespace.com/), and a number of other web design services; I decided to re-write my website myself, in an effort to learn some web design. I settled on using super basic web technologies to try and accomplish this: HTML, CSS, JavaScript and PHP. No frameworks, no Squarespace just really simple web design. 
+As far as the technical specifications here, there's noting super advanced or crazy; in fact, I'm not really a very good web designer at all, I just don't like Squarespace. I set a goal when designing my site to not use and frameworks or JavaScript libraries, or anything else. The only tools I've used to build this site are HTML, CSS, and a tiny bit of JavaScript for mobile menus. It's not great, and the actual code probably isn't efficient or whatever, but it does work. If you are super interested in how I built the site, I do actually have a descent collection of videos about the design process on my [YouTube channel](https://www.youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw).
 
-I've been documenting the entire process in an ongoing series on my [YouTube Channel](https://youtube.com/c/makccr). 
-
-[![Let's Code Series](https://img.youtube.com/vi/avjB5rQMm24/maxresdefault.jpg)](https://www.youtube.com/playlist?list=PLIYVhRocqRoT6yvieIyNehUz6VnB6hXhF)
+![](images/home.gif)
