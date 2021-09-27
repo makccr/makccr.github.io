@@ -274,6 +274,7 @@ body iframe {
   .image-flex p {
     width: 100%;
     margin: 0rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
   } .full-size-image { padding: .2rem; border-radius: .5rem; }
   .half-size-image { 
