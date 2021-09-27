@@ -275,7 +275,7 @@ body iframe {
     width: 100%;
     margin: 0rem;
     margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   } .full-size-image { padding: .2rem; border-radius: .5rem; }
   .half-size-image { 
     padding: .2rem; 
@@ -283,7 +283,7 @@ body iframe {
     width: 100%;
     margin: 2rem 0rem;
   } .third-size-image { padding: .2rem; border-radius: .5rem; width: 100%; }
-  .fourth-size-image { padding: .2rem; border-radius: .5rem; }
+  .fourth-size-image { padding: .2rem; border-radius: .5rem; width: 40%; }
   .fourth-size-video { 
     padding: .2rem; 
     border-radius: .5rem; 
@@ -302,4 +302,8 @@ body iframe {
   .codeBlock p {margin: 1rem 0rem}
   .card { width: 90%; }
   body iframe { height: 13rem;}
+  h1 {font-size: 2.5rem;}
+  h2 {font-size: 2rem;}
+  h3 {font-size: 2rem;}
+  h4 {font-size: 1.5rem;}
 }
