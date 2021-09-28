@@ -228,12 +228,63 @@ footer nav {margin-bottom: 2rem;}
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 } .card p {padding: .0em .75em;}
-body iframe {
-  border: none;
+
+.youtube-video-container-anamorphic {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  height: 40rem;
-  margin-bottom: 4rem;
+  margin: 3rem 0rem;
   border-radius: 1rem;
+}
+.youtube-video-container-anamorphic::after {
+  display: block;
+  content: "";
+  padding-top: 42.5%;
+}
+.youtube-video-container-anamorphic iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.youtube-video-container-16 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 3rem 0rem;
+  border-radius: 1rem;
+}
+.youtube-video-container-16::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+.youtube-video-container-16 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.youtube-video-container-2-1 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 3rem 0rem;
+  border-radius: 1rem;
+}
+.youtube-video-container-2-1::after {
+  display: block;
+  content: "";
+  padding-top: 50%;
+}
+.youtube-video-container-2-1 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-container {
