@@ -72,6 +72,10 @@ button {
     transition: all .3s;
     margin: 1rem 1rem;
 } button:hover {background-color: var(--button-hover);}
+button i, button i:hover{ 
+  background-color: inherit; 
+  transition: all .3s;
+}
 
 header { 
   padding: 1.5rem; 
