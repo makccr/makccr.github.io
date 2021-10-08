@@ -223,7 +223,7 @@ footer nav {margin-bottom: 2rem;}
   width: 17rem; 
   display: inline-block; 
   margin: 1em .5em; 
-  border: 1px solid var(--button-hover);
+  border: 1px solid var(--button-color);
   border-radius: 1rem;
   text-align: center;
 } .card h4 { margin: 1rem 0rem; }
