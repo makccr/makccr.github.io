@@ -68,7 +68,7 @@ button {
     background-color: var(--button-color);
     border: none;
     padding: 1rem 2rem;
-    border-radius: 5px;
+    border-radius: 3px; 
     transition: all .3s;
     margin: 1rem 1rem;
 } button:hover {background-color: var(--button-hover);}
@@ -159,7 +159,7 @@ footer nav a {
   padding: .5rem;
   transition: all .3s;
 } footer nav a:hover {color: var(--link-hover);}
-footer nav {margin-bottom: 2rem;}
+footer nav {margin-bottom: 1rem;}
 .social a:hover { opacity: 70%; }
 
 .portfolio {
@@ -224,13 +224,13 @@ footer nav {margin-bottom: 2rem;}
   display: inline-block; 
   margin: 1em .5em; 
   border: 1px solid var(--button-color);
-  border-radius: 1rem;
+  border-radius: .3rem;
   text-align: center;
 } .card h4 { margin: 1rem 0rem; }
 .card img {
   width: 100%; 
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
 } .card p {padding: .0em .75em;}
 
 .youtube-video-container-anamorphic {
@@ -238,7 +238,7 @@ footer nav {margin-bottom: 2rem;}
   overflow: hidden;
   width: 100%;
   margin: 3rem 0rem;
-  border-radius: 1rem;
+  border-radius: .3rem;
 }
 .youtube-video-container-anamorphic::after {
   display: block;
@@ -257,7 +257,7 @@ footer nav {margin-bottom: 2rem;}
   overflow: hidden;
   width: 100%;
   margin: 3rem 0rem;
-  border-radius: 1rem;
+  border-radius: .3rem;
 }
 .youtube-video-container-16::after {
   display: block;
@@ -276,7 +276,7 @@ footer nav {margin-bottom: 2rem;}
   overflow: hidden;
   width: 100%;
   margin: 3rem 0rem;
-  border-radius: 1rem;
+  border-radius: .3rem;
 }
 .youtube-video-container-2-1::after {
   display: block;
