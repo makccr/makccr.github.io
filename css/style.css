@@ -4,11 +4,11 @@
 :root { /* Base Settings */
   --fg-color: #f9f9f7;
   --fg2-color: #dbdbdb;
-  --link-color: #cca798;
-  --link-hover: #cc846c;
+  --link-color: #dc3232;
+  --link-hover: #dc3232;
   --bg-color: #000;
   --button-color: #111;
-  --button-hover: #222;
+  --button-hover: #cc241d;
 } /* Defining color scheme */
 
 * { /* Base Settings */
