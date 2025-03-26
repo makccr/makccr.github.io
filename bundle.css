@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
 img {
   display: block;
@@ -27,13 +28,19 @@ img {
  } /* Base Settings */
 h1,h2,h3,h4,h5,h6 {
     /*color: var(--fg-color);*/
-    font-family: 'IM Fell DW Pica', serif;
+    font-family: 'Italiana', sans-serif;
     font-weight: 400;
     padding-bottom: .5rem;
     padding-top: 2rem; 
 }
 body { 
   padding: 1rem 5rem;
+}
+p {
+    font-family: 'IM Fell DW Pica', serif;
+    font-weight: 400; 
+    font-size: 1.3em; 
+    padding: .5em;
 }
 /* Light Mode Settings ------------------------------------------------------ */
 @media (prefers-color-scheme: light) {
