@@ -1,0 +1,9 @@
+---
+layout: essays.html
+---
+{% for essays in collections.essays %}
+<a href="{{ essays.url }}"><h2>{{ essays.data.title }}</h2></a>
+<p>{{ essays.date }}</p>
+<p>{{ essays.data.teaser }}..</p>
+<a href="">Read More</a>
+{% endfor %}
