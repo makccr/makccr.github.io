@@ -36,12 +36,12 @@ h1,h2,h3,h4,h5,h6 {
 body { 
   padding: 1rem 5rem;
 }
-p {
+p,ol,ul {
     font-family: 'IM Fell DW Pica', serif;
     font-weight: 400; 
     font-size: 1.3em; 
     padding: .5em;
-}
+
 /* Light Mode Settings ------------------------------------------------------ */
 @media (prefers-color-scheme: light) {
   :root {
