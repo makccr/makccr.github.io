@@ -1,1 +1,56 @@
-.essays-top-img {width="100%"}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Inconsolata:wght@200..900&display=swap');
+
+img {
+  display: block;
+  max-width:100%;
+  max-height:100;
+  width: auto;
+  height: auto;
+}
+:root { /* Base Settings */
+  --fg-color: #f9f9f7;
+  --fg2-color: #dbdbdb;
+  --link-color: #dc3232;
+  --link-hover: #dc3232;
+  --bg-color: #000;
+  --button-color: #111;
+  --button-hover: #cc241d;
+} /* Defining color scheme */
+
+* { /* Base Settings */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*background: var(--bg-color);*/
+ } /* Base Settings */
+h1,h2,h3,h4,h5,h6 {
+    /*color: var(--fg-color);*/
+    font-family: 'IM Fell DW Pica', serif;
+    font-weight: 400;
+    padding-bottom: .5rem;
+    padding-top: 2rem; 
+}
+body { 
+  padding: 1rem 5rem;
+}
+/* Light Mode Settings ------------------------------------------------------ */
+@media (prefers-color-scheme: light) {
+  :root {
+    --fg-color: #444;
+    --fg2-color: #666;
+    --link-color: #8c695f;
+    --link-hover: #ba3d28;
+    --bg-color: #fff;
+    --button-color: #eee;
+    --button-hover: #ccc;
+  } .logo { background: url(/images/mBlack.svg); }
+} /* Flipping colors for light mode */
+
+/* Mobile Settings ---------------------------------------------------------- */
+@media only screen and (max-width: 850px) { /* Intermediate downscaling */
+} /* Intermediate downscaling cleanup */
+
+@media only screen and (max-width: 640px) { /* Main phone settings */
+}
