@@ -1,5 +1,6 @@
 ---
 title: The Best Value in the History of Literature
+day: Friday, March 14, 2025
 teaser: I can't remember exactly when or how I first came across "The Harvard Classics", but ever since that day I have been on a mission to get my hands on a set. The Classics, originally published as "Dr. Elliot's Five Foot Shelf of Books" is an absolutely massive, fifty-one volume collection of novels, poetry, history, philosophy, scientific writing, historical documents, and anything else that Dr. Elliot deemed necessary reading to establish a well-rounded liberal education. But the size of the collection isn't what's really special about it. Any fool could copy and paste some books into one Word Document and hit print.
 ---
 
