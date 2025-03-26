@@ -1,6 +1,6 @@
 ---
 title: Why You Should Watch “The Incredible Hulk” Before You See “Avengers Endgame”
-teaser: I just got back from Avengers Endgame, and it was pretty incredible. It took advantage of its three hour run time in a way I never expected, and formed itself into a quiet contemplation of the MCU’s past events. But, what surprised me about the film more than anything else, was the way that no single character felt short shrifted in the film. Of course the biggest complaint that I heard about the penultimate film, “Avengers Infinity War”, was how the film moved quickly and glossed over important character moments. But somehow, in a film with perhaps more characters in the script than any other film in history, this was not the case with “Avengers Endgame”.
+teaser: A look at how Avengers Endgame goes out of it's way to add to storylines that no one in their right mind would have expected it to touch.
 ---
 
 <img src="img/2019-04-30-A.jpg" alt="Screenshot from The Incredible Hulk">

@@ -1,6 +1,6 @@
 ---
 title: Vim, The Best Markdown Editor
-teaser: Before I start writing any opinions here, I’d like to take a second to talk about why I think I’m qualified to say what the best markdown editor is; and what my criteria in choosing a markdown editor looks like. There is no shortage of blogs and articles out there that seek to answer this very question, so I wouldn’t expect anyone to just be taking my word for it, without knowing if my word has any value to you, or the way that you want to work.
+teaser: My pitch for all writers to ditch Microsoft Word and learn to write on the command line.
 ---
 
 <img src="img/2019-12-05-A.jpg" alt="Some dude writing nonsense">

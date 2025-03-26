@@ -1,7 +1,6 @@
 ---
-title: Why The Prisoner of Azkaban is the Worst Movie
-date: 
-teaser: If you have read any reviews for the Harry Potter films online, you probably know that Harry Potter and the Prisoner of Azkaban, is widely considered to be the best of the films. The praise for this movie off the charts. It has 91% on Rotten Tomatoes (a score beaten only by The Deathly Hallows Pt.2, at 94%), Roger Ebert gave it 3.5/4 starts, the film has high reviews on basically every movie rating platform out there, MetaCritic, IMDb, ext. If you google the movie, the top voted tags, are “magical”, “must watch”, “clever”, and “intense”; one of my favorite YouTuber’s, the Nerd Writer even made a video about why he believes The Prisoner of Azkaban to be the best movie.
+title: Why "The Prisoner of Azkaban" is the Worst Movie
+teaser: It's actually the best movie, I'm not insane. It's just kind of annoying that this is the best one.
 ---
 
 <img src="img/2018-10-19.jpg" alt="Screenshot from Harry Potter and the Half Blood Prince" class="essay-top-img">
