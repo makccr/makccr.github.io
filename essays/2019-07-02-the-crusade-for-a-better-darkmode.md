@@ -1,9 +1,9 @@
 ---
 title: The Crusade for a Better Dark Mode
+image: img/2019-07-02.jpg
 teaser: A simple guide to implementing theme switching in CSS that follows a system-wide theme.
 ---
 
-<img src="img/2019-07-02.jpg" alt="Some nerd typing">
 
 I couldn’t exactly tell you why, but I care a great deal about the progress of dark modes on modern software platforms. But I kind of always have hated the way that this feature is baked into software and websites. Almost always, you open a new app, or website; and at some point you realize you’d like to go into dark mode; so you fish around in the settings and menus looking for a button to do just that for you; or maybe you even get desperate and just Google the answer — the point is it’s a frustrating process. Every app, every web site, ever OS has a manual button that you, the user, have to go and track down. Of course that’s just the process for enabling the dark mode, turning it back off it equally annoying.
 

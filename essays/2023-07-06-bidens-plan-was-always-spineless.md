@@ -1,10 +1,8 @@
 ---
 title: Biden's Plan Was Always Spineless
+image: img/2023-07-06-A.jpg
 teaser: Some thoughts on Biden's plan to forgive student loan debt.
 --- 
-
-<img src="img/2023-07-06-A.jpg" alt="Joe Biden pretending he understands what is being said"> 
-
 ## A Position on Student Loans I Didn't Think I'd Ever Have
 
 A few days ago The Supreme Court ruled against a plan Joe Biden had to forgive a few billion dollars worth of federally held student loans via executive order. A few years ago I think I might have done what several people are doing now: been outraged at the Supreme Court's decision here; but I'm not the same me I was a few years ago.
