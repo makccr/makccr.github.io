@@ -35,10 +35,16 @@ img {
 
 * { /* Base Settings */
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0em;
+  padding: 0em;
   background: var(--bg-color);
  } /* Base Settings */
+ body, html {height: 100%}
+
+.hero {
+    opacity: 100%
+}
+
 h1,h2,h3,h4,h5,h6 {
     color: var(--fg-color);
     font-family: 'Lexend Deca', sans-serif;
@@ -47,14 +53,12 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 2rem; 
     color: var(--fg-color);
 } h1,h2,h3 { text-align: center;}
-body { 
-  padding: 1rem 5rem;
-}
 p,ol,ul {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300; 
     font-size: 1.3em; 
     padding: 1em;
+    text-align: justify;
     margin-left: 8em; 
     margin-right: 8em; 
     color: var(--fg2-color);
@@ -117,6 +121,7 @@ footer p {
     padding: .3em; 
     font-family: 'Inconsolata', sans-serif;
     font-size: 1.1em; 
+    text-align: center; 
 }
 
 footer div {
