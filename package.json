@@ -20,7 +20,10 @@
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-img": "^6.0.1"
+    "@11ty/eleventy-cache-assets": "^2.3.0",
+    "@11ty/eleventy-img": "^6.0.1",
+    "airtable": "^0.12.2",
+    "dotenv": "^16.4.7"
   },
   "devDependencies": {
     "luxon": "^3.6.0"

@@ -2,7 +2,7 @@
 layout: essays.html
 ---
 {% for essays in collections.essays reversed %}
-<a href="{{ essays.url }}"><h2>{{ essays.data.title }}</h2></a>
-<p class="date">{{ essays.date | postDate }}</p>
-<p>{{ essays.data.teaser }}..</p>
+<a href="{{ essays.url }}"><h2 class="essays">{{ essays.data.title }}</h2></a>
+<div class="essays">{{ essays.data.teaser }}..</div>
+<p class="essays">{{ essays.date | postDate }}</p>
 {% endfor %}
