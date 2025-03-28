@@ -1,7 +1,9 @@
 ---
 title: Why "The Prisoner of Azkaban" is the Worst Movie
+layout: essay.html
 image: img/2018-10-19.jpg
 date: 2018-10-19
+wc: 9
 teaser: It's actually the best movie, I'm not insane. It's just kind of annoying that this is the best one.
 ---
 

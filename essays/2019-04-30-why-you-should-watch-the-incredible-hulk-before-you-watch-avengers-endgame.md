@@ -1,7 +1,9 @@
 ---
 title: Watch “The Incredible Hulk” Before “Avengers Endgame”
+layout: essay.html
 image: img/2019-04-30-A.jpg
 date: 2019-04-30
+wc: 9
 teaser: A look at how Avengers Endgame goes out of it's way to add to storylines that no one in their right mind would have expected it to touch.
 ---
 

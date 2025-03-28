@@ -3,6 +3,7 @@ layout: essay.html
 title: The Best Bargain in the History of Literature
 image: img/2025-03-15.jpg
 date: 2025-03-15
+wc: 7
 teaser: My case for why The Harvard Classics are, at least currently, the best bargain available in the world of literature.
 ---
 

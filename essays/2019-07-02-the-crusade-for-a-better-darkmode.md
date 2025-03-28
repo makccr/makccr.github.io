@@ -1,7 +1,9 @@
 ---
 title: The Crusade for a Better Dark Mode
+layout: essay.html
 image: img/2019-07-02.jpg
 date: 2019-07-02
+wc: 6
 teaser: A simple guide to implementing theme switching in CSS that follows a system-wide theme.
 ---
 
@@ -70,4 +72,6 @@ html, body {
 
 I actually made a video talking about this same thing which you can watch here if your’e interested. But the point is, for now at least, I think this is a really great solution for a modern, simple, clean dark mode experience for web users.
 
-<iframe width="1192" height="670" src="https://www.youtube.com/embed/oRuOwozgTiw" title="CSS Dark Mode: All CSS, No JavaScript, Works with MacOS &amp; iOS Dark Mode" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+---
+
+*P.S.*: I made a [YouTube Video](https://youtu.be/oRuOwozgTiw) covering this same process if that's more your speed.

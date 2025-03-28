@@ -8,7 +8,7 @@ title: Essays
         {% for essays in collections.essays reversed %}
     <div class=card>
         <img src="/essays/{{ essays.data.image }}" alt="hero image"> 
-        <p class="essays">{{ essays.data.date | postDate }}</p>
+        <p class="essays">{{ essays.data.date | postDate }} • {{ essays.data.wc }} min</p>
         <h2 class="essays">{{ essays.data.title }}</h2>
         <a href="{{ essays.url }}"><button>Read Now</button></a>
     </div>
