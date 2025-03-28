@@ -58,9 +58,9 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--fg-color);
 } h1,h2,h3 { text-align: center;}
 p,ol,ul {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Open Sans', serif;
     font-weight: 400; 
-    font-size: 1.3em; 
+    font-size: 1.1em; 
     padding: 1em;
     text-align: justify;
     margin-left: 8em; 
@@ -191,6 +191,22 @@ footer div {
 button i, button i:hover{ 
   background-color: inherit; 
   transition: all .3s;
+}
+
+code {
+    color: var(--fg-color);
+    font-family: 'Inconsolata', monospace; 
+    font-size: .8em; 
+    background-color: var(--button-color);
+    padding: .2em; 
+    border-radius: .3em;
+    border: 1px solid var(--mid-accent);
+}
+
+.language-css {
+    font-size: 1.1em;
+    display: block;
+    margin: 1em 10.5em;
 }
 
 /* Light Mode Settings ------------------------------------------------------ */
