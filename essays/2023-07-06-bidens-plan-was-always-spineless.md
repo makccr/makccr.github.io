@@ -1,6 +1,7 @@
 ---
 title: Biden's Plan Was Always Spineless
 image: img/2023-07-06-A.jpg
+date: 2023-07-06
 teaser: Some thoughts on Biden's plan to forgive student loan debt.
 --- 
 ## A Position on Student Loans I Didn't Think I'd Ever Have

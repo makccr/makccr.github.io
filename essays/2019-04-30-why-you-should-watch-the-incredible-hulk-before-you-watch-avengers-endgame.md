@@ -1,6 +1,7 @@
 ---
-title: Why You Should Watch “The Incredible Hulk” Before You See “Avengers Endgame”
+title: Watch “The Incredible Hulk” Before “Avengers Endgame”
 image: img/2019-04-30-A.jpg
+date: 2019-04-30
 teaser: A look at how Avengers Endgame goes out of it's way to add to storylines that no one in their right mind would have expected it to touch.
 ---
 

@@ -4,16 +4,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-img {
-  display: block;
-  max-width:100%;
-  max-height:100;
-  width: auto;
-  height: auto;
+.hero {
+  width: 100%;
+  max-height: 40em;
+  object-fit: cover;
   margin-top: 3em; 
   margin-bottom: 3em; 
 }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto; 
+    height: auto;
+}
+
 
 .logo {
     display: inline-block; 
@@ -41,13 +48,10 @@ img {
  } /* Base Settings */
  body, html {height: 100%}
 
-.hero {
-    opacity: 100%
-}
 
 h1,h2,h3,h4,h5,h6 {
     color: var(--fg-color);
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     padding-bottom: .5rem;
     padding-top: 2rem; 
@@ -55,7 +59,7 @@ h1,h2,h3,h4,h5,h6 {
 } h1,h2,h3 { text-align: center;}
 p,ol,ul {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 300; 
+    font-weight: 400; 
     font-size: 1.3em; 
     padding: 1em;
     text-align: justify;
@@ -135,6 +139,58 @@ footer div {
 
 .footer {
     font-size: .8em;
+}
+
+.cardContainer { 
+  text-align: center; 
+  display: inline-block;
+  margin: 1rem;
+} 
+.card {
+  width: 25rem; 
+  min-height: 28em;
+  display: inline-block; 
+  margin: 1em; 
+  padding: 0em;
+  border: 1px solid var(--mid-accent);
+  border-radius: .3rem;
+  text-align: center;
+} .card h2 { 
+    padding: 1rem; 
+}
+.card img {
+  width: 100%; 
+  max-height: 12em;
+  min-height: 12em;
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+  object-fit: cover;
+  padding: 0em; 
+  margin: 0em;
+} 
+
+.card p {
+    margin-top: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.card button {
+    color: var(--fg2-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--button-color);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 3px; 
+    transition: all .3s;
+    margin: 1rem 1rem;
+} button:hover {background-color: var(--button-hover);}
+button i, button i:hover{ 
+  background-color: inherit; 
+  transition: all .3s;
 }
 
 /* Light Mode Settings ------------------------------------------------------ */

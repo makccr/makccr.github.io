@@ -1,6 +1,7 @@
 ---
 title: Vim, The Best Markdown Editor
 image: img/2019-12-05-A.jpg
+date: 2019-12-05
 teaser: My pitch for all writers to ditch Microsoft Word and learn to write on the command line.
 ---
 
