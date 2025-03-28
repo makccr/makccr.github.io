@@ -5,7 +5,7 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
     eleventyConfig.addPassthroughCopy("bundle.css");
     eleventyConfig.addFilter("postDate", dateObj => {
-  return DateTime.fromJSDate(dateObj).toFormat("LLLL yyyy")
+  return DateTime.fromJSDate(dateObj).toFormat("d 'of' LLLL yyyy")
 })
 };
 
