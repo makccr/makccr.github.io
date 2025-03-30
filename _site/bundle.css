@@ -8,10 +8,9 @@
 
 .hero {
   width: 100%;
-  max-height: 40em;
+  max-height: 50em;
   object-fit: cover;
-  margin-top: 3em; 
-  margin-bottom: 3em; 
+  margin-bottom: 3em;
 }
 
 img {
@@ -22,19 +21,12 @@ img {
 }
 
 
-.logo {
-    display: inline-block; 
-    max-width: 3em; 
-    max-height: 3em;
-    width: auto; 
-    height: auto;
-}
 :root { /* Base Settings */
   --fg-color: #fff;
   --fg2-color: #D1D5DB;
   --link-color: #dc3232;
   --link-hover: #dc3232;
-  --mid-accent: #333;
+  --mid-accent: #191919;
   --bg-color: #09090B;
   --button-color: #111;
   --button-hover: #cc241d;
@@ -57,6 +49,7 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 2rem; 
     color: var(--fg-color);
 } h1,h2,h3 { text-align: center;}
+h1 {margin-top: 3em;}
 p,ol,ul {
     font-family: 'Open Sans', serif;
     font-weight: 400; 
@@ -114,8 +107,39 @@ a:hover {
     transition: .3s;
 }
 
+header {
+    border-bottom: .1em solid var(--mid-accent);
+    padding: .7em 3em; 
+}
+
+header a {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  padding: 0em .1em;
+}
+
+header a:link {
+    text-decoration: none;
+} header a:hover { color: var(--link-hover); }
+
+
+header p {
+    display: inline-block;
+    margin: 0em 1.5em; 
+    padding: 0em;
+}
+
+.logo {
+    display: inline-block; 
+    max-width: 2.5em; 
+    max-height: 2.5em;
+    width: auto; 
+    height: auto;
+} 
+
 footer{
-      border-top: .1em solid var(--mid-accent);
+    border-top: .1em solid var(--mid-accent);
     padding: 4em; 
     margin-top: 4em; 
     text-align: center; 
@@ -133,12 +157,17 @@ footer div {
     padding-bottom: 1em;
 }
 
+footer a:hover { color: var(--link-hover);}
+
 .fa-brands {
     padding: .3em;
 }
 
 .footer {
     font-size: .8em;
+}
+
+.essayContainer {
 }
 
 .cardContainer { 
@@ -209,17 +238,22 @@ code {
     margin: 1em 10.5em;
 }
 
+blockquote {
+    font-size: 1.5rem;
+}
+
 /* Light Mode Settings ------------------------------------------------------ */
 @media (prefers-color-scheme: light) {
   :root {
     --fg-color: #444;
     --fg2-color: #666;
     --link-color: #8c695f;
-    --link-hover: #ba3d28;
+    --link-hover: #dc3232;
     --bg-color: #fff;
     --button-color: #eee;
     --button-hover: #ccc;
-  } .logo { background: url(/images/mBlack.svg); }
+  --mid-accent: #eee;
+  }
 } /* Flipping colors for light mode */
 
 /* Mobile Settings ---------------------------------------------------------- */
