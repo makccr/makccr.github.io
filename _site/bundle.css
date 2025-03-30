@@ -157,7 +157,13 @@ footer div {
     padding-bottom: 1em;
 }
 
+footer a { text-transform: uppercase; }
+footer a:link { text-decoration: none;}
 footer a:hover { color: var(--link-hover);}
+
+footer .links {
+    margin-bottom: 2em;
+} footer .links a { padding: 0em  .75em; }
 
 .fa-brands {
     padding: .3em;
@@ -230,17 +236,12 @@ code {
     padding: .2em; 
     border-radius: .3em;
     border: 1px solid var(--mid-accent);
-}
-
-.language-css {
     font-size: 1.1em;
     display: block;
     margin: 1em 10.5em;
 }
 
-blockquote {
-    font-size: 1.5rem;
-}
+blockquote { font-size: 1.5rem; }
 
 /* Light Mode Settings ------------------------------------------------------ */
 @media (prefers-color-scheme: light) {
