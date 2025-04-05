@@ -59,7 +59,7 @@ p,ol,ul {
     margin-left: 8em; 
     margin-right: 8em; 
     color: var(--fg2-color);
-} p { line-height: 140%; }
+} p,li { line-height: 140%; }
 
 li {margin-left: 3em;}
 
