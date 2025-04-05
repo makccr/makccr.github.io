@@ -70,10 +70,7 @@ a:link, a:visited, a:active {
 }
 
 hr {
-    margin-top: 5em; 
-    margin-bottom: 5em;
-    margin-left: 25em; 
-    margin-right: 25em;
+    margin: 5em 25em;
     color: var(--mid-accent);
 }
 .essays {
@@ -273,4 +270,52 @@ blockquote { font-size: 1.5rem; }
 } /* Intermediate downscaling cleanup */
 
 @media only screen and (max-width: 640px) { /* Main phone settings */
+header {
+    text-align: center; 
+}
+.logo {
+    display: block;
+    text-align: center;
+    margin-left:auto; 
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+header a {
+    display: block;
+    padding: 0em;
+    margin: 0em;
+    text-align: center; 
+    font-size: 1.5em;
+}
+p,ol,ul {
+    margin-left: 1em; 
+    margin-right: 1em;
+}
+
+footer {
+    padding: 1em;
+} 
+footer .links a {
+    display: block;
+    font-size: 1.3em;
+}
+.cardContainer {
+    display: block;
+}
+.card {
+    width: 90%;
+}
+blockquote { 
+    font-size: 1.1em; 
+    margin-bottom: 0em;
+}
+hr {
+    margin: 5em; 
+}
+.caption {
+    display: block; 
+    max-width: 90%;
+    margin-left: auto; 
+    margin-right: auto;
+}
 }

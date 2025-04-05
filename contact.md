@@ -12,6 +12,7 @@ title: Contact
 ### Some Notes
 There are some types of question andior comments that would be better directed to other areas. For example, if you're having an issue with my [dot files](https://github.com/makccr/dot) or one of [my projects](https://github.com/makccr) hosted on [GitHub](https://github.com), it would be better in almost every case to simply [create an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue) on the respective GitHub page; if for no other reason, than the fact that other users will then be able to see whatever issue you were having and perhaps troubleshoot their own issues faster. Likewise if you have a comment about a video I've made, those comments would be best left on [YouTube](https://www.youtube.com/@makc) or [Odysee](https://odysee.com/@makc:a) where you saw the video. 
 
+### Bug Reports
 If you are attempting to submit a bug report for this website, first of all, thanks for helping out. Second, the best way to do this would be to [create an issue](https://github.com/makccr/makccr.github.io/issues/new) on this websites repository. If you are unable or unwilling to do so however, feel free to just [send an e-mail](mailto:m@makc.co?subject=bugReport) with "Bug Report" in the subject line (clicking the proceeding link will take care of this for you).
 
 ### Social Media Use
