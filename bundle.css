@@ -59,7 +59,7 @@ p,ol,ul {
     margin-left: 8em; 
     margin-right: 8em; 
     color: var(--fg2-color);
-}
+} p { line-height: 140%; }
 
 li {margin-left: 3em;}
 
@@ -242,6 +242,17 @@ code {
 }
 
 blockquote { font-size: 1.5rem; }
+
+.caption {
+    text-align: center;
+    font-size: .9em;
+    margin-top: 0em; 
+    padding-top: 0em;
+    display: block; 
+    max-width: 30em;
+    margin-left: auto; 
+    margin-right: auto;
+}
 
 /* Light Mode Settings ------------------------------------------------------ */
 @media (prefers-color-scheme: light) {
