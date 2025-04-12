@@ -172,6 +172,7 @@ footer .links {
 
 .cardContainer { 
   text-align: center; 
+  vertical-align: center; 
   display: inline-block;
   margin: 1em;
 } 
@@ -215,7 +216,7 @@ footer .links {
     padding: 1rem 2rem;
     border-radius: 3px; 
     transition: all .3s;
-    margin: 1rem 1rem;
+    margin: 1rem .2rem;
     margin-bottom: 2em;
 } button:hover {background-color: var(--button-hover);}
 button i, button i:hover{ 
