@@ -3,16 +3,15 @@ layout: main.html
 title: Essays
 ---
 <h1>{{ title }}</h1>
-<div class="essayCard">
 <div class=cardContainer>
         {% for essays in collections.essays reversed %}
     <div class=card>
         <img src="/essays/{{ essays.data.image }}" alt="hero image"> 
+        <p></p>
         <p class="essays">{{ essays.data.date | postDate }}</p>
         <h2 class="essays">{{ essays.data.title }}</h2>
         <a href="{{ essays.url }}"><button>Read Now</button></a>
     </div>
         {% endfor %}
-</div>
 </div>
 
