@@ -20,6 +20,13 @@ img {
     height: auto;
 }
 
+img.50 {
+    max-width: 10%;
+    max-height: 10%;
+    width: auto; 
+    height: auto;
+}
+
 
 :root { /* Base Settings */
   --fg-color: #fff;
@@ -267,6 +274,10 @@ blockquote { font-size: 1.5rem; }
     max-width: 30em;
     margin-left: auto; 
     margin-right: auto;
+}
+
+#port-contact {
+    text-align: center; 
 }
 
 /* Light Mode Settings ------------------------------------------------------ */
