@@ -44,3 +44,18 @@ image: img/IMAGE
 date: Y-M-D
 ---
 ```
+
+##### YouTube Embed 
+```css
+<div class="youtube">
+    <div class="youtube-video-container-16">
+        <iframe width="560" height="315"
+            src="LINK"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture
+-in-picture"
+            allowfullscreen >
+        </iframe>
+    </div>
+</div>
+```
