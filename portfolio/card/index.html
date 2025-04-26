@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>MAKC.CO - Portfolio</title>
+<title>MAKC.CO - Responsive Card</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1 /modern-normalize.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/bundle.css">
@@ -26,50 +26,25 @@
             </p>
     </header>
     <main>
-        
-<style>
-main {text-align: center;}
-</style> 
+        <style> 
+main {
+    text-align: center;
+}
+</style>
 
-<h1>Portfolio</h1>
-<div class="cardContainer">
-        
-    <div class="portfolio-card">
-        <a href="/portfolio/card/">
-            <picture><source type="image/webp" srcset="/.11ty/image/?src=portfolio%2Fimg%2Fcards.png&width=672&format=webp&via=transform 672w"><img src="/.11ty/image/?src=portfolio%2Fimg%2Fcards.png&width=672&format=jpeg&via=transform" alt="hero image" width="672" height="672"></picture> 
-        </a>
-    </div>
-        
-    <div class="portfolio-card">
-        <a href="/portfolio/bit/">
-            <picture><source type="image/webp" srcset="/.11ty/image/?src=portfolio%2Fimg%2F8bit.jpg&width=1400&format=webp&via=transform 1400w"><img src="/.11ty/image/?src=portfolio%2Fimg%2F8bit.jpg&width=1400&format=jpeg&via=transform" alt="hero image" width="1400" height="840"></picture> 
-        </a>
-    </div>
-        
-    <div class="portfolio-card">
-        <a href="/portfolio/205-1/">
-            <picture><source type="image/webp" srcset="/.11ty/image/?src=portfolio%2Fimg%2F205.1-B.jpg&width=1378&format=webp&via=transform 1378w"><img src="/.11ty/image/?src=portfolio%2Fimg%2F205.1-B.jpg&width=1378&format=jpeg&via=transform" alt="hero image" width="1378" height="684"></picture> 
-        </a>
-    </div>
-        
-    <div class="portfolio-card">
-        <a href="/portfolio/cinegenie/">
-            <picture><source type="image/webp" srcset="/.11ty/image/?src=portfolio%2Fimg%2Fcinegenie-C.jpg&width=4096&format=webp&via=transform 4096w"><img src="/.11ty/image/?src=portfolio%2Fimg%2Fcinegenie-C.jpg&width=4096&format=jpeg&via=transform" alt="hero image" width="4096" height="2304"></picture> 
-        </a>
-    </div>
-        
-    <div class="portfolio-card">
-        <a href="/portfolio/205/">
-            <picture><source type="image/webp" srcset="/.11ty/image/?src=portfolio%2Fimg%2F205.jpg&width=1400&format=webp&via=transform 1400w"><img src="/.11ty/image/?src=portfolio%2Fimg%2F205.jpg&width=1400&format=jpeg&via=transform" alt="hero image" width="1400" height="1400"></picture> 
-        </a>
-    </div>
-        
-    <div class="portfolio-card">
-        <a href="/portfolio/cinematic/">
-            <picture><source type="image/webp" srcset="/.11ty/image/?src=portfolio%2Fimg%2Fcinematic.jpg&width=1200&format=webp&via=transform 1200w"><img src="/.11ty/image/?src=portfolio%2Fimg%2Fcinematic.jpg&width=1200&format=jpeg&via=transform" alt="hero image" width="1200" height="675"></picture> 
-        </a>
-    </div>
-        
+<picture><source type="image/webp" srcset="/.11ty/image/?src=portfolio%2Fimg%2Fcards.png&width=672&format=webp&via=transform 672w"><img class="hero" src="/.11ty/image/?src=portfolio%2Fimg%2Fcards.png&width=672&format=jpeg&via=transform" alt="" width="672" height="672"></picture>
+<h1>Responsive Card</h1>
+<h2>Using CSS &amp; HTML Only</h2>
+<p>While designing a re-release of my personal website, I ended up with the challenge of designing a responsive CSS card. The goal was to make the simplest, light-weight design possible that still looked really clean and modern.</p>
+<picture><source type="image/webp" srcset="/.11ty/image/?src=portfolio%2Fimg%2Fcards-B.jpg&width=1200&format=webp&via=transform 1200w"><img class="third" src="/.11ty/image/?src=portfolio%2Fimg%2Fcards-B.jpg&width=1200&format=jpeg&via=transform" alt="design" width="1200" height="748"></picture>
+<picture><source type="image/webp" srcset="/.11ty/image/?src=portfolio%2Fimg%2Fcards-A.png&width=1200&format=webp&via=transform 1200w"><img class="third" src="/.11ty/image/?src=portfolio%2Fimg%2Fcards-A.png&width=1200&format=jpeg&via=transform" alt="design" width="1200" height="675"></picture>
+<picture><source type="image/webp" srcset="/.11ty/image/?src=portfolio%2Fimg%2Fcards-C.jpg&width=1200&format=webp&via=transform 1200w"><img class="third" src="/.11ty/image/?src=portfolio%2Fimg%2Fcards-C.jpg&width=1200&format=jpeg&via=transform" alt="design" width="1200" height="752"></picture>
+<p>Along with the goal of making these cards look really great on mobile or desktop versions of my site, at any resolution; I set out to design a card that will look great with a light-mode or a dark mode on my website. The cards are using media queries to support theme switching with the system theme on MacOS and the upcoming iOS 13, and will automatically and seamlessly switch between light and dark mode without the end user ever having to push a button, or even notice what is going on.</p>
+
+<hr>
+<div id="port-contact">
+    <button>Contact &nbsp;<i class="fa-solid fa-inbox"></i></button> 
+    <p class="caption">Like what you see? I can do the same for you.</p>
 </div>
 
     </main>
