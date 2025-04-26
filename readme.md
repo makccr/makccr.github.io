@@ -22,3 +22,25 @@ These days the site is a lot more boring, but also a whole lot lower maintenance
 `npm install @11ty/eleventy`
 `npm i @11ty/eleventy-img`
 `npm install luxon --save-dev`
+
+##### Portfolio Head
+```liquid
+---
+layout: portfolio.html
+title: TITLE
+image: img/IMAGE
+date: YEAR-01-01
+tags:
+  - TYPE
+---
+```
+
+##### Essays Head
+```liquid
+---
+title: TITLE
+layout: essay.html
+image: img/IMAGE
+date: Y-M-D
+---
+```
