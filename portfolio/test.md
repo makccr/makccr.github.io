@@ -7,15 +7,14 @@ date: 2018-10-19
 
 Some test type stuff 
 
-<img class='50' src="img/205-A.jpg" alt="a graph i made">
-<img class='50' src="img/205-A.jpg" alt="a graph i made">
-<hr><hr>
-<img class='30' src="img/205-A.jpg" alt="a graph i made">
-<img class='30' src="img/205-A.jpg" alt="a graph i made">
-<img class='30' src="img/205-A.jpg" alt="a graph i made">
-<hr><hr>
-<img class='25' src="img/205-A.jpg" alt="a graph i made">
-<img class='25' src="img/205-A.jpg" alt="a graph i made">
-<img class='25' src="img/205-A.jpg" alt="a graph i made">
-<img class='25' src="img/205-A.jpg" alt="a graph i made">
-<hr><hr>
+<img class="half" src="img/205-B.jpg" alt="a graph i made">
+<img class="half" src="img/205-B.jpg" alt="a graph i made">
+<hr></hr>
+<img class="third" src="img/205-B.jpg" alt="a graph i made">
+<img class="third" src="img/205-B.jpg" alt="a graph i made">
+<img class="third" src="img/205-B.jpg" alt="a graph i made">
+<hr></hr>
+<img class="quarter" src="img/205-B.jpg" alt="a graph i made">
+<img class="quarter" src="img/205-B.jpg" alt="a graph i made">
+<img class="quarter" src="img/205-B.jpg" alt="a graph i made">
+<img class="quarter" src="img/205-B.jpg" alt="a graph i made">

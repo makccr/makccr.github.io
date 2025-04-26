@@ -20,11 +20,31 @@ img {
     height: auto;
 }
 
-img.50 {
-    max-width: 10%;
-    max-height: 10%;
+.half {
+    max-width: 45%;
+    max-height: 45%;
+    padding: 1em;
     width: auto; 
     height: auto;
+    border-radius: 1.5em;
+}
+
+.third {
+    max-width: 30%;
+    max-height: 30%;
+    padding: 1em;
+    width: auto; 
+    height: auto;
+    border-radius: 1.5em;
+}
+
+.quarter {
+    max-width: 22%;
+    max-height: 22%;
+    padding: 1em;
+    width: auto; 
+    height: auto;
+    border-radius: 1.5em;
 }
 
 
@@ -350,4 +370,11 @@ hr {
 code {
     margin: 1em;
 }
+
+.half,.quarter,.third {
+    max-height: 95%;
+    max-width: 95%;
+}
+
+
 }
