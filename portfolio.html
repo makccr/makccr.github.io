@@ -1,0 +1,14 @@
+---
+layout: main.html
+title: Portfolio
+---
+<h1>{{ title }}</h1>
+<div class=cardContainer>
+        {% for portfolio in collections.portfolio reversed %}
+    <div class=card>
+        <a href="{{ portfolio.url }}">
+            <img src="/portfolio/{{ portfolio.data.image }}" alt="hero image"> 
+        </a>
+    </div>
+        {% endfor %}
+</div>
