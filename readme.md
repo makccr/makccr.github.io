@@ -14,14 +14,27 @@ These days the site is a lot more boring, but also a whole lot lower maintenance
 [![Preview on All Devices](images/all-device-preview.jpg)](https://studio.morflax.com/things/)
 
 ### Just for my use: 
-`npx @11ty/eleventy`
-`npx @11ty/eleventy --serve`
-
-`git checkout eleventy`
-
-`npm install @11ty/eleventy`
-`npm i @11ty/eleventy-img`
-`npm install luxon --save-dev`
+```
+npx @11ty/eleventy
+```
+```
+npx @11ty/eleventy --serve
+```
+```
+git checkout eleventy
+```
+```
+npm install @11ty/eleventy
+```
+```
+npm i @11ty/eleventy-img
+```
+```
+npm install luxon --save-dev
+```
+```
+git subtree push --prefix _site origin gh-pages
+```
 
 ##### Portfolio Head
 ```liquid
