@@ -4,7 +4,8 @@
   "description": "<a href=\"https://makc.co\">     <img src=\"https://makccr.github.io/images/github-header.svg\" alt=\"MAKC lgoo\" title=\"MAKC\" align=\"right\" height=\"50\" /> </a>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "deploy": "npm run build && gh-pages -d _site"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "moment": "^2.30.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "luxon": "^3.6.1"
   },
   "scripts": {
