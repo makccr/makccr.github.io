@@ -1,7 +1,3 @@
-<a href="https://makc.co">
-    <img src="https://makccr.github.io/images/github-header.svg" alt="MAKC lgoo" title="MAKC" align="right" height="50" />
-</a>
-
 # [makc.co](https://makc.co)
 This is the repository for my website. The main goal of the website, is to be a website (duh) - that is to serve as a hub that links to the various projects I've worked on that are available for access online, and a hosting platform to download some of the projects that I have made available for download. 
 
