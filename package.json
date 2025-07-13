@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "luxon": "^3.6.1"
-  }
+  },
   "scripts": {
   "build": "eleventy",
   "deploy": "npm run build && gh-pages -d _site"
