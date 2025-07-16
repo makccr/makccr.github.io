@@ -1,5 +1,5 @@
 ---
-title: How Benjamin Franklin Cured My Habit Tracker Obsession
+title: The Art of Virtue - Ben Franklin's Habit Tracker
 layout: essay.html
 image: img/2025-07-14.jpg
 date: 2025-07-14

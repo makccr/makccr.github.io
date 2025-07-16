@@ -2,7 +2,19 @@
 layout: main.html
 title: Essays
 ---
+<style>
+h6 {
+    font-size: 1em;
+    display: block;
+    width: 50%;
+    margin: auto;
+    font-family: 'Inconsolata', sans-serif;
+    color: var(--fg2-color);
+}
+</style>
+
 <h1>{{ title }}</h1>
+<h6>A collection of personal essays on film, technology, philosophy, and art—charting the edges where culture, creativity, and critical thought meet.</h6>
 <div class=cardContainer>
         {% for essays in collections.essays reversed %}
     <div class=card>
