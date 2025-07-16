@@ -17,7 +17,7 @@ npx @11ty/eleventy
 npx @11ty/eleventy --serve
 ```
 ```
-git checkout eleventy
+npm run deploy
 ```
 ```
 npm install @11ty/eleventy
@@ -27,21 +27,6 @@ npm i @11ty/eleventy-img
 ```
 ```
 npm install luxon --save-dev
-```
-```
-git subtree push --prefix _site origin gh-pages
-```
-
-##### Portfolio Head
-```liquid
----
-layout: portfolio.html
-title: TITLE
-image: img/IMAGE
-date: YEAR-01-01
-tags:
-  - TYPE
----
 ```
 
 ##### Essays Head
