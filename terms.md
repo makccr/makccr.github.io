@@ -25,7 +25,7 @@ So what have I done to make the site more accessible? The main focus is making s
 ---
 
 # Privacy Policy
-### as of April 5, 2025
+### as of the 17th of July 2025
 ## Collection and Use of Personal Information
 I do not collect any personal information from the users of this website. I do take this quite seriously, as I really hate browsing the modern web. Nearly every modern website is absolutely loaded with a novel's worth of JavaScript running in the background that is collecting your information and/or feeding you ads. I do not participate in the data collection norm that we have come to expect from the modern web. I do not have any ads on my website, because I don't want third parties collecting data on users. I don't collect any kind of cookies, because I don't know how to. If you require evidence of this, my website is 100% open-source, and the entirety of the source code can be viewed on my site's [GitHub repository](https://github.com/makccr/makccr.github.io).
 
@@ -34,7 +34,7 @@ While I do take privacy quite seriously, there are a number of third party servi
 
 In an effort to make things easier for the end-user I have compiled a list of all the services that help keep this sight afloat, with links to their respective privacy policies:
 
-* [GitHub Pages](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) - My hosting solution
+* [Netlify](https://www.netlify.com/privacy/) - My hosting solution
 * [Google Fonts](https://developers.google.com/fonts/faq/privacy) - Serves fonts to my site 
 * [Font Awesome](https://fontawesome.com/privacy) - Serves icons to my site
 * [Eleventy](https://www.11ty.dev/docs/privacy/) - A static site generator that I use to compile my website 
@@ -47,4 +47,4 @@ In addition to the third party services I use, I have also compiled a quick coll
 * [Odysee](https://help.odysee.tv/communityguidelines/)
 * [Unsplash](https://unsplash.com/privacy)
 * [Good Reads](https://www.goodreads.com/about/privacy)
-* [Reddit](https://www.reddit.com/en-us/policies/privacy-policy)
+* [Letterboxd](https://letterboxd.com/legal/privacy-policy/)
