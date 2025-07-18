@@ -1,9 +1,39 @@
 ---
 layout: main.html
-title: Welcome!
+title: Welcome
 ---
-<img src="images/index_bg.jpg" alt="hero image"> 
-<h1>{{ title }}</h1>
+<style>
+    main { text-align: center; }
+    #home { text-align: center; }
+</style>
 
-<p>I'm a propagandist for pickled red onions, rare meat activist, barely-monetizable YouTuber and Captain of the sailing vessel known as "Knox".<br><br>
-Undoubtedly, you've discovered this website by mistake, but thanks for stopping by anyway.</p>
+<h1>{{ title }}</h1>
+<p id="home">
+    A propagandist for pickled red onions, a rare meat activist, barely-monetizable YouTuber and Captain of the sailing vessel "Argo".<br><br>
+Undoubtedly, you've discovered this website by mistake, but thanks for stopping by anyway.
+</p>
+<h1>Recent Videos</h1>
+<div class=cardContainer>
+        {% assign sorted = airtable | sort: "Date" | reverse %}
+        {% for item in sorted limit:3 %}
+    <div class=card>
+        <img src="https://i.ytimg.com/vi/{{ item.ytid | strip }}/maxresdefault.jpg" alt="Hero image">
+        <p class="videos">{{ item.Type }}<br>{{ item.year }}</p>
+        <a href="{{ item.yturl }}" target="_blank"><button class="yt">YouTube <i class="fa-brands fa-youtube"></i></button></a>
+        <a href="{{ item.odurl }}"target="_blank"><button class="od">Odysee <i class="fa-brands fa-odysee"></i></button></a>
+    </div>
+        {% endfor %}
+</div>
+<h1>Recent Essays</h1>
+<div class=cardContainer>
+        {% assign recentEssays = collections.essays | reverse | slice: 0, 3 %}
+        {% for essays in recentEssays %}
+    <div class=card>
+        <img src="/essays/{{ essays.data.image }}" alt="hero image"> 
+        <p></p>
+        <p class="essays">{{ essays.data.date | postDate }}</p>
+        <h2 class="essays">{{ essays.data.title }}</h2>
+        <a href="{{ essays.url }}"><button>Read Now</button></a>
+    </div>
+        {% endfor %}
+</div>
