@@ -24,15 +24,11 @@
     "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/eleventy-img": "^6.0.2",
     "airtable": "^0.12.2",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.6.1",
     "moment": "^2.30.1"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "luxon": "^3.6.1"
-  },
-  "scripts": {
-  "build": "eleventy",
-  "deploy": "npm run build && gh-pages -d _site"
-}
+  }
 }

@@ -2,5 +2,27 @@
 layout: main.html
 title: Videos
 ---
+<style>
+h6 {
+    font-size: 1em;
+    display: block;
+    width: 50%;
+    margin: auto;
+    font-family: 'Inconsolata', sans-serif;
+    color: var(--fg2-color);
+}
+</style>
 
 <h1>{{ title }}</h1>
+<h6>My entire, fifteen year back-catalog of video content, now available on <a href="https://www.youtube.com/@makc" target="_blank">YouTube</a> or <a href="https://odysee.com/@makc:a" target="_blank">Odysee</a>...</h6>
+<div class=cardContainer>
+        {% for item in airtable %}
+    <div class=card>
+        <img src="https://i.ytimg.com/vi/{{ item.ytid | strip }}/maxresdefault.jpg" alt="Hero image">
+        <p class="videos">{{ item.Type }}<br>{{ item.year }}</p>
+        <a href="{{ item.yturl }}" target="_blank"><button class="yt">YouTube <i class="fa-brands fa-youtube"></i></button></a>
+        <a href="{{ item.odurl }}"target="_blank"><button class="od">Odysee <i class="fa-brands fa-odysee"></i></button></a>
+    </div>
+        {% endfor %}
+</div>
+

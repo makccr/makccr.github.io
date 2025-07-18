@@ -28,6 +28,9 @@ npm i @11ty/eleventy-img
 ```
 npm install luxon --save-dev
 ```
+```
+npm install airtable dotenv
+```
 
 ##### Essays Head
 ```liquid
