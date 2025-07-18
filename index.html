@@ -5,6 +5,16 @@ title: Welcome
 <style>
     main { text-align: center; }
     #home { text-align: center; }
+
+    button,a { 
+        padding: 0rem; 
+        margin: 0rem;
+    }
+
+    .card p {
+        padding: 0rem .5rem;
+        margin-bottom: 1.5rem;
+    }
 </style>
 
 <h1>{{ title }}</h1>
@@ -16,11 +26,11 @@ Undoubtedly, you've discovered this website by mistake, but thanks for stopping 
 <div class=cardContainer>
         {% assign sorted = airtable | sort: "Date" | reverse %}
         {% for item in sorted limit:3 %}
-    <div class=card>
+    <div class=card id="recent">
         <img src="https://i.ytimg.com/vi/{{ item.ytid | strip }}/maxresdefault.jpg" alt="Hero image">
-        <p class="videos">{{ item.Type }}<br>{{ item.year }}</p>
         <a href="{{ item.yturl }}" target="_blank"><button class="yt">YouTube <i class="fa-brands fa-youtube"></i></button></a>
-        <a href="{{ item.odurl }}"target="_blank"><button class="od">Odysee <i class="fa-brands fa-odysee"></i></button></a>
+        <a href="{{ item.odurl }}"target="_blank"><button class="yt">Odysee <i class="fa-brands fa-odysee"></i></button></a>
+        <p class="videos">{{ item.Title  | truncate: 35, "…"}}</p>
     </div>
         {% endfor %}
 </div>
