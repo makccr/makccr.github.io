@@ -23,22 +23,23 @@ title: Welcome
 Undoubtedly, you've discovered this website by mistake, but thanks for stopping by anyway.
 </p>
 <h1>Recent Videos</h1>
-<div class=cardContainer>
+<div class="cardContainer">
         {% assign sorted = airtable | sort: "Date" | reverse %}
         {% for item in sorted limit:3 %}
-    <div class=card id="recent">
+
+    <div class="card">
         <img src="https://i.ytimg.com/vi/{{ item.ytid | strip }}/maxresdefault.jpg" alt="Hero image">
         <a href="{{ item.yturl }}" target="_blank"><button class="yt">YouTube <i class="fa-brands fa-youtube"></i></button></a>
         <a href="{{ item.odurl }}"target="_blank"><button class="yt">Odysee <i class="fa-brands fa-odysee"></i></button></a>
-        <p class="videos">{{ item.Title  | truncate: 35, "…"}}</p>
+        <p class="videos">{{ item.Title }}</p>
     </div>
         {% endfor %}
 </div>
 <h1>Recent Essays</h1>
-<div class=cardContainer>
+<div class="cardContainer">
         {% assign recentEssays = collections.essays | reverse | slice: 0, 3 %}
         {% for essays in recentEssays %}
-    <div class=card>
+    <div class="card">
         <img src="/essays/{{ essays.data.image }}" alt="hero image"> 
         <p></p>
         <p class="essays">{{ essays.data.date | postDate }}</p>
