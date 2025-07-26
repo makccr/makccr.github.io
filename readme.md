@@ -17,19 +17,7 @@ npx @11ty/eleventy
 npx @11ty/eleventy --serve
 ```
 ```
-npm run deploy
-```
-```
-npm install @11ty/eleventy
-```
-```
-npm i @11ty/eleventy-img
-```
-```
-npm install luxon --save-dev
-```
-```
-npm install airtable dotenv
+npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv; npm install luxon --save-dev
 ```
 
 ##### Essays Head
