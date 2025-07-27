@@ -1,7 +1,9 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset 
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+
+  <!-- Static Pages -->
   <url>
     <loc>https://makc.co/</loc>
     <lastmod>2025-07-19</lastmod>
@@ -42,6 +44,91 @@
     <lastmod>2025-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+
+  <url>
+    <loc>https://makc.co/essays/why-the-prisoner-of-azkaban-is-the-worst-movie/</loc>
+    <lastmod>October 18, 2018</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://makc.co/essays/why-you-should-watch-the-incredible-hulk-before-you-watch-avengers-endgame/</loc>
+    <lastmod>April 29, 2019</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://makc.co/essays/the-crusade-for-a-better-darkmode/</loc>
+    <lastmod>July 1, 2019</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://makc.co/essays/vim-the-best-markdown-editor/</loc>
+    <lastmod>December 4, 2019</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://makc.co/essays/harvard-classics/</loc>
+    <lastmod>March 14, 2025</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://makc.co/essays/the-only-way-out-is-through/</loc>
+    <lastmod>March 29, 2025</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://makc.co/essays/woolman-was-a-dick/</loc>
+    <lastmod>April 1, 2025</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://makc.co/essays/the-art-of-virtue/</loc>
+    <lastmod>July 13, 2025</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://makc.co/essays/barge-haulers/</loc>
+    <lastmod>July 16, 2025</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://makc.co/essays/1-million-dollar-spending-spree/</loc>
+    <lastmod>July 17, 2025</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://makc.co/essays/bad-mans-ballad/</loc>
+    <lastmod>July 20, 2025</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://makc.co/essays/consequences/</loc>
+    <lastmod>July 21, 2025</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>

@@ -12,14 +12,15 @@
 </code></pre>
 <pre><code>npx @11ty/eleventy --serve
 </code></pre>
-<pre><code>npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv; npm install luxon --save-dev
+<pre><code>npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags; npm install luxon --save-dev; npm install @quasibit/eleventy-plugin-sitemap
 </code></pre>
 <h5>Essays Head</h5>
 <pre><code class="language-liquid">---
-title: TITLE
+title: &quot;TITLE&quot;
 layout: essay.html
-image: img/IMAGE
-date: Y-M-D
+image: img/LINK.jpg
+date: YYYY-MM-DD
+tags: essay 
 ---
 </code></pre>
 <h5>YouTube Embed</h5>

@@ -2,15 +2,41 @@ import Airtable from "airtable";
 import dotenv from "dotenv";
 import fs from "fs";
 import path from "path";
+import { createRequire } from "module"; // Needed for CommonJS compatibility
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { DateTime } from "luxon";
+import pluginSitemap from "@quasibit/eleventy-plugin-sitemap";
 
 dotenv.config();
 
+const require = createRequire(import.meta.url);
+const striptags = require("striptags");
+
 export default function (eleventyConfig) {
-  const useCache = process.env.NODE_ENV === "production"; // Set to true in production
+  const useCache = process.env.NODE_ENV === "production";
   const cachePath = path.resolve(".cache/airtable.json");
 
+  // ✅ Add striptags filter
+  eleventyConfig.addFilter("striptags", striptags);
+
+  eleventyConfig.addFilter("firstLine", content => {
+  if (!content) return "";
+  return content.split("\n")[0];
+});
+
+  // ✅ Optional plugin-based sitemap
+  eleventyConfig.addPlugin(pluginSitemap, {
+    sitemap: {
+      hostname: "https://makc.co",
+    },
+  });
+
+  // ✅ Custom collection: all essays
+  eleventyConfig.addCollection("essays", (collectionApi) => {
+    return collectionApi.getFilteredByGlob("essays/*.md");
+  });
+
+  // Airtable integration
   eleventyConfig.addGlobalData("airtable", async () => {
     if (useCache && fs.existsSync(cachePath)) {
       console.log("[Airtable] Using cached data.");
@@ -57,15 +83,22 @@ export default function (eleventyConfig) {
     });
   });
 
+  // Plugins & passthrough
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
   eleventyConfig.addPassthroughCopy("bundle.css");
-  eleventyConfig.addPassthroughCopy("sitemap.xml");
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("downloads");
 
+  // Filters
   eleventyConfig.addFilter("postDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("LLLL d, yyyy");
   });
-}
 
+  return {
+    dir: {
+      input: ".",
+      output: "_site",
+    }
+  };
+}

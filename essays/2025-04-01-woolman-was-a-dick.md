@@ -1,9 +1,9 @@
 ---
-title: John Woolman Was Actually Kind of a Dick
+title: John Woolman Was Kind of a Dick
 layout: essay.html
 image: img/2025-04-01.jpg
 date: 2025-04-02
-teaser: The title says it all, dude was an asshole.
+tags: essay 
 ---
 
 Having just finished reading *The Journal of John Woolman*, I was struck by a few different things, the foremost: just how early of an anti-slavery campaigner Woolman was. I knew that they guy wrote about the evils of slavery around the time of the American revolution. What I did not realize is that Woolman actually died in 1774, 2 years before *The Declaration of Independence* was even signed. To say that the guy was "ahead of his time" is one of the most egregious understatements in history. At a time when virtually everyone owned slaves, including virtually all of our first presidents - this guy was actually running around successfully convincing people, on an individual level, to just straight up grant freedom to slaves they had already paid for.

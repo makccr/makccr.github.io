@@ -1,7 +1,13 @@
+---
+permalink: /sitemap.xml
+layout: null
+---
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset 
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+
+  <!-- Static Pages -->
   <url>
     <loc>https://makc.co/</loc>
     <lastmod>2025-07-19</lastmod>
@@ -44,4 +50,12 @@
     <priority>0.7</priority>
   </url>
 
+{% for post in collections.essays %}
+  <url>
+    <loc>https://makc.co{{ post.url }}</loc>
+    <lastmod>{{ post.date | postDate }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+{% endfor %}
 </urlset>

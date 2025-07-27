@@ -21,16 +21,17 @@ npx @11ty/eleventy
 npx @11ty/eleventy --serve
 ```
 ```
-npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv; npm install luxon --save-dev
+npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags; npm install luxon --save-dev; npm install @quasibit/eleventy-plugin-sitemap
 ```
 
 ##### Essays Head
 ```liquid
 ---
-title: TITLE
+title: "TITLE"
 layout: essay.html
-image: img/IMAGE
-date: Y-M-D
+image: img/LINK.jpg
+date: YYYY-MM-DD
+tags: essay 
 ---
 ```
 

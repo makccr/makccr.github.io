@@ -1,8 +1,9 @@
 ---
-title: A Study in Submission and Defiance
+title: "Barge Haulers on the Volga: A Study in Submission and Defiance"
 layout: essay.html
 image: img/2025-07-17.jpg
 date: 2025-07-17
+tags: essay 
 ---
 
 Above is, without question, my favorite painting of all time. *Barge Haulers on the Volga* is a nineteenth-century work by Russian painter [Ilya Repin](https://www.britannica.com/biography/Ilya-Yefimovich-Repin). It comes as no surprise to me that I was immediately drawn to it, as, like so many others, I’ve long been captivated by the cultural output of the Russian Empire and its many political incarnations: the Soviet Union, the Russian Federation, the RSFSR. Whether it’s Dostoevsky, Tolstoy, Rachmaninoff, or even Solzhenitsyn’s bleak documentation of the soviet-era prison system in *The Gulag Archipelago*, Russian art has been some of the most intellectually and emotionally formative material I’ve encountered in recent years. Repin’s painting more than earns it's spot in that canon: deeply human, brutally honest, and impossible to forget.

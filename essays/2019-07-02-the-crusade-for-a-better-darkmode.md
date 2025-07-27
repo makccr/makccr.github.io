@@ -3,8 +3,7 @@ title: The Crusade for a Better Dark Mode
 layout: essay.html
 image: img/2019-07-02.jpg
 date: 2019-07-02
-wc: 6
-teaser: A simple guide to implementing theme switching in CSS that follows a system-wide theme.
+tags: essay 
 ---
 
 
