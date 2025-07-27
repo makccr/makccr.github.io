@@ -579,4 +579,8 @@ code {
     font-size: 1rem;
 }
 
+.video-card {
+    width: 90%;
+}
+
 }
