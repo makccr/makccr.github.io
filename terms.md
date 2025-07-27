@@ -39,6 +39,7 @@ In an effort to make things easier for the end-user I have compiled a list of al
 * [Font Awesome](https://fontawesome.com/privacy) - Serves icons to my site
 * [Eleventy](https://www.11ty.dev/docs/privacy/) - A static site generator that I use to compile my website 
 * [Airtable](https://www.airtable.com/company/privacy) - A database solution that I use as a sort-of a CMS
+* [mailerLite](https://www.mailerlite.com/legal/terms-of-service) - The service I use to send an email newsletter
 
 In addition to the third party services I use, I have also compiled a quick collection of privacy policies for all of the social media sites that are linked to from this website: 
 
