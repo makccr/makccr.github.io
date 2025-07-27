@@ -60,6 +60,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
   eleventyConfig.addPassthroughCopy("bundle.css");
   eleventyConfig.addPassthroughCopy("sitemap.xml");
+  eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("downloads");
 
   eleventyConfig.addFilter("postDate", dateObj => {
