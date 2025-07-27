@@ -49,7 +49,7 @@ But the truth is, Vim’s brutal learning curve is conquered in about a week, mo
 
 This is Vim’s real strength. If you think about it, you can only ever type in any application, as fast as your fingers will go. If I type 80 WPM in Microsoft Word, I won’t type 100 WPM in Vim. The real strength of any text editor is it’s ability to manipulate text. Markdown takes care of a lot of the basic formatting for us, which is why writing Markdown probably already feels fast and more efficient than anything else. But if Markdown handles formatting, Vim handles everything else. You can correct words, spell check, delete, re-write, change and manipulate text in a matter of seconds using Vim. Vim has movement controls to navigate by line, paragraph, sentence, word, and all the way down to the individual characters, and it’s all done without ever moving your fingers from the home row. Most Vim users I know of actually disable arrow keys to force themselves to use Vim’s alternative arrow keys: h,j,k,l (the real pros even disable the backspace).
 
-<img src="img/2019-12-05-B.jpg" alt="a graph i made">
+<img class="fifty" src="img/2019-12-05-B.jpg" alt="a graph i made">
 
 ## Typora
 However, as much as I like Vim, and I really do use Vim for basically everything, the app does have a glaring weakness. Vim is an app that is only interested in being one thing, a text editor. It’s designed to allow you to write and manipulate whatever kind of text you need to work with, as quickly and efficiently as possible. Even Vim’s closest competitor, Emacs, does much much more out of the box than Vim. By default in Vim, something as basic as spell checking is turned off. Vim write and edits text. That’s all.
