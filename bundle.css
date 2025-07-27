@@ -61,7 +61,7 @@ img {
   --fg2-color: #D1D5DB;
   --link-color: #dc3232;
   --link-hover: #dc3232;
-  --mid-accent: #191919;
+  --mid-accent: #404040;
   --bg-color: #09090B;
   --button-color: #111;
   --button-hover: #cc241d;
@@ -237,6 +237,21 @@ footer .links {
   margin: 1em;
   align: center;
 } 
+
+.rss {
+    display: block; 
+    text-align: center; 
+    align: center; 
+    margin: auto;
+    margin: 0rem; 
+}
+
+.rss button {
+    background-color: #dc3232; 
+} 
+.rrs button:hover { 
+    background-color: var(--mid-accent); 
+}
 
 .card {
   width: 25rem; 
