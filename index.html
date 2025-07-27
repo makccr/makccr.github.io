@@ -15,12 +15,20 @@ title: Welcome
         padding: 0rem .5rem;
         margin-bottom: 1.5rem;
     }
+h6 {
+    font-size: 1em;
+    display: block;
+    width: 50%;
+    margin: auto;
+    font-family: 'Inconsolata', sans-serif;
+    color: var(--fg2-color);
+</style>
 </style>
 
 <h1>{{ title }}</h1>
-<p id="home">
+<h6>
 I'm propagandist for pickled red onions, a rare meat activist, barely-monetizable YouTuber and Captain of the sailing vessel Argo. I've been creating content online for well over a decade now, but delivering to a very small audience. Undoubtedly, you've discovered this website by mistake, but thanks for stopping by anyway-and, feel free to browse around.
-</p>
+</h6>
 <h1>Recent Videos</h1>
 <div class="cardContainer">
         {% assign sorted = airtable | sort: "Date" | reverse %}
