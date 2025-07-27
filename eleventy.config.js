@@ -2,10 +2,11 @@ import Airtable from "airtable";
 import dotenv from "dotenv";
 import fs from "fs";
 import path from "path";
-import { createRequire } from "module"; // Needed for CommonJS compatibility
+import { createRequire } from "module";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { DateTime } from "luxon";
 import pluginSitemap from "@quasibit/eleventy-plugin-sitemap";
+import pluginRss from "@11ty/eleventy-plugin-rss"; // ✅ RSS plugin
 
 dotenv.config();
 
@@ -20,9 +21,12 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("striptags", striptags);
 
   eleventyConfig.addFilter("firstLine", content => {
-  if (!content) return "";
-  return content.split("\n")[0];
-});
+    if (!content) return "";
+    return content.split("\n")[0];
+  });
+
+  // ✅ Add RSS plugin
+  eleventyConfig.addPlugin(pluginRss);
 
   // ✅ Optional plugin-based sitemap
   eleventyConfig.addPlugin(pluginSitemap, {

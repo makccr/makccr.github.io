@@ -21,7 +21,7 @@ npx @11ty/eleventy
 npx @11ty/eleventy --serve
 ```
 ```
-npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags; npm install luxon --save-dev; npm install @quasibit/eleventy-plugin-sitemap
+npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags @11ty/eleventy-plugin-rss; npm install luxon --save-dev
 ```
 
 ##### Essays Head
