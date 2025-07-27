@@ -24,7 +24,7 @@ title: Videos
         {% for item in airtable %}
     <div data-category="{{ item.Type }}" class="video-card">
         <img src="https://i.ytimg.com/vi/{{ item.ytid | strip }}/maxresdefault.jpg" alt="Hero image"/>
-        <p class="videos">{{ item.Title | truncate: 47, "..." }}</p>
+        <p class="videos">{{ item.Title | truncate: 44, "..." }}</p>
         <a href="{{ item.yturl }}" target="_blank"><button>&nbsp;Watch Now <i class="fa-brands fa-youtube"></i></button></a>
     </div>
         {% endfor %}
