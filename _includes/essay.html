@@ -40,3 +40,30 @@ layout: main.html
 <div class="essayContainer"> 
 {{ content }}
 </div> 
+<hr></hr>
+{% assign allPosts = collections.essays %}
+{% for post in allPosts %}
+  {% if post.url == page.url %}
+    {% capture currentIndex %}{{ forloop.index0 }}{% endcapture %}
+  {% endif %}
+{% endfor %}
+
+<div class="post-navigation" style="margin-top: 3em; text-align: center;">
+  {% assign prevIndex = currentIndex | minus: 1 %}
+  {% assign nextIndex = currentIndex | plus: 1 %}
+
+  {% if prevIndex >= 0 %}
+    {% assign prevPost = allPosts[prevIndex] %}
+    <a href="{{ prevPost.url }}" class="prev-post" style="margin-right: 2em;">
+       <i class="fa-solid fa-arrow-left"></i>&nbsp; Previous: {{ prevPost.data.title }}
+    </a>
+  {% endif %}
+
+  {% if nextIndex < allPosts.size %}
+    {% assign nextPost = allPosts[nextIndex] %}
+    <a href="{{ nextPost.url }}" class="next-post">
+      Next: {{ nextPost.data.title }} &nbsp;<i class="fa-solid fa-arrow-right"></i>
+    </a>
+  {% endif %}
+</div>
+
