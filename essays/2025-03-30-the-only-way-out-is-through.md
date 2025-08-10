@@ -4,6 +4,7 @@ layout: essay.html
 image: img/2025-03-30.jpg
 date: 2025-03-30
 tags: essay 
+tagline: "The first exposure I had to this line of thinking, at least as far as I can remember, would be from Nikos Kazantzakis' novel: Zorba the Greek (which interestingly enough might have since become my favorite book). The original quote is said by Zorba to the protagonist: How do you expect to get the better of a devil ... if you don't turn into a devil and a half yourself?"
 ---
 
 The first exposure I had to this line of thinking, at least as far as I can remember, would be from Nikos Kazantzakis' novel: *Zorba the Greek* (which interestingly enough might have since become my favorite book). The original quote is said by Zorba to the protagonist: "How do you expect to get the better of a devil ... if you don't turn into a devil and a half yourself?"

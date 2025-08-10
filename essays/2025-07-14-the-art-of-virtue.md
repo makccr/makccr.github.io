@@ -4,6 +4,7 @@ layout: essay.html
 image: img/2025-07-14.jpg
 date: 2025-07-14
 tags: essay 
+tagline: "Without a doubt, the best book I’ve read this year is *The Autobiography of Benjamin Franklin*. I only opened it because it leads off The Harvard Classics—a 51‑volume anthology I describe in a [separate essay](https://makc.co/essays/2025-03-15-harvard-classics/)—but I was pleasantly surprised by how readable, engaging, and practical it is."
 ---
 
 Without a doubt, the best book I’ve read this year is *The Autobiography of Benjamin Franklin*. I only opened it because it leads off The Harvard Classics—a 51‑volume anthology I describe in a [separate essay](https://makc.co/essays/2025-03-15-harvard-classics/)—but I was pleasantly surprised by how readable, engaging, and practical it is.

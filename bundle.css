@@ -485,12 +485,16 @@ blockquote { font-size: 1.1rem; }
   :root {
     --fg-color: #444;
     --fg2-color: #666;
-    --link-color: #8c695f;
+    --link-color: #dc3232;
     --link-hover: #dc3232;
     --bg-color: #fff;
     --button-color: #eee;
     --button-hover: #ccc;
   --mid-accent: #eee;
+  }
+
+  .rss button {
+    color: white;
   }
 } /* Flipping colors for light mode */
 

@@ -4,8 +4,8 @@ layout: essay.html
 image: img/2025-07-20.jpg
 date: 2025-07-21
 tags: essay 
+tagline: "Whatever reigns where Seraphim flame and soar, I beg the, judge not my hand, but what it labored for. No blade was drawn, but wrath still did command, The tears that yearned to guide my violent hand."
 ---
-
 *Whatever reigns where Seraphim flame and soar,*<br>
 *I beg the, judge not my hand, but what it labored for.*<br>
 *No blade was drawn, but wrath still did command,*<br>

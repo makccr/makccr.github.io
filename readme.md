@@ -32,6 +32,7 @@ layout: essay.html
 image: img/LINK.jpg
 date: YYYY-MM-DD
 tags: essay 
+tagline: "DESCRIPTION"
 ---
 ```
 
