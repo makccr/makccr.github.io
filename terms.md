@@ -13,6 +13,16 @@ You MAY use any "deep-link", "page-scrape", "robot", "spider" or other automatic
 
 You may attempt to gain unauthorized access to any portion or feature of the Site, or any other systems or networks connected to the Site, by hacking, password "mining" or any other illegitimate means. There are no unauthorized parts of this website, have fun.
 
+Officially my Site's GitHub repository specifically is protected under the [MIT License](https://github.com/makccr/makccr.github.io?tab=MIT-1-ov-file), the full text of which is below: 
+
+Copyright (c) <script>document.write(/\d{4}/.exec(Date())[0])</script> Mackenzie Criswell
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 ### All of that being said, feel free to explore and have fun, but please don't try to take the Site down.
 
 I encourage you to treat this site like the Wal-Mart parking lot where people go to learn how to drive as teenagers. Screw around, learn, experiment; but keep in mind reasonable limits. Even in the Wal-Mart parking lot, if you start doing burn-outs, someone is going to call the cops. I quite like the idea of my site being a *free-for-all*; but if things ever get to the point that it requires constant attention from me, I'll have to switch some things up.
