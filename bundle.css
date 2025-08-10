@@ -59,8 +59,8 @@ img {
 :root { /* Base Settings */
   --fg-color: #fff;
   --fg2-color: #D1D5DB;
-  --link-color: #dc3232;
-  --link-hover: #dc3232;
+  --link-color: #fb4934;
+  --link-hover: #cc241d;
   --mid-accent: #404040;
   --bg-color: #09090B;
   --button-color: #111;
@@ -239,18 +239,23 @@ footer .links {
 } 
 
 .rss {
-    display: block; 
+    display: inline-block; 
     text-align: center; 
     align: center; 
-    margin: auto;
-    margin: 0rem; 
 }
 
 .rss button {
-    background-color: #dc3232; 
+    background-color: var(--link-color); 
+    color: var(--fg-color);
 } 
 .rrs button:hover { 
     background-color: var(--mid-accent); 
+}
+
+.substack {
+    height: 20rem; 
+    width: 30rem;
+    border-radius: 1rem;
 }
 
 .card {
@@ -597,5 +602,12 @@ code {
 .video-card {
     width: 90%;
 }
+
+.substack {
+    height: 20rem; 
+    width: 90%;
+}
+
+.rss button { margin: .5rem; }
 
 }
