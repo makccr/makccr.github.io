@@ -63,14 +63,42 @@
 
 </head>
 <body>
+    <script>
+    function mobileMenu() {
+        var x = document.getElementById("mobile-links")
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
     <header>
-        <a href="/index"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fm.svg&width=1000&format=webp&via=transform 1000w"><img class="logo" src="/.11ty/image/?src=images%2Fm.svg&width=1000&format=jpeg&via=transform" alt="HOME" width="1000" height="1000"></picture></a>
+        <a href="/index"><picture><source type="image/webp" srcset="/img/wFNTedeVhW-1000.webp 1000w"><img class="logo" src="/img/wFNTedeVhW-1000.jpeg" alt="HOME" width="1000" height="1000"></picture></a>
+            <div class="bars" onclick="mobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
             <p class="links">
                 <a href="/videos">Videos</a>
                 <a href="/essays">Essays</a>
-                <a href="/downloads">Downloads</a>
+                <a href="/downloads">Downloads & Apps</a>
             </p>
     </header>
+
+<div id="mobile-links">
+    <div class="mobile-links-container">
+        <ul>
+            <p class="mobile"><a href="/videos">Videos</a></p>
+            <p class="mobile"><a href="/essays">Essays</a></p>
+            <p class="mobile"><a href="/downloads">Downloads & Apps</a></p>
+            <br>
+            <p class="mobile"><a href="/contact">Contact</a></p>
+            <p class="mobile"><a href="/terms">Terms & Privacy</a></p>
+            <p class="mobile"><a href="sitemap.xml">Sitemap</a></p>
+        </ul>
+    </div>
+</div>
     
     <main>
         
@@ -105,7 +133,7 @@
     }
 }
 </style>
-    <picture><source type="image/webp" srcset="/.11ty/image/?src=essays%2Fimg%2F2025-07-18.jpg&width=4896&format=webp&via=transform 4896w"><img class="hero" src="/.11ty/image/?src=essays%2Fimg%2F2025-07-18.jpg&width=4896&format=jpeg&via=transform" alt="" width="4896" height="3264"></picture>
+    <picture><source type="image/webp" srcset="/essays/1-million-dollar-spending-spree/R9HV3Puk22-4896.webp 4896w"><img class="hero" src="/essays/1-million-dollar-spending-spree/R9HV3Puk22-4896.jpeg" alt="" width="4896" height="3264"></picture>
     <h1>My Million Dollar Spending Spree</h1>
     <h3>July 17, 2025</h3>
 <hr>
