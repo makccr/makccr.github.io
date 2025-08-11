@@ -213,7 +213,7 @@ header p {
   display: none;
   position: fixed;
   text-align: right;
-  background-color: rgba(0,0,0,1.0);
+  background-color: var(--bg-color);
   width: 100vw; 
   height: 100vh; 
   z-index: 10;
