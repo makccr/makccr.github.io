@@ -29,7 +29,8 @@ I'm a propagandist for pickled red onions, a rare meat activist, barely-monetiza
     <div data-category="{{ item.Type }}" class="video-card">
         <img src="https://i.ytimg.com/vi/{{ item.ytid | strip }}/maxresdefault.jpg" alt="Hero image"/>
         <p class="videos">{{ item.Title | truncate: 47, "..." }}</p>
-        <a href="{{ item.yturl }}" target="_blank"><button>&nbsp;Watch Now <i class="fa-brands fa-youtube"></i></button></a>
+        <a href="{{ item.yturl }}" target="_blank"><button>&nbsp;YouTube <i class="fa-brands fa-youtube"></i></button></a>
+        <a href="{{ item.odurl }}" target="_blank"><button>&nbsp;Odysee <i class="fa-brands fa-odysee"></i></button></a>
     </div>
         {% endfor %}
 </div>
