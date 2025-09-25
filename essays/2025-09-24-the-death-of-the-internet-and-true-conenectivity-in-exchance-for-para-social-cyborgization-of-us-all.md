@@ -1,5 +1,5 @@
 ---
-title: "The Death of True Connectivity Online in Exchange for the Para-Social Cyborgization of Us All"
+title: "The Death of Connectivity Online in Exchange for Algorithmic Cyborgization"
 layout: essay.html
 image: img/2025-09-24.jpg
 date: 2025-09-24
