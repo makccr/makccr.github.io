@@ -36,11 +36,15 @@ layout: main.html
     <img class="hero" src="{{ image }}" alt="" >
     <h1>{{ title | default: "Essays" }}</h1>
     <h3>{{ date | postDate }}</h3>
-<hr></hr>
+
+<div class="post-navigation" style="margin-top: 3em; text-align: center;">
+  <a href="https://makc.co/feed.xml" target="_blank"><button>RSS &nbsp;<i class="fa-solid fa-rss"></i></button></a>
+</div>
+
 <div class="essayContainer"> 
 {{ content }}
 </div> 
-<hr></hr>
+
 {% assign allPosts = collections.essays %}
 {% for post in allPosts %}
   {% if post.url == page.url %}
@@ -51,24 +55,14 @@ layout: main.html
 <div class="post-navigation" style="margin-top: 3em; text-align: center;">
   {% assign prevIndex = currentIndex | minus: 1 %}
   {% assign nextIndex = currentIndex | plus: 1 %}
-
 <div class="rss">
   {% if prevIndex >= 0 %}
     {% assign prevPost = allPosts[prevIndex] %}
-    <a href="{{ prevPost.url }}" class="prev-post">
-        <button><i class="fa-solid fa-arrow-left"></i>&nbsp; Last Essay</button>
-    </a>
+    <a href="{{ prevPost.url }}" class="prev-post"><button><i class="fa-solid fa-arrow-left"></i></button></a>
   {% endif %}
-
   <a href="https://makc.co/feed.xml" target="_blank"><button>RSS &nbsp;<i class="fa-solid fa-rss"></i></button></a>
-
   {% if nextIndex < allPosts.size %}
     {% assign nextPost = allPosts[nextIndex] %}
-    <a href="{{ nextPost.url }}" class="next-post">
-        <button>Next Essay &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
-    </a>
+    <a href="{{ nextPost.url }}" class="next-post"><button><i class="fa-solid fa-arrow-right"></i></button></a>
   {% endif %}
 </div>
-<hr></hr>
-
-<iframe class="substack" src="https://makccr.substack.com/embed" frameborder="0" scrolling="no"></iframe>

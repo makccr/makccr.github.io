@@ -35,7 +35,7 @@ In addition to accessibility feature requests or bug reports, all other technica
 ---
 
 # Privacy Policy
-### as of the 10th of August 2025
+### as of the 25th of September 2025
 ## Collection and Use of Personal Information
 I do not collect any personal information from the users of this website. I do take this quite seriously, as I really hate browsing the modern web. Nearly every modern website is absolutely loaded with a novel's worth of JavaScript running in the background that is collecting your information and/or feeding you ads. I do not participate in the data collection norm that we have come to expect from the modern web. I do not have any ads on my website, because I don't want third parties collecting data on users. I don't collect any kind of cookies, because I don't know how to. If you require evidence of this, my website is 100% open-source, and the entirety of the source code can be viewed on my site's [GitHub repository](https://github.com/makccr/makccr.github.io).
 
@@ -50,6 +50,5 @@ In an effort to make things easier for the end-user I have compiled a list of al
 * [Bootstrap](https://getbootstrap.com/) - A front-end toolkit that I use basically just for additional icons
 * [Eleventy](https://www.11ty.dev/docs/privacy/) - A static site generator that I use to compile my website 
 * [Airtable](https://www.airtable.com/company/privacy) - An online database platform that I use as a sort-of a CMS solution
-* [Substack](https://substack.com/privacy) - A blogging platform that I cross-post essays to for wider distribution & an easy newsletter
 
-In addition to the third party services I use, I have also compiled a quick collection of privacy policies for all of the social media sites that are linked to from this website: [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement), [YouTube](https://www.youtube.com/howyoutubeworks/our-commitments/protecting-user-data/), [Odysee](https://help.odysee.tv/communityguidelines/), [Unsplash](https://unsplash.com/privacy), [Good Reads](https://www.goodreads.com/about/privacy), [Letterboxd](https://letterboxd.com/legal/privacy-policy/), [Substack](https://substack.com/privacy) and [X (The artist formerly knows as Twitter)](https://help.x.com/en/rules-and-policies). 
+In addition to the third party services I use, I have also compiled a quick collection of privacy policies for all of the social media sites that are linked to from this website: [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement), [YouTube](https://www.youtube.com/howyoutubeworks/our-commitments/protecting-user-data/), [Odysee](https://help.odysee.tv/communityguidelines/), [Unsplash](https://unsplash.com/privacy), [Invidioius](https://inv.nadeko.net/privacy).
