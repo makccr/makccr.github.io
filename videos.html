@@ -23,11 +23,10 @@ title: Videos
 <div class=cardContainer>
         {% for item in airtable %}
     <div data-category="{{ item.Type }}" class="video-card">
+        <a href="{{ item.yturl }}" target="_blank" title="YouTube">
         <img src="https://i.ytimg.com/vi/{{ item.ytid | strip }}/maxresdefault.jpg" alt="Hero image"/>
-        <p class="videos">{{ item.Title | truncate: 44, "..." }}</p>
-        <a href="{{ item.ivurl }}" target="_blank" title="Invidious"><button><i class="fa-solid fa-video"></i></button></a>
-        <a href="{{ item.yturl }}" target="_blank" title="YouTube"><button><i class="fa-brands fa-youtube"></i></button></a>
-        <a href="{{ item.odurl }}" target="_blank" title="Odysee"><button><i class="fa-brands fa-odysee"></i></button></a>
+        </a>
+        <p class="videos">{{ item.Title | truncate: 44, "..." }}</p><br>
     </div>
         {% endfor %}
 </div>
