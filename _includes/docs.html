@@ -30,10 +30,6 @@ layout: main.html
     <h1>{{ title | default: "Essays" }}</h1>
     <h3>{{ date | postDate }}</h3>
 
-<div class="post-navigation" style="margin-top: 3em; text-align: center;">
-  <a href="https://makc.co/feed.xml" target="_blank"><button>RSS &nbsp;<i class="fa-solid fa-rss"></i></button></a>
-</div>
-
 <div class="essayContainer"> 
 {{ content }}
 </div> 
@@ -44,18 +40,3 @@ layout: main.html
     {% capture currentIndex %}{{ forloop.index0 }}{% endcapture %}
   {% endif %}
 {% endfor %}
-
-<div class="post-navigation" style="margin-top: 3em; text-align: center;">
-  {% assign prevIndex = currentIndex | minus: 1 %}
-  {% assign nextIndex = currentIndex | plus: 1 %}
-<div class="rss">
-  {% if prevIndex >= 0 %}
-    {% assign prevPost = allPosts[prevIndex] %}
-    <a href="{{ prevPost.url }}" class="prev-post"><button><i class="fa-solid fa-arrow-left"></i></button></a>
-  {% endif %}
-  <a href="https://makc.co/feed.xml" target="_blank"><button>RSS &nbsp;<i class="fa-solid fa-rss"></i></button></a>
-  {% if nextIndex < allPosts.size %}
-    {% assign nextPost = allPosts[nextIndex] %}
-    <a href="{{ nextPost.url }}" class="next-post"><button><i class="fa-solid fa-arrow-right"></i></button></a>
-  {% endif %}
-</div>
