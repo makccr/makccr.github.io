@@ -19,18 +19,17 @@ title: Welcome
 
 <h1>{{ title }}</h1>
 <h6>
-I'm a propagandist for pickled red onions, a rare meat activist, barely-monetizable YouTuber and Captain of the sailing vessel Argo. I've been creating content online for well over a decade now, but delivering to a very small audience. Undoubtedly, you've discovered this website by mistake, but thanks for stopping by anyway-and, feel free to browse around.
+I'm a A propagandist for pickled red onions, rare meat activist, and Captain of the sailing vessel Knox. I've been creating content online for well over a decade now, but delivering to a very small audience. Undoubtedly, you've discovered this website by mistake, but thanks for stopping by anyway--and, feel free to browse around, odds are you might find something interesting.
 </h6>
 <hr></hr>
 <div class=cardContainer>
         {% assign sorted = airtable | sort: "Date" | reverse %}
         {% for item in sorted limit:3 %}
     <div data-category="{{ item.Type }}" class="video-card">
+        <a href="{{ item.yturl }}" target="_blank" title="YouTube">
         <img src="https://i.ytimg.com/vi/{{ item.ytid | strip }}/maxresdefault.jpg" alt="Hero image"/>
-        <p class="videos">{{ item.Title | truncate: 47, "..." }}</p>
-        <a href="{{ item.ivurl }}" target="_blank" title="Invidioius"><button><i class="fa-solid fa-video"></i></button></a>
-        <a href="{{ item.yturl }}" target="_blank" title="YouTube"><button><i class="fa-brands fa-youtube"></i></button></a>
-        <a href="{{ item.odurl }}" target="_blank" title="Odysee"><button><i class="fa-brands fa-odysee"></i></button></a>
+        </a>
+        <p class="videos">{{ item.Title | truncate: 47, "..." }}</p><br>
     </div>
         {% endfor %}
 </div>
