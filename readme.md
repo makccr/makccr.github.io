@@ -11,42 +11,4 @@ These days the site is a lot more boring, but also a whole lot lower maintenance
 
 *P.S.*: If you're interested in a series of video on the current iteration of my site, feel free to [e-mail](mailto:m@makc.co:) me to let that request be known; and be sure to keep and eye on my [YouTube channel](https://www.youtube.com/@makc) just in case I publish something without telling anyone...
 
-[![Preview on All Devices](images/all-device-preview.jpg)](https://studio.morflax.com/things/)
-
-### Just for my use: 
-```
-npx @11ty/eleventy
-```
-```
-npx @11ty/eleventy --serve
-```
-```
-npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags @11ty/eleventy-plugin-rss; npm install luxon --save-dev
-```
-
-##### Essays Head
-```liquid
----
-title: "TITLE"
-layout: essay.html
-image: img/LINK.jpg
-date: YYYY-MM-DD
-tags: essay 
-tagline: "DESCRIPTION"
----
-```
-
-##### YouTube Embed 
-```css
-<div class="youtube">
-    <div class="youtube-video-container-16">
-        <iframe width="560" height="315"
-            src="LINK"
-            frameborder="0"
-            allow="accelerometer; encrypted-media; gyroscope; picture
--in-picture"
-            allowfullscreen >
-        </iframe>
-    </div>
-</div>
-```
+[![Preview on All Devices](images/all-device-preview.jpg)](https://makc.co/docs/cloning-this-site/)
