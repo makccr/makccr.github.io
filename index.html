@@ -22,7 +22,6 @@ title: Welcome
 I'm a propagandist for pickled red onions, a rare meat activist, barely-monetizable YouTuber and Captain of the sailing vessel Argo. I've been creating content online for well over a decade now, but delivering to a very small audience. Undoubtedly, you've discovered this website by mistake, but thanks for stopping by anyway-and, feel free to browse around.
 </h6>
 <hr></hr>
-<h2>Recent Videos</h2>
 <div class=cardContainer>
         {% assign sorted = airtable | sort: "Date" | reverse %}
         {% for item in sorted limit:3 %}
@@ -36,7 +35,6 @@ I'm a propagandist for pickled red onions, a rare meat activist, barely-monetiza
         {% endfor %}
 </div>
 <hr></hr>
-<h2>Recent Essays</h2>
 <div class="cardContainer">
   {% assign recentEssays = collections.essays | reverse | slice: 0, 3 %}
   {% for essay in recentEssays %}

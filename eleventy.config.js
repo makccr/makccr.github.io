@@ -40,6 +40,11 @@ export default function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("essays/*.md");
   });
 
+  // ✅ Custom collection: all docs
+  eleventyConfig.addCollection("docs", (collectionApi) => {
+    return collectionApi.getFilteredByGlob("docs/*.md");
+  });
+
   // Airtable integration
   eleventyConfig.addGlobalData("airtable", async () => {
     if (useCache && fs.existsSync(cachePath)) {

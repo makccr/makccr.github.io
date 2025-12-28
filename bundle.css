@@ -415,7 +415,7 @@ code {
     font-family: 'Inconsolata', monospace; 
     font-size: .8em; 
     background-color: var(--button-color);
-    padding: .2em; 
+    padding: 1em; 
     border-radius: .3em;
     border: 1px solid var(--mid-accent);
     font-size: 1.1em;
@@ -433,6 +433,18 @@ blockquote { font-size: 1.1rem; }
     align: center; 
     margin: auto;
     font-family: 'IM Fell English', serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.docs-preview {
+    color: var(--fg2-color);
+    padding: 1rem 1rem;
+    width: 60%;
+    text-align: center;
+    align: center; 
+    margin: auto;
+    font-family: 'Inconsolata', monospace;
     font-weight: 400;
     font-size: 1rem;
 }
@@ -584,9 +596,6 @@ hr {
     margin-left: auto; 
     margin-right: auto;
 }
-code {
-    margin: 1em;
-}
 
 .half,.quarter,.third {
     max-height: 95%;
@@ -622,6 +631,7 @@ code {
     border-radius: .3em;
     border: 1px solid var(--mid-accent);
     font-size: 1.1em;
+    margin: 1em;
 }
 
 .essay-preview {
@@ -632,6 +642,18 @@ code {
     align: center; 
     margin: auto;
     font-family: 'IM Fell English', serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.docs-preview {
+    color: var(--fg2-color);
+    padding: 1rem 1rem;
+    width: 90%;
+    text-align: center;
+    align: center; 
+    margin: auto;
+    font-family: 'Inconsolata', monospace;
     font-weight: 400;
     font-size: 1rem;
 }
