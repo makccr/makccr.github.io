@@ -85,7 +85,7 @@
     </script>
 
     <header>
-        <a href="/index"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fm.svg&width=1000&format=webp&via=transform 1000w"><img class="logo" src="/.11ty/image/?src=images%2Fm.svg&width=1000&format=jpeg&via=transform" alt="HOME" width="1000" height="1000"></picture></a>
+        <a href="/index"><picture><source type="image/webp" srcset="/img/wFNTedeVhW-1000.webp 1000w"><img class="logo" src="/img/wFNTedeVhW-1000.jpeg" alt="HOME" width="1000" height="1000"></picture></a>
             <div class="bars" onclick="mobileMenu()">
                 <i class="fas fa-bars"></i>
             </div>
@@ -151,7 +151,7 @@
 <p>A guide for setting up a working instance of <a href="https://github.com/makccr/dot">my BSPWM configuration</a> on a clean install of <a href="https://fedoraproject.org/workstation/download">Fedora Workstation</a>. Note: <em>I have only tested this on version 43 and above on x86 platforms.</em></p>
 <h2>Install Required Packages</h2>
 <p>We need to first install all packages that are required by BSPWM and are referenced in my BSPWM configuration. Most packages can be installed via the dnf package manger:</p>
-<p><code>sudo dnf upgrade &amp;&amp; sudo dnf install xorg-x11-server-Xorg polybar dunst sxhkd bspwm picom feh flameshot redshift xrandr udiskie alacritty pavucontrol brightnessctl</code></p>
+<p><code>sudo dnf upgrade &amp;&amp; sudo dnf install xorg-x11-server-Xorg polybar dunst sxhkd bspwm picom feh flameshot redshift xrandr udiskie alacritty pavucontrol brightnessctl xbindkeys</code></p>
 <p><strong>Note</strong>: The only packages that are required for BSPWM to function are:</p>
 <ul>
 <li>bspwm</li>

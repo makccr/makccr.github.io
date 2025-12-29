@@ -10,7 +10,7 @@ A guide for setting up a working instance of [my BSPWM configuration](https://gi
 ## Install Required Packages
 We need to first install all packages that are required by BSPWM and are referenced in my BSPWM configuration. Most packages can be installed via the dnf package manger:
 
-`sudo dnf upgrade && sudo dnf install xorg-x11-server-Xorg polybar dunst sxhkd bspwm picom feh flameshot redshift xrandr udiskie alacritty pavucontrol brightnessctl`
+`sudo dnf upgrade && sudo dnf install xorg-x11-server-Xorg polybar dunst sxhkd bspwm picom feh flameshot redshift xrandr udiskie alacritty pavucontrol brightnessctl xbindkeys`
 
 **Note**: The only packages that are required for BSPWM to function are: 
 * bspwm
