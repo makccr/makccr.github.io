@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>MAKC.CO - Ballad of a Bad Man</title>
+<title>MAKC.CO - Setting up BSPWM on Fedora Workstation</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1 /modern-normalize.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/bundle.css">
@@ -67,8 +67,8 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@makccr">
-<meta name="twitter:title" content="MAKC.CO - Ballad of a Bad Man">
-<meta name="twitter:description" content="Whatever reigns where Seraphim flame and soar, I beg the, judge not my hand, but what it labored for. No blade was drawn, but wrath still did command, The tears that yearned to guide my violent hand.">
+<meta name="twitter:title" content="MAKC.CO - Setting up BSPWM on Fedora Workstation">
+<meta name="twitter:description" content="Im a propagandist for pickled red onions, a rare meat activist, barely-monetizable YouTuber and Captain of the sailing vessel Knox. Ive been creating content online for well over a decade now, but delivering to a very small audience. Undoubtedly, youve discovered this website by mistake, but thanks for stopping by anyway-and, feel free to browse around.">
 <meta name="twitter:image" content="https://makc.co/images/bg-head.jpg">
 
 </head>
@@ -115,21 +115,18 @@
     <main>
         
 <style>
-    p,ol,ul {
-        font-family: 'IM Fell English', serif;
-        font-weight: 400;
+    header p { 
+        font-family: 'Open Sans', sans-serif;
         font-size: 1.1em;
+    } h1 { margin-top: 1em; }
+
+    p,ol,ul {
         padding: 1em;
         text-align: left;
         width: 60%;
         align: center; 
         margin: auto; 
-        color: var(--fg2-color);
-    } h1 { margin-top: 1em; }
-    header p { 
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.1em;
-    }
+    } h4 {text-align: center;}
 
 @media only screen and (max-width: 850px) { 
     p,ol,ul {
@@ -143,37 +140,61 @@
         margin-left: .5em; 
         margin-right: .5em;
     }
+
 }
 </style>
-    <picture><source type="image/webp" srcset="/.11ty/image/?src=essays%2Fimg%2F2025-07-20.jpg&width=5184&format=webp&via=transform 5184w"><img class="hero" src="/.11ty/image/?src=essays%2Fimg%2F2025-07-20.jpg&width=5184&format=jpeg&via=transform" alt="" width="5184" height="3456"></picture>
-    <h1>Ballad of a Bad Man</h1>
-    <h3>July 20, 2025</h3>
-
-<div class="post-navigation" style="margin-top: 3em; text-align: center;">
-  <a href="https://makc.co/feed.xml" target="_blank"><button>RSS &nbsp;<i class="fa-solid fa-rss"></i></button></a>
-</div>
+    <img class="hero" src="" alt="">
+    <h1>Setting up BSPWM on Fedora Workstation</h1>
+    <h3>December 28, 2025</h3>
 
 <div class="essayContainer"> 
-<p><em>Whatever reigns where Seraphim flame and soar,</em><br>
-<em>I beg the, judge not my hand, but what it labored for.</em><br>
-<em>No blade was drawn, but wrath still did command,</em><br>
-<em>The tears that yearned to guide my violent hand.</em><br></p>
-<p><em>And I, God help me struck not from hate,</em><br>
-<em>But with love inflamed, to seal another's fate.</em><br>
-<em>The blood ran hot. It chilled my chest;</em><br>
-<em>My brother lived. I found no rest.</em><br></p>
-<p><em>Weep not for the man who's breath I broke,</em><br>
-<em>But for the law in me, who felt the stroke.</em><br>
-<em>A line I swore I'd never cross,</em><br>
-<em>Shattered by a single toss.</em><br></p>
-<p><em>Is this my flaw? Not lust, not prideful thrill,</em><br>
-<em>But mercy's specter, averted by unconscious will?</em><br>
-<em>Lord of grace, of earth, of sea, of sky,</em><br>
-<em>May love lay scourge to Logos, and justify?</em><br></p>
-<p><em>Speak not to me now, let silence fan the flame,</em><br>
-<em>For I must bear the weight of a blood-soaked mane.</em><br>
-<em>One soul, now wears the twisted martyrant brand,</em><br>
-<em>Another, now damned for salting mercy’s land.</em><br></p>
+<p>A guide for setting up a working instance of <a href="https://github.com/makccr/dot">my BSPWM configuration</a> on a clean install of <a href="https://fedoraproject.org/workstation/download">Fedora Workstation</a>. Note: <em>I have only tested this on version 43 and above on x86 platforms.</em></p>
+<h2>Install Required Packages</h2>
+<p>We need to first install all packages that are required by BSPWM and are referenced in my BSPWM configuration. Most packages can be installed via the dnf package manger:</p>
+<p><code>sudo dnf upgrade &amp;&amp; sudo dnf install xorg-x11-server-Xorg polybar dunst sxhkd bspwm picom feh flameshot redshift xrandr udiskie alacritty pavucontrol brightnessctl</code></p>
+<p><strong>Note</strong>: The only packages that are required for BSPWM to function are:</p>
+<ul>
+<li>bspwm</li>
+<li>sxhkd</li>
+<li>xrandr</li>
+<li>X11-server</li>
+</ul>
+<p>My polybar configuration will also use a few different scripts that will require API keys stored in a Dropbox folder. Installing and logging into the default Dropbox client is required for some polybar modules to work. In order to install dropbox, you must first download the appropriate rpm package from the <a href="https://linux.dropbox.com/packages/fedora/">Dropbox website</a> &amp; then install with:</p>
+<p><code>sudo dnf install ~/Downloads/DROPBOX-VERSION.rpm</code></p>
+<p>Finally, BSPWM works a lot better with an application launcher of some sort. My configuration is set up to use a <a href="https://github.com/makccr/suckless/tree/main/dmenu">custom build of dmenu</a> that will need to be installed. To install we will need to clone the repo via either HTTPS or SSH and then build the application.</p>
+<p><code>cd ~/Documents; git clone git@github.com:makccr/suckless; cd suckless</code>
+<code>cd ~/Documents; git clone https://github.com/makccr/suckless.git; cd suckless</code></p>
+<p>Once the repository is cloned, there is an install script located in the root folder, which needs to be run, however in order to build dmenu some X11 development headers to be installed on the system in question:</p>
+<p><code>sudo dnf install libX11-devel libXinerama-devel libXft-devel</code></p>
+<p><code>./install.sh</code></p>
+<p><strong>Note</strong>: It is not necessary to install a custom iteration of demnu. Some amount of time and effort could be saved by simply downloading and installing the dmenu packages in dnf package manger:</p>
+<p><code>sudo dnf install dmenu</code></p>
+<h2>Install Configuration Files &amp; Fonts</h2>
+<p>First use git to clone my dot files repository and create symbolic links for my config and script directories.</p>
+<p><code>cd ~/Documents; git clone git@github.com:makccr/dot; cd</code>
+<code>cd ~/Documents; git clone https://github.com/makccr/dot.git; cd </code></p>
+<p>There is a setup script in the <em>.scripts/</em> folder of this repository as well. It should be noted however, that on a clean install of Fedora Workstation the <em>~/.config</em> folder will be populated. It is necessary to move these default configuration files somewhere before running the install script.</p>
+<p><code>mv ~/.config ~/Documents/</code></p>
+<p>At this point we can now run the <em>setup.sh</em> script, which will create symbolic links from the <em>~/Documents/dot</em> directory to the respective locations for all configs. <strong>Important</strong>: This script must be run from the users home directory (~/).</p>
+<p><code>./~/Documents/dot/.scripts/setup.sh</code></p>
+<p>At this point we can now add the default Fedora configs back into the <em>~/.config</em> folder:</p>
+<p><code>mv ~/Documents/.config/{*,.*} ~/.config</code></p>
+<p>Lastly we need to install some fonts that polybar will be looking for in it's configuration. The easiest way to do this would be to simply install two font packages from dnf.</p>
+<p><code>sudo dnf install julietaula-montserrat-fonts nerd-fonts-hack</code></p>
+<p>However, this is also a good opportunity to go ahead an install my full collection of fonts:</p>
+<p><code>git clone git@github.com:makccr/fonts; cd fonts; sudo cp -r makc-fonts/ /usr/share/fonts/</code></p>
+<h2>Finishing and Testing</h2>
+<p>At this point bspwm, it's dependencies and it's configuration files should be installed. Simply logging out of GNOME and logging into BSPWM should be all that is required to start using BSPWM.</p>
+<p>I have found that the <em>bspwm.dekstop</em> entry is sometimes not created when installing bspwm on Fedora. This will result in a situation where BSPWM can not be launched from the default login manger. In order to fix this we simply need to create a <em>bspwm.desktop</em> file in <em>/usr/share/xsessions</em>.</p>
+<p><strong>Note</strong>: Ensuring that <em>xorg-x11-server-Xorg</em> package gets installed before the <em>bspwm</em> package should make sure that the <em>bspwm</em> installer creates the <em>bspwm.desktop</em> entry on it's own; however this is a common issue I've run into and it's helpful to no how to fix it:</p>
+<p><code>sudo nano /usr/share/xsessions/bspwm.desktop</code></p>
+<p>Add the following text to the <em>.dekstop</em> file and save changes.</p>
+<pre><code>[Desktop Entry]
+Name=BSPWM
+Comment=Binary Space Partitioning Window Manager
+Exec=/usr/bin/bspwm
+Type=Application
+</code></pre>
 
 </div> 
 
@@ -200,30 +221,13 @@
   
 
   
-    
-  
 
   
 
   
 
 
-<div class="post-navigation" style="margin-top: 3em; text-align: center;">
-  
-  
-<div class="rss">
-  
-    
-    <a href="/essays/1-million-dollar-spending-spree/" class="prev-post"><button><i class="fa-solid fa-arrow-left"></i></button></a>
-  
-  <a href="https://makc.co/feed.xml" target="_blank"><button>RSS &nbsp;<i class="fa-solid fa-rss"></i></button></a>
-  
-    
-    <a href="/essays/consequences/" class="next-post"><button><i class="fa-solid fa-arrow-right"></i></button></a>
-  
-</div>
-
-    </div></main>
+    </main>
     <footer>
         <div class="socialIcons"> 
             <a title="Github" target="_blank" href="https://github.com/makccr"><i class="fa-brands fa-github"></i></a>
