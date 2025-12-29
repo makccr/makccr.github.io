@@ -63,12 +63,10 @@ However, this is also a good opportunity to go ahead an install my full collecti
 
 `git clone git@github.com:makccr/fonts; cd fonts; sudo cp -r makc-fonts/ /usr/share/fonts/`
 
-## Finishing and Testing
-At this point bspwm, it's dependencies and it's configuration files should be installed. Simply logging out of GNOME and logging into BSPWM should be all that is required to start using BSPWM. 
+## Testing
+One of the few issues I have run into, is the *bspwm.desktop* file not being created and put into */usr/share/xessions*. This will result in a situation where BSPWM can not be launched from the default login manger. In order to fix this we simply need to create a *bspwm.desktop* file in */usr/share/xsessions*. 
 
-I have found that the *bspwm.dekstop* entry is sometimes not created when installing bspwm on Fedora. This will result in a situation where BSPWM can not be launched from the default login manger. In order to fix this we simply need to create a *bspwm.desktop* file in */usr/share/xsessions*. 
-
-**Note**: Ensuring that *xorg-x11-server-Xorg* package gets installed before the *bspwm* package should make sure that the *bspwm* installer creates the *bspwm.desktop* entry on it's own; however this is a common issue I've run into and it's helpful to no how to fix it: 
+**Note**: Ensuring that *xorg-x11-server-Xorg* and *bspwm* packages are installed should prevent this problem from ever taking place, but it's still helpful to know how to fix the issue.
 
 `sudo nano /usr/share/xsessions/bspwm.desktop`
 
