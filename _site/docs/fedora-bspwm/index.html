@@ -85,7 +85,7 @@
     </script>
 
     <header>
-        <a href="/index"><picture><source type="image/webp" srcset="/img/wFNTedeVhW-1000.webp 1000w"><img class="logo" src="/img/wFNTedeVhW-1000.jpeg" alt="HOME" width="1000" height="1000"></picture></a>
+        <a href="/index"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fm.svg&width=1000&format=webp&via=transform 1000w"><img class="logo" src="/.11ty/image/?src=images%2Fm.svg&width=1000&format=jpeg&via=transform" alt="HOME" width="1000" height="1000"></picture></a>
             <div class="bars" onclick="mobileMenu()">
                 <i class="fas fa-bars"></i>
             </div>
@@ -151,7 +151,7 @@
 <p>A guide for setting up a working instance of <a href="https://github.com/makccr/dot">my BSPWM configuration</a> on a clean install of <a href="https://fedoraproject.org/workstation/download">Fedora Workstation</a>. Note: <em>I have only tested this on version 43 and above on x86 platforms.</em></p>
 <h2>Install Required Packages</h2>
 <p>We need to first install all packages that are required by BSPWM and are referenced in my BSPWM configuration. Most packages can be installed via the dnf package manger:</p>
-<p><code>sudo dnf upgrade &amp;&amp; sudo dnf install xorg-x11-server-Xorg polybar dunst sxhkd bspwm picom feh flameshot redshift xrandr udiskie alacritty pavucontrol brightnessctl xbindkeys</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> dnf upgrade <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> dnf <span class="token function">install</span> xorg-x11-server-Xorg polybar dunst sxhkd bspwm picom feh flameshot redshift xrandr udiskie alacritty pavucontrol brightnessctl xbindkeys</code></pre>
 <p><strong>Note</strong>: The only packages that are required for BSPWM to function are:</p>
 <ul>
 <li>bspwm</li>
@@ -160,40 +160,41 @@
 <li>X11-server</li>
 </ul>
 <p>My polybar configuration will also use a few different scripts that will require API keys stored in a Dropbox folder. Installing and logging into the default Dropbox client is required for some polybar modules to work. In order to install dropbox, you must first download the appropriate rpm package from the <a href="https://linux.dropbox.com/packages/fedora/">Dropbox website</a> &amp; then install with:</p>
-<p><code>sudo dnf install ~/Downloads/DROPBOX-VERSION.rpm</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> dnf <span class="token function">install</span> ~/Downloads/DROPBOX-VERSION.rpm</code></pre>
 <p>Finally, BSPWM works a lot better with an application launcher of some sort. My configuration is set up to use a <a href="https://github.com/makccr/suckless/tree/main/dmenu">custom build of dmenu</a> that will need to be installed. To install we will need to clone the repo via either HTTPS or SSH and then build the application.</p>
-<p><code>cd ~/Documents; git clone git@github.com:makccr/suckless; cd suckless</code>
-<code>cd ~/Documents; git clone https://github.com/makccr/suckless.git; cd suckless</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token builtin class-name">cd</span> ~/Documents<span class="token punctuation">;</span> <span class="token function">git</span> clone git@github.com:makccr/suckless<span class="token punctuation">;</span> <span class="token builtin class-name">cd</span> suckless
+<span class="token comment"># or</span>
+<span class="token builtin class-name">cd</span> ~/Documents<span class="token punctuation">;</span> <span class="token function">git</span> clone https://github.com/makccr/suckless.git<span class="token punctuation">;</span> <span class="token builtin class-name">cd</span> suckless</code></pre>
 <p>Once the repository is cloned, there is an install script located in the root folder, which needs to be run, however in order to build dmenu some X11 development headers to be installed on the system in question:</p>
-<p><code>sudo dnf install libX11-devel libXinerama-devel libXft-devel</code></p>
-<p><code>./install.sh</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> dnf <span class="token function">install</span> libX11-devel libXinerama-devel libXft-devel</code></pre>
+<pre class="language-shell"><code class="language-shell">./install.sh</code></pre>
 <p><strong>Note</strong>: It is not necessary to install a custom iteration of demnu. Some amount of time and effort could be saved by simply downloading and installing the dmenu packages in dnf package manger:</p>
-<p><code>sudo dnf install dmenu</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> dnf <span class="token function">install</span> dmenu</code></pre>
 <h2>Install Configuration Files &amp; Fonts</h2>
 <p>First use git to clone my dot files repository and create symbolic links for my config and script directories.</p>
-<p><code>cd ~/Documents; git clone git@github.com:makccr/dot; cd</code>
-<code>cd ~/Documents; git clone https://github.com/makccr/dot.git; cd </code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token builtin class-name">cd</span> ~/Documents<span class="token punctuation">;</span> <span class="token function">git</span> clone git@github.com:makccr/dot<span class="token punctuation">;</span> <span class="token builtin class-name">cd</span>
+<span class="token comment"># or</span>
+<span class="token builtin class-name">cd</span> ~/Documents<span class="token punctuation">;</span> <span class="token function">git</span> clone https://github.com/makccr/dot.git<span class="token punctuation">;</span> <span class="token builtin class-name">cd</span></code></pre>
 <p>There is a setup script in the <em>.scripts/</em> folder of this repository as well. It should be noted however, that on a clean install of Fedora Workstation the <em>~/.config</em> folder will be populated. It is necessary to move these default configuration files somewhere before running the install script.</p>
-<p><code>mv ~/.config ~/Documents/</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">mv</span> ~/.config ~/Documents/</code></pre>
 <p>At this point we can now run the <em>setup.sh</em> script, which will create symbolic links from the <em>~/Documents/dot</em> directory to the respective locations for all configs. <strong>Important</strong>: This script must be run from the users home directory (~/).</p>
-<p><code>./~/Documents/dot/.scripts/setup.sh</code></p>
+<pre class="language-shell"><code class="language-shell">./~/Documents/dot/.scripts/setup.sh</code></pre>
 <p>At this point we can now add the default Fedora configs back into the <em>~/.config</em> folder:</p>
-<p><code>mv ~/Documents/.config/{*,.*} ~/.config</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">mv</span> ~/Documents/.config/<span class="token punctuation">{</span>*,.*<span class="token punctuation">}</span> ~/.config</code></pre>
 <p>Lastly we need to install some fonts that polybar will be looking for in it's configuration. The easiest way to do this would be to simply install two font packages from dnf.</p>
-<p><code>sudo dnf install julietaula-montserrat-fonts nerd-fonts-hack</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> dnf <span class="token function">install</span> julietaula-montserrat-fonts nerd-fonts-hack</code></pre>
 <p>However, this is also a good opportunity to go ahead an install my full collection of fonts:</p>
-<p><code>git clone git@github.com:makccr/fonts; cd fonts; sudo cp -r makc-fonts/ /usr/share/fonts/</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> clone git@github.com:makccr/fonts<span class="token punctuation">;</span> <span class="token builtin class-name">cd</span> fonts<span class="token punctuation">;</span> <span class="token function">sudo</span> <span class="token function">cp</span> <span class="token parameter variable">-r</span> makc-fonts/ /usr/share/fonts/</code></pre>
 <h2>Testing</h2>
 <p>One of the few issues I have run into, is the <em>bspwm.desktop</em> file not being created and put into <em>/usr/share/xessions</em>. This will result in a situation where BSPWM can not be launched from the default login manger. In order to fix this we simply need to create a <em>bspwm.desktop</em> file in <em>/usr/share/xsessions</em>.</p>
 <p><strong>Note</strong>: Ensuring that <em>xorg-x11-server-Xorg</em> and <em>bspwm</em> packages are installed should prevent this problem from ever taking place, but it's still helpful to know how to fix the issue.</p>
-<p><code>sudo nano /usr/share/xsessions/bspwm.desktop</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> <span class="token function">nano</span> /usr/share/xsessions/bspwm.desktop</code></pre>
 <p>Add the following text to the <em>.dekstop</em> file and save changes.</p>
-<pre><code>[Desktop Entry]
-Name=BSPWM
-Comment=Binary Space Partitioning Window Manager
-Exec=/usr/bin/bspwm
-Type=Application
-</code></pre>
+<pre class="language-shell"><code class="language-shell"><span class="token punctuation">[</span>Desktop Entry<span class="token punctuation">]</span>
+<span class="token assign-left variable">Name</span><span class="token operator">=</span>BSPWM
+<span class="token assign-left variable">Comment</span><span class="token operator">=</span>Binary Space Partitioning Window Manager
+<span class="token assign-left variable">Exec</span><span class="token operator">=</span>/usr/bin/bspwm
+<span class="token assign-left variable">Type</span><span class="token operator">=</span>Application</code></pre>
 
 </div> 
 

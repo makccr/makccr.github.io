@@ -85,7 +85,7 @@
     </script>
 
     <header>
-        <a href="/index"><picture><source type="image/webp" srcset="/img/wFNTedeVhW-1000.webp 1000w"><img class="logo" src="/img/wFNTedeVhW-1000.jpeg" alt="HOME" width="1000" height="1000"></picture></a>
+        <a href="/index"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fm.svg&width=1000&format=webp&via=transform 1000w"><img class="logo" src="/.11ty/image/?src=images%2Fm.svg&width=1000&format=jpeg&via=transform" alt="HOME" width="1000" height="1000"></picture></a>
             <div class="bars" onclick="mobileMenu()">
                 <i class="fas fa-bars"></i>
             </div>
@@ -151,65 +151,63 @@
 <p>A quick guide for cloning this site's repository via git &amp; getting set up for development on a new system. I use <a href="https://github.com/11ty/eleventy/">Eleventy (11ty)</a> as a static site generator &amp; <a href="https://airtable.com/">Airtable</a> as a <em>sort of a CMS solution</em>. This documentation will walk through cloning this website's repository from <a href="https://github.com/makccr/makccr.github.io">GitHub</a>, installing all required dependencies, insuring all NPM plugins are installed, and testing to ensure that the new machine is ready for further development.</p>
 <h2>Install Required Packages</h2>
 <h4>Arch</h4>
-<p><code>sudo pacman -Syu git nodejs npm</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> pacman <span class="token parameter variable">-Syu</span> <span class="token function">git</span> nodejs <span class="token function">npm</span></code></pre>
 <h4>Fedora</h4>
-<p><code>sudo dnf upgrade &amp;&amp; sudo dnf install git nodejs npm</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> dnf upgrade <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> dnf <span class="token function">install</span> <span class="token function">git</span> nodejs <span class="token function">npm</span></code></pre>
 <h4>Ubuntu</h4>
-<p><code>sudo apt update &amp;&amp; sudo apt upgrade; curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash - &amp;&amp; sudo apt install -y nodejs; sudo apt install git npm</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> <span class="token function">apt</span> update <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">apt</span> upgrade<span class="token punctuation">;</span> <span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://deb.nodesource.com/setup_current.x <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token parameter variable">-E</span> <span class="token function">bash</span> - <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> nodejs<span class="token punctuation">;</span> <span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token function">git</span> <span class="token function">npm</span></code></pre>
 <h4>Free BSD</h4>
-<p><code>su -c &quot;pkg update &amp;&amp; pkg upgrade &amp;&amp; pkg install git node npm&quot;</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">su</span> <span class="token parameter variable">-c</span> <span class="token string">"pkg update &amp;&amp; pkg upgrade &amp;&amp; pkg install git node npm"</span></code></pre>
 <h3>Clone the Site's Repository</h3>
 <ol>
 <li>Navigate to a suitable location, typically I will use a <em>~/Documents</em> folder</li>
 <li>Clone the site from GitHub either via HTTPS or SSH:</li>
 </ol>
-<p><code>git clone git@github.com:makccr/makccr.github.io</code>
-<code>git clone https://github.com/makccr/makccr.github.io</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> clone git@github.com:makccr/makccr.github.io
+or
+<span class="token function">git</span> clone https://github.com/makccr/makccr.github.io</code></pre>
 <h2>Install 11ty &amp; Required Plugins</h2>
-<p><code>npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags @11ty/eleventy-plugin-rss; npm install luxon --save-dev</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags @11ty/eleventy-plugin-rss<span class="token punctuation">;</span> <span class="token function">npm</span> <span class="token function">install</span> luxon --save-dev</code></pre>
 <h2>Relocate dotenv API Key</h2>
 <p>I use the dotenv npm plugin in order to authenticate a connection to Airtable. By default the dotenv plugin expects to find a file called <em>.env</em> in the site's root directory. For obvious reasons this can't be added to the GitHub repository and pushed upstream. My solution is to store the required API key in a Dropbox folder and then manually copy this key into the site's root directory when cloning a new development instance:</p>
-<p><code>cp ~/Dropbox/keys/.env ~/Documents/makccr.github.io/.env</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">cp</span> ~/Dropbox/keys/.env ~/Documents/makccr.github.io/.env</code></pre>
 <h2>Verify the New Instance is Ready for Development</h2>
 <p>The easiest way to verify that everything is working properly, is simply to attempt to compile and serve the eleventy site:</p>
-<p><code>npx @11ty/eleventy --serve</code></p>
+<pre class="language-shell"><code class="language-shell">npx @11ty/eleventy <span class="token parameter variable">--serve</span></code></pre>
 <p>If all went well, a local version of the site can now be reached at <em>http://localhost:8080</em> in any web browser. So long as this command is running the site will continually recompile as changes are made. You can also manually compile the site with:</p>
-<p><code>npx @11ty/eleventy</code></p>
+<pre class="language-shell"><code class="language-shell">npx @11ty/eleventy</code></pre>
 <p>When ready to commit changes to the site, just use the normal git process for doing so. The site is hosted on Netlify &amp; any changes pushed to the <em>master</em> branch will go live immediately.</p>
-<p><code>git add -A; git commit -m &quot;message&quot;; git push</code></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">add</span> -A<span class="token punctuation">;</span> <span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"message"</span><span class="token punctuation">;</span> <span class="token function">git</span> push</code></pre>
 <hr>
 <h2>Helpful Formatting Blocks</h2>
 <h4>New Essay Header</h4>
-<pre><code>---
-title: &quot;TITLE&quot;
+<pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">title: "TITLE"
 layout: essay.html
 image: img/LINK.jpg
 date: YYYY-MM-DD
 tags: essay 
-tagline: &quot;DESCRIPTION&quot;
----
-</code></pre>
+tagline: "DESCRIPTION"</span>
+<span class="token punctuation">---</span></span></code></pre>
 <h4>New Doc Header</h4>
-<pre><code>---
-title: &quot;TITLE&quot;
+<pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">title: "TITLE"
 layout: documentation.html
 date: YYYY-MM-DD
-tags: docs
----
-</code></pre>
+tags: docs</span>
+<span class="token punctuation">---</span></span></code></pre>
 <h4>Custom YouTube Embed Code</h4>
-<pre><code>&lt;div class=&quot;youtube&quot;&gt;
-    &lt;div class=&quot;youtube-video-container-16&quot;&gt;
-        &lt;iframe width=&quot;560&quot; height=&quot;315&quot;
-            src=&quot;LINK&quot;
-            frameborder=&quot;0&quot;
-            allow=&quot;accelerometer; encrypted-media; gyroscope; picture
--in-picture&quot;
-            allowfullscreen &gt;
-        &lt;/iframe&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>youtube<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>youtube-video-container-16<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>560<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>315<span class="token punctuation">"</span></span>
+            <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>LINK<span class="token punctuation">"</span></span>
+            <span class="token attr-name">frameborder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span>
+            <span class="token attr-name">allow</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>accelerometer; encrypted-media; gyroscope; picture
+-in-picture<span class="token punctuation">"</span></span>
+            <span class="token attr-name">allowfullscreen</span> <span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
 <p>This YouTube embed code has additional classes for videos at different aspect ratios, options include:</p>
 <ul>
 <li>youtube-video-container-16</li>

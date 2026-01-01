@@ -6,7 +6,8 @@ import { createRequire } from "module";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { DateTime } from "luxon";
 import pluginSitemap from "@quasibit/eleventy-plugin-sitemap";
-import pluginRss from "@11ty/eleventy-plugin-rss"; // ✅ RSS plugin
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"; // ✅ ADDED
 
 dotenv.config();
 
@@ -16,6 +17,9 @@ const striptags = require("striptags");
 export default function (eleventyConfig) {
   const useCache = process.env.NODE_ENV === "production";
   const cachePath = path.resolve(".cache/airtable.json");
+
+  // ✅ Syntax highlighting
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   // ✅ Add striptags filter
   eleventyConfig.addFilter("striptags", striptags);
@@ -116,4 +120,3 @@ export default function (eleventyConfig) {
     }
   };
 }
-

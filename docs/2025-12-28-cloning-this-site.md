@@ -9,50 +9,71 @@ A quick guide for cloning this site's repository via git & getting set up for de
 
 ## Install Required Packages
 #### Arch
-`sudo pacman -Syu git nodejs npm`
+```shell
+sudo pacman -Syu git nodejs npm
+```
 
 #### Fedora
-`sudo dnf upgrade && sudo dnf install git nodejs npm`
+```shell
+sudo dnf upgrade && sudo dnf install git nodejs npm
+```
 
 #### Ubuntu
-`sudo apt update && sudo apt upgrade; curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash - && sudo apt install -y nodejs; sudo apt install git npm`
+```shell
+sudo apt update && sudo apt upgrade; curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash - && sudo apt install -y nodejs; sudo apt install git npm
+```
 
 #### Free BSD
-`su -c "pkg update && pkg upgrade && pkg install git node npm"`
+```shell
+su -c "pkg update && pkg upgrade && pkg install git node npm"
+```
 
 ### Clone the Site's Repository
 1. Navigate to a suitable location, typically I will use a *~/Documents* folder
 2. Clone the site from GitHub either via HTTPS or SSH: 
 
-`git clone git@github.com:makccr/makccr.github.io`
-`git clone https://github.com/makccr/makccr.github.io`
+```shell
+git clone git@github.com:makccr/makccr.github.io
+or
+git clone https://github.com/makccr/makccr.github.io
+```
 
 ## Install 11ty & Required Plugins
-`npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags @11ty/eleventy-plugin-rss; npm install luxon --save-dev`
+```shell
+npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags @11ty/eleventy-plugin-rss; npm install luxon --save-dev
+```
 
 ## Relocate dotenv API Key
 I use the dotenv npm plugin in order to authenticate a connection to Airtable. By default the dotenv plugin expects to find a file called *.env* in the site's root directory. For obvious reasons this can't be added to the GitHub repository and pushed upstream. My solution is to store the required API key in a Dropbox folder and then manually copy this key into the site's root directory when cloning a new development instance: 
 
-`cp ~/Dropbox/keys/.env ~/Documents/makccr.github.io/.env`
+```shell
+cp ~/Dropbox/keys/.env ~/Documents/makccr.github.io/.env
+```
 
 ## Verify the New Instance is Ready for Development
 The easiest way to verify that everything is working properly, is simply to attempt to compile and serve the eleventy site: 
 
-`npx @11ty/eleventy --serve`
+```shell
+npx @11ty/eleventy --serve
+```
 
 If all went well, a local version of the site can now be reached at *http://localhost:8080* in any web browser. So long as this command is running the site will continually recompile as changes are made. You can also manually compile the site with: 
 
-`npx @11ty/eleventy`
+```shell
+npx @11ty/eleventy
+```
 
 When ready to commit changes to the site, just use the normal git process for doing so. The site is hosted on Netlify & any changes pushed to the *master* branch will go live immediately.
 
-`git add -A; git commit -m "message"; git push`
+```shell
+git add -A; git commit -m "message"; git push
+```
 
 --- 
 
 ## Helpful Formatting Blocks
 #### New Essay Header
-```
+```markdown
 ---
 title: "TITLE"
 layout: essay.html
@@ -63,7 +84,7 @@ tagline: "DESCRIPTION"
 ---
 ```
 #### New Doc Header
-```
+```markdown
 ---
 title: "TITLE"
 layout: documentation.html
@@ -73,7 +94,7 @@ tags: docs
 ```
 
 #### Custom YouTube Embed Code
-```
+```html
 <div class="youtube">
     <div class="youtube-video-container-16">
         <iframe width="560" height="315"

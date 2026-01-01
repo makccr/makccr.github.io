@@ -85,7 +85,7 @@
     </script>
 
     <header>
-        <a href="/index"><picture><source type="image/webp" srcset="/img/wFNTedeVhW-1000.webp 1000w"><img class="logo" src="/img/wFNTedeVhW-1000.jpeg" alt="HOME" width="1000" height="1000"></picture></a>
+        <a href="/index"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fm.svg&width=1000&format=webp&via=transform 1000w"><img class="logo" src="/.11ty/image/?src=images%2Fm.svg&width=1000&format=jpeg&via=transform" alt="HOME" width="1000" height="1000"></picture></a>
             <div class="bars" onclick="mobileMenu()">
                 <i class="fas fa-bars"></i>
             </div>
@@ -145,7 +145,7 @@
     }
 }
 </style>
-    <picture><source type="image/webp" srcset="/essays/the-crusade-for-a-better-darkmode/jBzkwHrrpg-1920.webp 1920w"><img class="hero" src="/essays/the-crusade-for-a-better-darkmode/jBzkwHrrpg-1920.jpeg" alt="" width="1920" height="1281"></picture>
+    <picture><source type="image/webp" srcset="/.11ty/image/?src=essays%2Fimg%2F2019-07-02.jpg&width=1920&format=webp&via=transform 1920w"><img class="hero" src="/.11ty/image/?src=essays%2Fimg%2F2019-07-02.jpg&width=1920&format=jpeg&via=transform" alt="" width="1920" height="1281"></picture>
     <h1>The Crusade for a Better Dark Mode</h1>
     <h3>July 1, 2019</h3>
 
@@ -168,34 +168,33 @@
 <p>I’m actually going with the second option for now, while working on the redesign of my personal website. I might end up actually adding a manual dark mode switcher, button thing, before the site goes live, but at least for now, I’m kind of happy with the way that things work. The way that I have this set up is to serve, by default, not the standard light mode of my site, but the dark mode version. Anyone on an unsupported platform will just see the dark version of my site. But when a user moves over to a supported browser, my site will follow the preference set by the OS. Setting this up is fairly straightforward.</p>
 <p>The first step is to decide what version of your site you want users to see by default, before you ever start writing it. This is important because whatever classes you set up in your CSS document at the top, will be what users in an unsupported browser will see.</p>
 <p>So in my case, since I want to serve the dark mode by default, I would design my site in dark mode by default, dark backgrounds, light text, that type of thing:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">html, body</span> <span class="token punctuation">{</span>
+	<span class="token property">background-color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span> 
+	<span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span></code></pre>
 <p>Then we can use media queries to enable theme-switching, which works one of two ways:</p>
-<pre><code class="language-css">html, body {
-	background-color: black; 
-	color: white; 
-}
-</code></pre>
-<p><code>@media (prefers-color-scheme: light)</code> Which will only trigger when a user is in light mode on their system, and:</p>
-<p><code>@media (prefers-color-scheme: dark)</code> Which will only trigger when a user is in dark mode on their system.</p>
+<pre class="language-css"><code class="language-css">@media <span class="token punctuation">(</span><span class="token property">prefers-color-scheme</span><span class="token punctuation">:</span> light<span class="token punctuation">)</span></code></pre>
+<p>Which will only trigger when a user is in light mode on their system, and:</p>
+<pre class="language-css"><code class="language-css">@media <span class="token punctuation">(</span><span class="token property">prefers-color-scheme</span><span class="token punctuation">:</span> dark<span class="token punctuation">)</span></code></pre>
+<p>Which will only trigger when a user is in dark mode on their system.</p>
 <p>In my case, I’m wanting to enable a dark mode by default, and then use media queries to enable a light mode, so I’ll want to trigger the changes when a user is in light mode, which would look like this:</p>
-<pre><code class="language-css">@media (prefers-color-scheme: light) {
-	body, html {
-		background-color: white;
-    color: black;
-	}
-}
-</code></pre>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">prefers-color-scheme</span><span class="token punctuation">:</span> light<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+	<span class="token selector">body, html</span> <span class="token punctuation">{</span>
+		<span class="token property">background-color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
 <p>Then if we want to put it all together:</p>
-<pre><code class="language-css">html, body {
-  background-color: black; 
-  color: white; 
-} /* Made dark mode color settings */
-@media (prefers-color-scheme: light) {
-	body, html {
-		background-color: white; 
-		color: black; 
-	}
-} /* Switching to light color scheme when enabled on supported system */
-</code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">html, body</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span> 
+  <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> <span class="token comment">/* Made dark mode color settings */</span>
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">prefers-color-scheme</span><span class="token punctuation">:</span> light<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+	<span class="token selector">body, html</span> <span class="token punctuation">{</span>
+		<span class="token property">background-color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span> 
+		<span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span> 
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token comment">/* Switching to light color scheme when enabled on supported system */</span></code></pre>
 <p>I actually made a video talking about this same thing which you can watch here if your’e interested. But the point is, for now at least, I think this is a really great solution for a modern, simple, clean dark mode experience for web users.</p>
 <hr>
 <p><em>P.S.</em>: I made a <a href="https://youtu.be/oRuOwozgTiw">YouTube Video</a> covering this same process if that's more your speed.</p>

@@ -42,14 +42,12 @@ In practice, I’ve slimmed Franklin’s list to seven virtues that group natura
 
 Paper worked fine, but I wanted weekly grades for quick comparison, so I built a spreadsheet. Each day I type “X” under any virtue I missed; the sheet totals my slips and converts them to a letter grade:
 
-```
-
+```xlsx
 =COUNTIF(START:END,"*X*") * 2.04
 
 =LOOKUP( GRADE-CELL,  
 {0;60;63;67;70;73;77;80;83;87;90;93;97},  
 {"F";"D-";"D";"D+";"C-";"C";"C+";"B-";"B";"B+";"A-";"A";"A+"} )
-
 ``` 
 
 Franklin’s simple chart still feels modern: measure what matters, focus narrowly, improve steadily. It’s habit‑tracking with a soul.

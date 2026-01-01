@@ -30,8 +30,6 @@ The first step is to decide what version of your site you want users to see by d
 
 So in my case, since I want to serve the dark mode by default, I would design my site in dark mode by default, dark backgrounds, light text, that type of thing:
 
-Then we can use media queries to enable theme-switching, which works one of two ways:
-
 ```css
 html, body {
 	background-color: black; 
@@ -39,9 +37,18 @@ html, body {
 }
 ```
 
-`@media (prefers-color-scheme: light)` Which will only trigger when a user is in light mode on their system, and:
+Then we can use media queries to enable theme-switching, which works one of two ways:
 
-`@media (prefers-color-scheme: dark)` Which will only trigger when a user is in dark mode on their system.
+```css
+@media (prefers-color-scheme: light)
+``` 
+Which will only trigger when a user is in light mode on their system, and:
+
+```css
+@media (prefers-color-scheme: dark)
+```
+
+Which will only trigger when a user is in dark mode on their system.
 
 In my case, I’m wanting to enable a dark mode by default, and then use media queries to enable a light mode, so I’ll want to trigger the changes when a user is in light mode, which would look like this:
 
