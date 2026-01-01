@@ -135,4 +135,11 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://makc.co/essays/syntax-highlighting-in-11ty/</loc>
+    <lastmod>December 30, 2025</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

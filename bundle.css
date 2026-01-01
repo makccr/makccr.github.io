@@ -20,6 +20,14 @@ img {
     height: auto;
 }
 
+.seventyFive {
+    max-width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    padding: 3rem 0rem; 
+}
+
 .fifty {
     max-width: 50%;
   display: block;
@@ -71,6 +79,7 @@ img {
   --code-blue: #83a598; 
   --code-yellow: #fabd2f; 
   --code-red: #fb4934; 
+  --code-orange: #fe8019; 
   --code-gray: #a89984; 
 } /* Defining color scheme */
 
@@ -551,8 +560,10 @@ blockquote { font-size: 1.1rem; }
 .token.string, .token.char, .token.attr-value, .token.inserted { 
     color: var(--code-green); }
 
-.token.attr-name, .token.property, .token.keyword, .token.selector { 
+.token.attr-name, .token.property, .token.keyword { 
     color: var(--code-purple); }
+
+.token.selector { color: var(--code-orange);}
 
 .token.function { color: var(--code-blue); }
 

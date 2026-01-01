@@ -5,8 +5,92 @@
     <link>https://makc.co/essays/</link>
     <description>A collection of personal essays on film, technology, philosophy, and art—charting the edges where culture, creativity, and critical thought meet.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Sep 2025 19:00:00 CDT</lastBuildDate>
+    <lastBuildDate>Tue, 30 Dec 2025 18:00:00 CST</lastBuildDate>
 
+    
+      <item>
+        <title>Custom Syntax Highlighting With Eleventy</title>
+        <link>https://makc.co/essays/syntax-highlighting-in-11ty/</link>
+        <guid>https://makc.co/essays/syntax-highlighting-in-11ty/</guid>
+        <pubDate>Tue, 30 Dec 2025 18:00:00 CST</pubDate>
+        <description><![CDATA[<p>Unless you just happen to stalk my <a href="https://github.com/makccr">GitHub account</a> relentlessly, you are probably unaware of it, but this site was developed using the static site generator; <a href="https://www.11ty.dev/">Eleventy (11ty)</a>. 11ty offers incredibly easy web development, not only because of it's capability to play nicely with a massive amount of different file formats, but also because of it's massive library of <a href="https://nodejs.org/en">nodeJS</a> plugins. Throughout the process of developing and maintaining my website I have found that adding a new feature to my site is often as simple as running <em>npm install X</em> and making a small change to the <em>eleventy.config.js</em> file in my root directory. Earlier this week when I decided that I wanted to add syntax highlighting to HTML code blocks on my site, the process looked to be just that simple.</p>
+<p>The most complicated part of this process is solved by 11ty itself. Typically any page that I can get away with not writing custom HTML for, I simply write in the Markdown format. Using 11ty however, this is no problem. Once the site is compiled, Markdown is automatically converted to HTML, and I can easily style any text that was marked as code in Markdown as a class separate from the site's normal text. Even when attempting to take the next step and add individual syntax highlighting to these code blocks, I quickly came across a tool called <a href="https://prismjs.com/">PrismJS</a> that seemed to do exactly what I needed it to. Simply running one command in the terminal, and adding some text to my <em>eleventy.config.js</em> seemed like it would <em>just work</em>, just the way I've become accustomed to things in the 11ty ecosystem working.</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> @11ty/eleventy-plugin-syntaxhighlight --save-dev</code></pre>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> syntaxHighlight <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@11ty/eleventy-plugin-syntaxhighlight"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    eleventyConfig<span class="token punctuation">.</span><span class="token function">addPlugin</span><span class="token punctuation">(</span>syntaxHighlight<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> eleventyConfig<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<p>However, after hooking everything up and compiling my 11ty site, I found that nothing appeared to have changed. I did a bit of research and found a great article form Martin Gunnarsson in which he <a href="https://www.martingunnarsson.com/posts/eleventy-syntax-highlighting/">detailed himself going through the same process</a>. He ran into problems when he didn't label code blocks through Markdown the was that PrismJS was expecting. If you are unfamiliar with Markdown, there are three different ways to denote code in Markdown:</p>
+<pre class="language-markdown"><code class="language-markdown"><span class="token list punctuation">1.</span> Inline markdown where only <span class="token code-snippet code keyword">`a few words`</span> are denoted as code
+
+<span class="token list punctuation">2.</span> A proper code block: 
+'''
+console.log("some code");
+'''
+
+<span class="token list punctuation">3.</span> A code block with a label: 
+'''javascript
+console.log("some code");
+'''</code></pre>
+<p>It turns out that the syntax highlighting plugin from 11ty only supports the third option; a full code block with a label at the top line declaring what language the syntax highlighting needs to be applied to. Unfortunately for me, this is how I had already formatted damn near all of my code blocks site-wide. So I went ahead and took a closer look:</p>
+<img src="img/2025-12-31-A.jpg" alt="Firefox inspector window proving that the plugin was working" class="fifty">
+<p>After taking a look at the inspector window in Firefox, it became clear to me that the PrismJS plugin was doing quite a bit. When rendering the HTML document for my site, 11ty no longer was simply putting all of the text in a generic <em>code</em> block, but was instead creating individual CSS classes for <em>language-javascript</em>, <em>language-shell</em>, and so on - as well as breaking down the contents of the block even further into classes for <em>punctuation, string, operator, comment</em> and several other elements that made up the blocks. The only problem? The text in the code block was still the same color as generic text, no styling at all. This was odd, but it also wasn't the worst thing in the world. Knowing myself I knew I'd eventually want a way to customize the colors and makeup of the individual elements myself anyway; so I began the process of trying to compile a concrete list of every class that the syntax highlighting plugin would create for every single one of the nearly 300 languages that PrismJS supports -- no easy task.</p>
+<p>But, before I brake down how I solved that problem, it is worth nothing that 11ty's plugin should automatically add sytax highlighting when it is installed. I have since confirmed that the only reason that this was not happening on my site is because I had previously added customization to the <em>code</em> and <em>pre</em> CSS classes, changing the text color. After removing that customization, the syntax highlighting worked as expected. But unfortunately, I didn't confirm that this was the case until after I had already spent nearly a full work day figuring out a way more complex work around, that just happens to add a higher level of customization.</p>
+<p>It only took me a matter of minutes to find a way to isolate every one of these class names that PrismJS was creating. Simply opening the Console in Firefox and typing the following, showed me every class being rendered on an individual page.</p>
+<pre class="language-js"><code class="language-js"><span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>
+  <span class="token punctuation">[</span><span class="token operator">...</span>document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'pre code span'</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">el</span> <span class="token operator">=></span> el<span class="token punctuation">.</span>className<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">]</span>
+
+<span class="token comment">// That returned: </span>
+<span class="token function">Array</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span> <span class="token punctuation">[</span> <span class="token string">"token function"</span><span class="token punctuation">,</span> <span class="token string">"token keyword"</span><span class="token punctuation">,</span> <span class="token string">"token operator"</span><span class="token punctuation">,</span> <span class="token string">"token punctuation"</span><span class="token punctuation">,</span> <span class="token string">"token string"</span><span class="token punctuation">,</span> <span class="token string">"token function-variable function"</span><span class="token punctuation">,</span> <span class="token string">"token parameter"</span><span class="token punctuation">,</span> <span class="token string">"token list punctuation"</span><span class="token punctuation">,</span> <span class="token string">"token code-snippet code keyword"</span> <span class="token punctuation">]</span></code></pre>
+<p>Of course I realized now, that using this method, the only way I'd ever be able to make sure that every piece of syntax was formatted properly would be to somehow have a snippet of every single one of PrismJS's 297 supported languages in one Markdown document. So I got to work.</p>
+<p>A few hours later, I had a single Markdown file that contained a one line snippet of all 297 languages (or pretty close to all of them); and once I compiled the site and ran my console code again, I had a <em>comprehensive enough</em> list of every class that PrismJS could potentially create on my site. Once I had that list, the process was as simple as creating a custom set of color variables at the top of my main CSS page, which I themed using the <a href="https://github.com/morhetz/gruvbox">Gruvbox</a> color scheme:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span> <span class="token comment">/* Base Settings */</span>
+  <span class="token property">--code-aqua</span><span class="token punctuation">:</span> #8ec07c<span class="token punctuation">;</span>
+  <span class="token property">--code-green</span><span class="token punctuation">:</span> #b8bb26<span class="token punctuation">;</span>
+  <span class="token property">--code-purple</span><span class="token punctuation">:</span> #d3869b<span class="token punctuation">;</span>
+  <span class="token property">--code-blue</span><span class="token punctuation">:</span> #83a598<span class="token punctuation">;</span>
+  <span class="token property">--code-yellow</span><span class="token punctuation">:</span> #fabd2f<span class="token punctuation">;</span>
+  <span class="token property">--code-red</span><span class="token punctuation">:</span> #fb4934<span class="token punctuation">;</span>
+  <span class="token property">--code-gray</span><span class="token punctuation">:</span> #a89984<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment">/* Defining color scheme */</span></code></pre>
+<p>And after setting up color definitions, I began the work of applying each color to the proper CSS classes. Luckily for me, 297 different languages only generated 34 different CSS classes that I needed to assign, but once again this process took a few hours of experimenting to get everything right. Eventually however I managed to get everything where it was meant to be, and ended up with what should be proper syntax highlighting for every single one of PrismJS's supported languages.</p>
+<pre class="language-css"><code class="language-css"><span class="token comment">/* CODE COLORS */</span>
+<span class="token selector">.token.comment, .token.prolog, .token.doctype, .token.cdata</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--code-gray<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">font-style</span><span class="token punctuation">:</span> italic<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+<span class="token selector">.token.operator, .token.assign-left, .token.builtin, .token.entity, .token.namespace</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--code-aqua<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+<span class="token selector">.token.string, .token.char, .token.attr-value, .token.inserted</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--code-green<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+<span class="token selector">.token.attr-name, .token.property, .token.keyword, .token.selector</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--code-purple<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+<span class="token selector">.token.function</span> <span class="token punctuation">{</span> <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--code-blue<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+<span class="token selector">.token.number, .token.boolean, .token.variable, .token.parameter, .token.class-name, .token.type</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--code-yellow<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+<span class="token selector">.token.regex, .token.symbol, .token.punctuation, .token.constant, .token.tag</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--code-red<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+<span class="token selector">.token.bold</span> <span class="token punctuation">{</span> <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token selector">.token.italic</span> <span class="token punctuation">{</span> <span class="token property">font-style</span><span class="token punctuation">:</span> italic<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token selector">.token.deleted</span> <span class="token punctuation">{</span> <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--code-red<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+<span class="token selector">.token.important</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--code-red<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token selector">.token</span> <span class="token punctuation">{</span> <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--code-gray<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span></code></pre>
+<p>It does seem worth mentioning once more, that this whole process is not necessary to get syntax highlighting working on with 11ty. But if anyone else out there just happens to want to use a custom color scheme that isn't supported by Prism, or finds themselves in a position where they need to customize any of the syntax highlighting that PrismJS generated, hopefully you'll come across this essay and not waste the six hours that I wasted figuring this all out.</p>
+]]></description>
+      </item>
     
       <item>
         <title>The Death of Connectivity Online in Exchange for Algorithmic Cyborgization</title>

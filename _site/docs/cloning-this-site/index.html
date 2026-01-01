@@ -167,7 +167,7 @@
 or
 <span class="token function">git</span> clone https://github.com/makccr/makccr.github.io</code></pre>
 <h2>Install 11ty &amp; Required Plugins</h2>
-<pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags @11ty/eleventy-plugin-rss<span class="token punctuation">;</span> <span class="token function">npm</span> <span class="token function">install</span> luxon --save-dev</code></pre>
+<pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags @11ty/eleventy-plugin-rss @11ty/eleventy-plugin-syntaxhighlight<span class="token punctuation">;</span> <span class="token function">npm</span> <span class="token function">install</span> luxon --save-dev</code></pre>
 <h2>Relocate dotenv API Key</h2>
 <p>I use the dotenv npm plugin in order to authenticate a connection to Airtable. By default the dotenv plugin expects to find a file called <em>.env</em> in the site's root directory. For obvious reasons this can't be added to the GitHub repository and pushed upstream. My solution is to store the required API key in a Dropbox folder and then manually copy this key into the site's root directory when cloning a new development instance:</p>
 <pre class="language-shell"><code class="language-shell"><span class="token function">cp</span> ~/Dropbox/keys/.env ~/Documents/makccr.github.io/.env</code></pre>
@@ -218,6 +218,8 @@ tags: docs</span>
 </div> 
 
 
+
+  
 
   
 

@@ -40,7 +40,7 @@ git clone https://github.com/makccr/makccr.github.io
 
 ## Install 11ty & Required Plugins
 ```shell
-npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags @11ty/eleventy-plugin-rss; npm install luxon --save-dev
+npm install @11ty/eleventy @11ty/eleventy-img airtable dotenv striptags @11ty/eleventy-plugin-rss @11ty/eleventy-plugin-syntaxhighlight; npm install luxon --save-dev
 ```
 
 ## Relocate dotenv API Key
