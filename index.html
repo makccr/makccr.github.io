@@ -34,8 +34,10 @@ I'm a A propagandist for pickled red onions, rare meat activist, and Captain of 
         {% endfor %}
 </div>
 <hr></hr>
+<iframe src="https://makccr.substack.com/embed" width="480" height="320" style="border:0px solid #000; background:white;" frameborder="0" scrolling="no"></iframe>
+<hr></hr>
 <div class="cardContainer">
-  {% assign recentEssays = collections.essays | reverse | slice: 0, 3 %}
+  {% assign recentEssays = collections.docs | reverse | slice: 0, 3 %}
   {% for essay in recentEssays %}
     <div class="essay-list">
       <h3>{{ essay.data.title }}</h3>
