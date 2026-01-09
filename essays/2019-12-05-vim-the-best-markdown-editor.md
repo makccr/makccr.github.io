@@ -1,5 +1,5 @@
 ---
-title: "On; the Best Markdown Editor"
+title: "On, the Best Markdown Editor"
 layout: essay.html
 image: img/2019-12-05-A.jpg
 date: 2019-12-05

@@ -282,7 +282,7 @@ console.log("some code");
         <title>On, John Woolman Was Kind of a Dick</title>
         <link>https://makc.co/essays/woolman-was-a-dick/</link>
         <guid>https://makc.co/essays/woolman-was-a-dick/</guid>
-        <pubDate>Tue, 01 Apr 2025 19:00:00 CDT</pubDate>
+        <pubDate>Mon, 31 Mar 2025 19:00:00 CDT</pubDate>
         <description><![CDATA[<p>Having just finished reading <em>The Journal of John Woolman</em>, I was struck by a few different things, the foremost: just how early an anti-slavery campaigner Woolman was. I knew that the guy wrote about the evils of slavery around the time of the American Revolution. What I did not realize is that Woolman actually died in 1774, 2 years before <em>The Declaration of Independence</em> was even signed. To say that the guy was &quot;ahead of his time&quot; is one of the most egregious understatements in history. At a time when virtually everyone owned slaves, including virtually all of our first presidents - this guy was actually running around successfully convincing people, on an individual level, to just straight up grant freedom to slaves they had already paid for.</p>
 <p>This does beg a bit of an interesting question: Why, if Woolman was running around as a powerful anti-slavery advocate, well before our nation was even formed, did it take so damn long for us to outlaw slavery?</p>
 <p><em>One possible theory:</em> Woolman was a bit of a dick.</p>
@@ -427,7 +427,7 @@ Don't get me wrong the collection is more than worth the five or six hundred buc
       </item>
     
       <item>
-        <title>On; the Best Markdown Editor</title>
+        <title>On, the Best Markdown Editor</title>
         <link>https://makc.co/essays/vim-the-best-markdown-editor/</link>
         <guid>https://makc.co/essays/vim-the-best-markdown-editor/</guid>
         <pubDate>Wed, 04 Dec 2019 18:00:00 CST</pubDate>
@@ -518,18 +518,6 @@ Don't get me wrong the collection is more than worth the five or six hundred buc
 		<span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span> 
 	<span class="token punctuation">}</span>
 <span class="token punctuation">}</span> <span class="token comment">/* Switching to light color scheme when enabled on supported system */</span></code></pre>
-<hr>
-<div class="youtube">
-    <div class="youtube-video-container-16">
-        <iframe width="560" height="315"
-            src="https://youtu.be/oRuOwozgTiw"
-            frameborder="0"
-            allow="accelerometer; encrypted-media; gyroscope; picture
--in-picture"
-            allowfullscreen >
-        </iframe>
-    </div>
-</div>
 ]]></description>
       </item>
     

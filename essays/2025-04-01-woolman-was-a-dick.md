@@ -2,7 +2,7 @@
 title: "On, John Woolman Was Kind of a Dick"
 layout: essay.html
 image: img/2025-04-01.jpg
-date: 2025-04-02
+date: 2025-04-01
 tags: essay 
 ---
 

@@ -339,6 +339,16 @@ footer .links {
   text-align: center;
 } 
 
+.essay-card {
+  width: 40rem; 
+  display: inline-block; 
+  margin: 1em; 
+  padding: 0em;
+  border: 1px solid var(--mid-accent);
+  border-radius: .3rem;
+  text-align: center;
+} 
+
 .video-card {
   width: 25rem; 
   display: inline-block; 
@@ -356,6 +366,17 @@ footer .links {
   width: 100%; 
   max-height: 13em;
   min-height: 13em;
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+  object-fit: cover;
+  padding: 0em; 
+  margin: 0em;
+} 
+
+.essay-card img {
+  width: 100%; 
+  max-height: 20em;
+  min-height: 20em;
   border-top-right-radius: .5rem;
   border-top-left-radius: .5rem;
   object-fit: cover;
@@ -397,7 +418,7 @@ button i, button i:hover{
   transition: all .3s;
 }
 
-.video-card button, .filterButtons button, .essay-list button {
+.video-card button, .filterButtons button, .essay-list-button {
     color: var(--fg2-color);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -466,7 +487,7 @@ blockquote { font-size: 1.1rem; }
     text-align: center;
     align: center; 
     margin: auto;
-    font-family: 'IM Fell English', serif;
+    font-family: 'Product Sans', sans-serif;
     font-weight: 400;
     font-size: 1rem;
 }
@@ -648,7 +669,12 @@ p,ol,ul {
 footer { padding: 2em; } 
 footer .links a { display: none; }
 .cardContainer { display: block; }
-.card { width: 90%; }
+.card, .essay-card { width: 90%; }
+
+.essay-card img {
+    max-height: 10em; 
+    min-height: 10em; 
+}
 
 blockquote { 
     font-size: .9em; 

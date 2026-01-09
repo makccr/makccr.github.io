@@ -70,17 +70,3 @@ html, body {
 	}
 } /* Switching to light color scheme when enabled on supported system */
 ```
-
----
-
-<div class="youtube">
-    <div class="youtube-video-container-16">
-        <iframe width="560" height="315"
-            src="https://youtu.be/oRuOwozgTiw"
-            frameborder="0"
-            allow="accelerometer; encrypted-media; gyroscope; picture
--in-picture"
-            allowfullscreen >
-        </iframe>
-    </div>
-</div>

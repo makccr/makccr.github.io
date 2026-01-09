@@ -3,49 +3,66 @@ layout: main.html
 title: Welcome
 ---
 <style>
-    main { text-align: center; }
-    #home { text-align: center; }
+main { text-align: center; }
+#home { text-align: center; }
 
-    button,a { 
-        padding: 0rem; 
-        margin: 0rem;
-    }
-
-    .card p {
-        padding: 0rem .5rem;
-        margin-bottom: 1.5rem;
-    }
+.card p {
+    padding: 0rem .5rem;
+    margin-bottom: 1.5rem;
+}
 </style>
 
 <h1>{{ title }}</h1>
-<h6>
-I'm a A propagandist for pickled red onions, rare meat activist, and Captain of the sailing vessel Knox. I've been creating content online for well over a decade now, but delivering to a very small audience. Undoubtedly, you've discovered this website by mistake, but thanks for stopping by anyway--and, feel free to browse around, odds are you might find something interesting.
-</h6>
+
+<h6> I'm a A propagandist for pickled red onions, rare meat activist, and Captain of the sailing vessel Knox. I've been creating content online for well over a decade now, but delivering to a very small audience. Undoubtedly, you've discovered this website by mistake, but thanks for stopping by anyway--and, feel free to browse around, odds are you might find something interesting. </h6>
+
 <hr></hr>
+
+<h2>Recent Videos</h2>
+
 <div class=cardContainer>
-        {% assign sorted = airtable | sort: "Date" | reverse %}
-        {% for item in sorted limit:3 %}
+    {% assign sorted = airtable | sort: "Date" | reverse %}
+    {% for item in sorted limit:3 %}
     <div data-category="{{ item.Type }}" class="video-card">
         <a href="{{ item.yturl }}" target="_blank" title="YouTube">
-        <img src="https://i.ytimg.com/vi/{{ item.ytid | strip }}/maxresdefault.jpg" alt="Hero image"/>
+            <img src="https://i.ytimg.com/vi/{{ item.ytid | strip }}/maxresdefault.jpg" alt="Hero image"/>
         </a>
         <p class="videos">{{ item.Title | truncate: 47, "..." }}</p><br>
     </div>
-        {% endfor %}
+    {% endfor %}
 </div>
+
 <hr></hr>
-<iframe src="https://makccr.substack.com/embed" width="480" height="320" style="border:0px solid #000; background:white;" frameborder="0" scrolling="no"></iframe>
+
+<h2>Recent Essays</h2>
+
+    {% assign recentEssays = collections.essays | reverse | slice: 0, 2 %}
+    {% for essay in recentEssays %}
+    <div class="essay-card">
+        <img src="/essays/{{ essay.data.image }}" alt="">
+        <h3> {{ essay.data.title }} </h3>
+        <h6> {{ essay.data.date | postDate }} </h6>
+        <br>
+        <a href="{{ essay.url }}">
+            <button>Read Now &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+        </a>
+    </div>
+    {% endfor %}
+
 <hr></hr>
-<div class="cardContainer">
-  {% assign recentEssays = collections.docs | reverse | slice: 0, 3 %}
-  {% for essay in recentEssays %}
-    <div class="essay-list">
-      <h3>{{ essay.data.title }}</h3>
-      
-      <div class="essay-preview">
-        {{ essay.templateContent | striptags | firstLine }} 
-      </div>
-        <a href="{{ essay.url }}"><button>Read More &nbsp;<i class="fa-solid fa-arrow-right"></i></button></a>
-      
-  {% endfor %}
-</div>
+
+<h2>New Documentation</h2>
+
+    {% assign recentEssays = collections.docs | reverse | slice: 0, 5 %}
+    {% for essay in recentEssays %}
+    <h4> 
+        <a href="{{ essay.url }}">
+            {{ essay.data.title }}
+        </a>
+    </h4>
+    <h6>
+        Last Updated: {{ essay.data.date | postDate }}
+    </h6>
+    {% endfor %}
+
+<br><br><br>
