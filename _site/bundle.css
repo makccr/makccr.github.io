@@ -36,6 +36,23 @@ img {
     padding: 3rem 0rem; 
 }
 
+.on-img {
+    max-width: 10em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    padding-top: 8rem; 
+    padding-bottom: 1rem; 
+}
+
+.substack {
+    max-width: 10em;
+    max-height: 3em;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
 .half {
     max-width: 45%;
     max-height: 45%;
@@ -116,6 +133,7 @@ h6 {
     font-size: 1em;
     display: block;
     width: 50%;
+    text-align: center; 
     margin: auto;
     font-family: 'Inconsolata', sans-serif;
     color: var(--fg2-color);

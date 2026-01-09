@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>MAKC.CO - Custom Syntax Highlighting With Eleventy</title>
+<title>MAKC.CO - On, Custom Syntax Highlighting With Eleventy</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1 /modern-normalize.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/bundle.css">
@@ -67,8 +67,8 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@makccr">
-<meta name="twitter:title" content="MAKC.CO - Custom Syntax Highlighting With Eleventy">
-<meta name="twitter:description" content="The static site generator 11ty makes it incredibly easy to build a website from scratch. However I found the process of adding syntax highlighting to my site to be a little bit more interesting than I initially expected it to be.">
+<meta name="twitter:title" content="MAKC.CO - On, Custom Syntax Highlighting With Eleventy">
+<meta name="twitter:description" content="Im a propagandist for pickled red onions, a rare meat activist, barely-monetizable YouTuber and Captain of the sailing vessel Knox. Ive been creating content online for well over a decade now, but delivering to a very small audience. Undoubtedly, youve discovered this website by mistake, but thanks for stopping by anyway-and, feel free to browse around.">
 <meta name="twitter:image" content="https://makc.co/images/bg-head.jpg">
 
 </head>
@@ -91,7 +91,7 @@
             </div>
             <p class="links">
                 <a href="/videos">Videos</a>
-                <a href="https://makccr.substack.com/" target="_blank">Essays</a>
+                <a href="/essays">Essays</a>
                 <a href="/docs">Documentation</a>
                 <a href="/downloads">Downloads & Apps</a>
             </p>
@@ -101,7 +101,7 @@
     <div class="mobile-links-container">
         <ul>
             <p class="mobile"><a href="/videos">Videos</a></p>
-            <p class="mobile"><a href="https://makccr.substack.com/" target="_blank">Essays</a></p>
+            <p class="mobile"><a href="/essays">Essays</a></p>
             <p class="mobile"><a href="/docs">Documentation</a></p>
             <p class="mobile"><a href="/downloads">Downloads & Apps</a></p>
             <br>
@@ -146,7 +146,7 @@
 }
 </style>
     <picture><source type="image/webp" srcset="/.11ty/image/?src=essays%2Fimg%2F2025-12-31.jpg&width=5805&format=webp&via=transform 5805w"><img class="hero" src="/.11ty/image/?src=essays%2Fimg%2F2025-12-31.jpg&width=5805&format=jpeg&via=transform" alt="" width="5805" height="3020"></picture>
-    <h1>Custom Syntax Highlighting With Eleventy</h1>
+    <h1>On, Custom Syntax Highlighting With Eleventy</h1>
     <h3>December 30, 2025</h3>
 
 <div class="post-navigation" style="margin-top: 3em; text-align: center;">
@@ -156,12 +156,12 @@
 <div class="essayContainer"> 
 <p>Unless you stalk my <a href="https://github.com/makccr">GitHub account</a> relentlessly, you are probably unaware of it, but <a href="https://makc.co">my website</a> was developed using the static site generator, <a href="https://www.11ty.dev/">Eleventy (11ty)</a>. 11ty offers incredibly easy web development, not only because of its capability to play nicely with a massive amount of different file formats, but also because of its massive library of NodeJS plugins. Throughout the process of developing and maintaining my website, I have found that adding a new feature to my site is often as simple as running <em>npm install X</em> and making a small change to the <em>eleventy.config.js</em> file in my root directory. Earlier this week, when I decided that I wanted to add syntax highlighting to HTML code blocks on my site, the process looked to be just that simple.</p>
 <p>The most complicated part of this process is solved by 11ty itself. Typically, any page that I can get away with not writing custom HTML for, I simply write in the Markdown format. Using 11ty, however, this is no problem. Once the site is compiled, Markdown is automatically converted to HTML, and I can easily style any text that was marked as code in Markdown as a class separate from the site’s normal text. Even when attempting to take the next step and add individual syntax highlighting to these code blocks, I quickly came across a tool called <a href="https://prismjs.com/">PrismJS</a> that seemed to do exactly what I needed it to. Simply running one command in the terminal and adding some text to my <em>eleventy.config.js</em> seemed like it would <em>just work</em>, just the way I’ve become accustomed to things in the 11ty ecosystem working.</p>
-<pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> @11ty/eleventy-plugin-syntaxhighlight --save-dev</code></pre>
-<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> syntaxHighlight <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@11ty/eleventy-plugin-syntaxhighlight"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> @11ty/eleventy-plugin-syntaxhighlight --save-dev</code></pre>
+<pre class="language-bash"><code class="language-bash">const syntaxHighlight <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">"@11ty/eleventy-plugin-syntaxhighlight"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    eleventyConfig<span class="token punctuation">.</span><span class="token function">addPlugin</span><span class="token punctuation">(</span>syntaxHighlight<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> eleventyConfig<span class="token punctuation">;</span> 
+module.exports <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>eleventyConfig<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    eleventyConfig.addPlugin<span class="token punctuation">(</span>syntaxHighlight<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token builtin class-name">return</span> eleventyConfig<span class="token punctuation">;</span> 
 <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
 <p>However, after hooking everything up and compiling my 11ty site, I found that nothing appeared to have changed. I did a bit of research and found a great article by Martin Gunnarsson, in which he detailed his own experience <a href="https://www.martingunnarsson.com/posts/eleventy-syntax-highlighting/">going through the same process</a>. He ran into problems when he didn’t label code blocks through Markdown as PrismJS was expecting. If you are unfamiliar with Markdown, there are three different ways to denote code in Markdown:</p>
 <pre class="language-markdown"><code class="language-markdown"><span class="token list punctuation">1.</span> Inline markdown where only <span class="token code-snippet code keyword">`a few words`</span> are denoted as code
@@ -180,7 +180,7 @@ console.log("some code");
 <p>After taking a look at the inspector window in Firefox, it became clear to me that the PrismJS plugin was doing quite a bit. When rendering the HTML document for my site, 11ty no longer was simply putting all of the text in a generic <em>code</em> block, but was instead creating individual CSS classes for <em>language-javascript</em>, <em>language-shell</em>, and so on - as well as breaking down the contents of the block even further into classes for <em>punctuation, string, operator, comment</em> and several other elements that made up the blocks. The only problem? The text in the code block was still the same color as generic text, no styling at all. This was odd, but it also wasn’t the worst thing in the world. Knowing myself, I knew I’d eventually want a way to customize the colors and makeup of the individual elements myself anyway, so I began the process of trying to compile a concrete list of every class that the syntax highlighting plugin would create for every single one of the nearly 300 languages that PrismJS supports -- no easy task.</p>
 <p>But, before I break down how I solved that problem, it is worth noting that 11ty’s plugin should automatically add syntax highlighting when it is installed. I have since confirmed that the only reason this was not happening on my site is that I had previously added customization to the “<em>code”</em> and “<em>pre”</em> CSS classes, changing the text color. After removing that customization, the syntax highlighting worked as expected. But unfortunately, I didn’t confirm that this was the case until after I had already spent nearly a full workday figuring out a way more complex workaround, which just happens to add a higher level of customization.</p>
 <p>It only took me a matter of minutes to find a way to isolate every one of these class names that PrismJS was creating. Simply opening the Console in Firefox and typing the following showed me every class being rendered on an individual page.</p>
-<pre class="language-js"><code class="language-js"><span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>
+<pre class="language-javascript"><code class="language-javascript"><span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>
   <span class="token punctuation">[</span><span class="token operator">...</span>document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'pre code span'</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
     <span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">el</span> <span class="token operator">=></span> el<span class="token punctuation">.</span>className<span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">]</span>
@@ -279,15 +279,19 @@ console.log("some code");
   <a href="https://makc.co/feed.xml" target="_blank"><button>RSS &nbsp;<i class="fa-solid fa-rss"></i></button></a>
   
     
-    <a href="/essays/the-monroe-doctrine/" class="next-post"><button><i class="fa-solid fa-arrow-right"></i></button></a>
+    <a href="/essays/becoming-an-empire/" class="next-post"><button><i class="fa-solid fa-arrow-right"></i></button></a>
   
 </div>
+
+    <a href="https://makccr.substack.com/p/custom-syntax-highlighting-with-eleventy" target="_blank">
+<picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fsubstack-button.svg&width=800&format=webp&via=transform 800w"><img src="/.11ty/image/?src=images%2Fsubstack-button.svg&width=800&format=jpeg&via=transform" alt="Read it on Substack" class="substack" width="800" height="242"></picture>
+</a>
 
     </div></main>
     <footer>
         <div class="socialIcons"> 
             <a title="Github" target="_blank" href="https://github.com/makccr"><i class="fa-brands fa-github"></i></a>
-            <a title="Substack" target="_blank" href="https://makccr.substack.com/"><i class="bi bi-substack"></i></a>
+            <a title="Substack" target="_blank" href="https://makccr.substack.com/">&nbsp;<i class="bi bi-substack"></i>&nbsp;</a>
             <a title="YouTube" target="_blank" href="https://www.youtube.com/@makc"><i class="fa-brands fa-youtube"></i></a>
             <a title="Odysee" target="_blank" href="https://odysee.com/@makc:a"><i class="fa-brands fa-odysee"></i></a>
             <a title="Unsplash" target="_blank" href="https://unsplash.com/@makccr"><i class="fa-brands fa-unsplash"></i></a>

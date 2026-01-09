@@ -1,21 +1,21 @@
 ---
-title: "Custom Syntax Highlighting With Eleventy"
+title: "On, Custom Syntax Highlighting With Eleventy"
 layout: essay.html
 image: img/2025-12-31.jpg
 date: 2025-12-31
 tags: essay 
-tagline: "The static site generator 11ty makes it incredibly easy to build a website from scratch. However I found the process of adding syntax highlighting to my site to be a little bit more interesting than I initially expected it to be."
+substack: https://makccr.substack.com/p/custom-syntax-highlighting-with-eleventy
 ---
 
-Unless you stalk my [GitHub account](https://github.com/makccr) relentlessly, you are probably unaware of it, but [my website](https://makc.co) was developed using the static site generator, [Eleventy (11ty)](https://www.11ty.dev/). 11ty offers incredibly easy web development, not only because of its capability to play nicely with a massive amount of different file formats, but also because of its massive library of NodeJS plugins. Throughout the process of developing and maintaining my website, I have found that adding a new feature to my site is often as simple as running *npm install X* and making a small change to the *eleventy.config.js* file in my root directory. Earlier this week, when I decided that I wanted to add syntax highlighting to HTML code blocks on my site, the process looked to be just that simple.
+Unless you stalk my [GitHub account](https://github.com/makccr) relentlessly, you are probably unaware of it, but [my website](https://makc.co) was developed using the static site generator, [Eleventy (11ty)](https://www.11ty.dev/). 11ty offers incredibly easy web development, not only because of its capability to play nicely with a massive amount of different file formats, but also because of its massive library of NodeJS plugins. Throughout the process of developing and maintaining my website, I have found that adding a new feature to my site is often as simple as running _npm install X_ and making a small change to the _eleventy.config.js_ file in my root directory. Earlier this week, when I decided that I wanted to add syntax highlighting to HTML code blocks on my site, the process looked to be just that simple.
 
-The most complicated part of this process is solved by 11ty itself. Typically, any page that I can get away with not writing custom HTML for, I simply write in the Markdown format. Using 11ty, however, this is no problem. Once the site is compiled, Markdown is automatically converted to HTML, and I can easily style any text that was marked as code in Markdown as a class separate from the site’s normal text. Even when attempting to take the next step and add individual syntax highlighting to these code blocks, I quickly came across a tool called [PrismJS](https://prismjs.com/) that seemed to do exactly what I needed it to. Simply running one command in the terminal and adding some text to my *eleventy.config.js* seemed like it would *just work*, just the way I’ve become accustomed to things in the 11ty ecosystem working.
+The most complicated part of this process is solved by 11ty itself. Typically, any page that I can get away with not writing custom HTML for, I simply write in the Markdown format. Using 11ty, however, this is no problem. Once the site is compiled, Markdown is automatically converted to HTML, and I can easily style any text that was marked as code in Markdown as a class separate from the site’s normal text. Even when attempting to take the next step and add individual syntax highlighting to these code blocks, I quickly came across a tool called [PrismJS](https://prismjs.com/) that seemed to do exactly what I needed it to. Simply running one command in the terminal and adding some text to my _eleventy.config.js_ seemed like it would _just work_, just the way I’ve become accustomed to things in the 11ty ecosystem working.
 
-```shell
+```bash
 npm install @11ty/eleventy-plugin-syntaxhighlight --save-dev
 ```
 
-```javascript
+```bash
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
@@ -44,13 +44,13 @@ It turns out that the syntax highlighting plugin from 11ty only supports the thi
 
 <img src="img/2025-12-31-A.jpg" alt="Firefox inspector window proving that the plugin was working" class="fifty">
 
-After taking a look at the inspector window in Firefox, it became clear to me that the PrismJS plugin was doing quite a bit. When rendering the HTML document for my site, 11ty no longer was simply putting all of the text in a generic *code* block, but was instead creating individual CSS classes for *language-javascript*, *language-shell*, and so on - as well as breaking down the contents of the block even further into classes for *punctuation, string, operator, comment* and several other elements that made up the blocks. The only problem? The text in the code block was still the same color as generic text, no styling at all. This was odd, but it also wasn’t the worst thing in the world. Knowing myself, I knew I’d eventually want a way to customize the colors and makeup of the individual elements myself anyway, so I began the process of trying to compile a concrete list of every class that the syntax highlighting plugin would create for every single one of the nearly 300 languages that PrismJS supports -- no easy task.
+After taking a look at the inspector window in Firefox, it became clear to me that the PrismJS plugin was doing quite a bit. When rendering the HTML document for my site, 11ty no longer was simply putting all of the text in a generic _code_ block, but was instead creating individual CSS classes for _language-javascript_, _language-shell_, and so on - as well as breaking down the contents of the block even further into classes for _punctuation, string, operator, comment_ and several other elements that made up the blocks. The only problem? The text in the code block was still the same color as generic text, no styling at all. This was odd, but it also wasn’t the worst thing in the world. Knowing myself, I knew I’d eventually want a way to customize the colors and makeup of the individual elements myself anyway, so I began the process of trying to compile a concrete list of every class that the syntax highlighting plugin would create for every single one of the nearly 300 languages that PrismJS supports -- no easy task.
 
-But, before I break down how I solved that problem, it is worth noting that 11ty’s plugin should automatically add syntax highlighting when it is installed. I have since confirmed that the only reason this was not happening on my site is that I had previously added customization to the “*code”* and “*pre”* CSS classes, changing the text color. After removing that customization, the syntax highlighting worked as expected. But unfortunately, I didn’t confirm that this was the case until after I had already spent nearly a full workday figuring out a way more complex workaround, which just happens to add a higher level of customization.
+But, before I break down how I solved that problem, it is worth noting that 11ty’s plugin should automatically add syntax highlighting when it is installed. I have since confirmed that the only reason this was not happening on my site is that I had previously added customization to the “_code”_ and “_pre”_ CSS classes, changing the text color. After removing that customization, the syntax highlighting worked as expected. But unfortunately, I didn’t confirm that this was the case until after I had already spent nearly a full workday figuring out a way more complex workaround, which just happens to add a higher level of customization.
 
 It only took me a matter of minutes to find a way to isolate every one of these class names that PrismJS was creating. Simply opening the Console in Firefox and typing the following showed me every class being rendered on an individual page.
 
-```js
+```javascript
 [...new Set(
   [...document.querySelectorAll('pre code span')]
     .map(el => el.className)
@@ -62,7 +62,7 @@ Array(9) [ "token function", "token keyword", "token operator", "token punctuati
 
 Of course, I realized now that using this method, the only way I’d ever be able to make sure that every piece of syntax was formatted properly would be to somehow have a snippet of every single one of PrismJS’s 297 supported languages in one Markdown document. So I got to work.
 
-A few hours later, I had a single Markdown file that contained a one-line snippet of all 297 languages (or pretty close to all of them), and once I compiled the site and ran my console code again, I had a *comprehensive enough* list of every class that PrismJS could potentially create on my site. Once I had that list, the process was as simple as creating a custom set of color variables at the top of my main CSS page, which I themed using the [Gruvbox](https://github.com/morhetz/gruvbox) color scheme:
+A few hours later, I had a single Markdown file that contained a one-line snippet of all 297 languages (or pretty close to all of them), and once I compiled the site and ran my console code again, I had a _comprehensive enough_ list of every class that PrismJS could potentially create on my site. Once I had that list, the process was as simple as creating a custom set of color variables at the top of my main CSS page, which I themed using the [Gruvbox](https://github.com/morhetz/gruvbox) color scheme:
 
 ```css
 :root { /* Base Settings */
