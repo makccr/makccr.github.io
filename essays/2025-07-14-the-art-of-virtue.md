@@ -1,34 +1,33 @@
 ---
-title: The Art of Virtue
+title: On, the Art of Virtue
 layout: essay.html
 image: img/2025-07-14.jpg
 date: 2025-07-14
 tags: essay 
-tagline: "Without a doubt, the best book I’ve read this year is *The Autobiography of Benjamin Franklin*. I only opened it because it leads off The Harvard Classics—a 51‑volume anthology I describe in a [separate essay](https://makc.co/essays/2025-03-15-harvard-classics/)—but I was pleasantly surprised by how readable, engaging, and practical it is."
 ---
 
-Without a doubt, the best book I’ve read this year is *The Autobiography of Benjamin Franklin*. I only opened it because it leads off The Harvard Classics—a 51‑volume anthology I describe in a [separate essay](https://makc.co/essays/2025-03-15-harvard-classics/)—but I was pleasantly surprised by how readable, engaging, and practical it is.
+Without a doubt, the best book I’ve read this year is *The Autobiography of Benjamin Franklin*. I only opened it because it leads off The Harvard Classics—a 51‑volume anthology I describe in a separate essay—but I was pleasantly surprised by how readable, engaging, and practical it is.
 
 The most discussed section is The Art of Virtue, where Franklin lays out 13 qualities he believed make a “good human specimen”:
 
-1. Temperance – Eat not to dullness; drink not to elevation.
-2. Silence – Speak only when it benefits yourself or others. Avoid trivial talk.
-3. Order – Let all things have their place; every task its time.
-4. Resolution – Do what you ought; follow through without fail.
-5. Frugality – Spend only to benefit yourself or others. Waste nothing.
-6. Industry – Always be doing something useful. Cut out the unnecessary.
-7. Sincerity – Use no deceit. Think justly, speak accordingly.
-8. Justice – Do no harm, whether by action or neglect.
-9. Moderation – Avoid extremes; don’t overreact to injury.
-10. Cleanliness – Keep yourself, your clothes, and your home clean.
-11. Tranquility – Don’t be disturbed by small things or accidents.
-12. Chastity – Use sex only for health or offspring, never to excess or harm.
-13. Humility – Imitate Jesus and Socrates.
+1.  Temperance – Eat not to dullness; drink not to elevation.
+2.  Silence – Speak only when it benefits yourself or others. Avoid trivial talk.
+3.  Order – Let all things have their place; every task its time.
+4.  Resolution – Do what you ought; follow through without fail.
+5.  Frugality – Spend only to benefit yourself or others. Waste nothing.
+6.  Industry – Always be doing something useful. Cut out the unnecessary.
+7.  Sincerity – Use no deceit. Think justly, speak accordingly.
+8.  Justice – Do no harm, whether by action or neglect.
+9.  Moderation – Avoid extremes; don’t overreact to injury.
+10.  Cleanliness – Keep yourself, your clothes, and your home clean.
+11.  Tranquility – Don’t be disturbed by small things or accidents.
+12.  Chastity – Use sex only for health or offspring, never to excess or harm.
+13.  Humility – Imitate Jesus and Socrates.
 
 Two things grabbed me right away:
 
-* **The Comparison Between Jesus and Socrates**. Franklin isn’t the only Founder to pair them; Jefferson does the same in [*The Life and Morals of Jesus of Nazareth*](https://thejeffersonbible.com/), his cut-and-paste iterative isolation of just the story of Jesus and philosophy contained in The New Testament Gospels.
-* **The idea of tracking virtues, not habits.** Franklin built a weekly chart (see below) and marked a box whenever he failed a virtue. The goal was character, not routine.
+1. The Comparison Between Jesus and Socrates. Franklin isn’t the only Founder to pair them; Jefferson does the same in _[The Life and Morals of Jesus of Nazareth](https://thejeffersonbible.com/)_, his cut-and-paste iterative isolation of just the story of Jesus and philosophy contained in The New Testament Gospels.
+2. The idea of tracking virtues, not habits. Franklin built a weekly chart (see below) and marked a box whenever he failed a virtue. The goal was character, not routine.
 
 <img src="img/2025-07-14-B.jpg" alt="An estimation of what this tracking system might have looked like" class="fifty">
 
@@ -40,7 +39,7 @@ In practice, I’ve slimmed Franklin’s list to seven virtues that group natura
 
 <img src="img/2025-07-14-A.png" alt="My virtue tracking spreadsheet" class="fifty">
 
-Paper worked fine, but I wanted weekly grades for quick comparison, so I built a spreadsheet. Each day I type “X” under any virtue I missed; the sheet totals my slips and converts them to a letter grade:
+Paper worked fine, but I wanted weekly grades for quick comparison, so I built a spreadsheet. Each day, I type “X” under any virtue I feel I have succeeded in representing, and the sheet totals my slips, converting them to a letter grade:
 
 ```xlsx
 =COUNTIF(START:END,"*X*") * 2.04
