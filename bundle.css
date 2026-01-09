@@ -349,6 +349,47 @@ footer .links {
   text-align: center;
 } 
 
+.post-card {
+  width: 25rem; 
+  margin: 1em; 
+  padding: 0em;
+  border: 1px solid var(--mid-accent);
+  border-radius: .3rem;
+  text-align: center;
+  display: inline-flex;
+  align-items: stretch; 
+  gap: 1rem;
+} 
+
+.post-card img {
+  width: 9rem;
+  aspect-ratio: 4 / 3;  
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: .3rem 0 0 .3rem; 
+}
+
+.post-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.post-content h4 {
+    padding: .5em; 
+    margin: 0em;
+}
+
+.post-content h6 {
+    margin: 0rem; 
+    padding: 0rem;
+    width: 90%;
+}
+
 .video-card {
   width: 25rem; 
   display: inline-block; 
@@ -483,11 +524,11 @@ blockquote { font-size: 1.1rem; }
 .essay-preview {
     color: var(--fg2-color);
     padding: 1rem 1rem;
-    width: 60%;
+    width: 90%;
     text-align: center;
     align: center; 
     margin: auto;
-    font-family: 'Product Sans', sans-serif;
+    font-family: 'IM Fell English', serif;
     font-weight: 400;
     font-size: 1rem;
 }
@@ -669,7 +710,7 @@ p,ol,ul {
 footer { padding: 2em; } 
 footer .links a { display: none; }
 .cardContainer { display: block; }
-.card, .essay-card { width: 90%; }
+.card, .essay-card, .post-card { width: 90%; }
 
 .essay-card img {
     max-height: 10em; 

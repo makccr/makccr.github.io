@@ -3,17 +3,46 @@ layout: main.html
 title: Essays
 ---
 
+<style>
+main { text-align: center; }
+#home { text-align: center; }
+</style>
+
 <img src='/images/on.png' alt='On, logo' class="on-img">
 <h6>A collection of personal essays on film, technology, philosophy, and art—charting the edges where culture, creativity, and critical thought meet.</h6>
+
 <hr></hr>
+
+<h2>Recent Essays</h2>
 <div class="cardContainer">
-  {% for essay in collections.essays reversed %}
-    <div class="essay-list">
-      <h3><a href="{{ essay.url }}">{{ essay.data.title }}</a></h3>
-        <h6 class="essays">{{ essay.data.date | postDate }}</h6>
-      <div class="essay-preview">
-        {{ essay.templateContent | striptags | firstLine }} <a href="{{ essay.url }}"><br><button>Read More &nbsp;<i class="fa-solid fa-arrow-right"></i></button></a>
-      </div>
+    {% assign recentEssays = collections.essays | reverse | slice: 0, 2 %}
+    {% for essay in recentEssays %}
+    <div class="essay-card">
+        <img src="/essays/{{ essay.data.image }}" alt="">
+        <h3> {{ essay.data.title }} </h3>
+        <h6> {{ essay.data.date | postDate }} </h6>
+        <div class="essay-preview">
+            {{ essay.templateContent | striptags | truncate: 300, "..." }} 
+        </div>
+        <a href="{{ essay.url }}">
+            <button>Read Now &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+        </a>
     </div>
-  {% endfor %}
 </div>
+{% endfor %}
+
+<hr></hr>
+
+<h2>All Essays</h2>
+
+{% for essay in collections.essays reversed %}
+    <div class="post-card">
+        <img src="/essays/{{ essay.data.image }}" alt="">
+        <div class="post-content">
+            <a href="{{ essay.url}}">
+                <h4>{{ essay.data.title | truncate: 40, "..." }}</h4>
+            </a>
+            <h6>{{ essay.data.date | postDate }}</h6>
+        </div>
+    </div>
+{% endfor %}

@@ -1,5 +1,5 @@
 ---
-title: "On, Custom Syntax Highlighting With Eleventy"
+title: "On, Custom Syntax Highlighting With 11ty"
 layout: essay.html
 image: img/2025-12-31.jpg
 date: 2025-12-31

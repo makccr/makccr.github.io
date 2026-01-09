@@ -1,5 +1,5 @@
 ---
-title: "On, the Death of Connectivity Online in Exchange for Algorithmic Cyborgization"
+title: "On, the Death of the Internet"
 layout: essay.html
 image: img/2025-09-24.jpg
 date: 2025-09-24

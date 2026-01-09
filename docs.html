@@ -10,9 +10,11 @@ title: Documentation
   {% for essay in collections.docs reversed %}
     <div class="essays-list">
       <h3><a href="{{ essay.url }}">{{ essay.data.title }}</a></h3>
+      <h6>Last Updated: {{ essay.data.date | postDate }}</h6>
       <div class="docs-preview">
         {{ essay.templateContent | striptags | firstLine }} <a href="{{ essay.url }}"><br>
       </div>
+      <h6></h6>
     </div>
   {% endfor %}
 </div>
