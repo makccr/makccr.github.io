@@ -1,7 +1,7 @@
 ---
 title: "Cloning This Webiste & Getting Set-up for Development with Eleventy"
 layout: docs.html
-date: 2025-12-28
+date: 2025-01-17
 tags: docs 
 ---
 
@@ -86,7 +86,7 @@ tags: essay
 ```markdown
 ---
 title: "TITLE"
-layout: documentation.html
+layout: docs.html
 date: YYYY-MM-DD
 tags: docs
 ---
