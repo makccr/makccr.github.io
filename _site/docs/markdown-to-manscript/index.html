@@ -85,7 +85,7 @@
     </script>
 
     <header>
-        <a href="/index"><picture><source type="image/webp" srcset="/img/wFNTedeVhW-1000.webp 1000w"><img class="logo" src="/img/wFNTedeVhW-1000.jpeg" alt="HOME" width="1000" height="1000"></picture></a>
+        <a href="/index"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fm.svg&width=1000&format=webp&via=transform 1000w"><img class="logo" src="/.11ty/image/?src=images%2Fm.svg&width=1000&format=jpeg&via=transform" alt="HOME" width="1000" height="1000"></picture></a>
             <div class="bars" onclick="mobileMenu()">
                 <i class="fas fa-bars"></i>
             </div>
@@ -187,10 +187,10 @@ brew update <span class="token operator">&amp;&amp;</span> brew upgrade <span cl
 <pre class="language-bash"><code class="language-bash">pandoc INPUT.md <span class="token parameter variable">-o</span> OUTPUT.odt </code></pre>
 <p>Open the exported <em>.odt</em> file in Libre Office and edit each paragraph style that is utilized. This can be done by opening the paragraph style menu, and using the drop down menu to edit each style individually. I have made the template I use <a href="https://makc.co/downloads/reference.zip">available for download</a>.</p>
 <p>Store this <em>reference.odt</em> file in an easy to access location, I put a copy of the template in the root directory of any writing project I'm embark on.</p>
-<picture><source type="image/webp" srcset="/docs/markdown-to-manscript/AdjSnXgsGT-854.webp 854w"><img src="/docs/markdown-to-manscript/AdjSnXgsGT-854.jpeg" alt="Libre Office Style's List" class="fifty" width="854" height="445"></picture>
+<picture><source type="image/webp" srcset="/.11ty/image/?src=docs%2Fimg%2F2026-01-17-A.jpg&width=854&format=webp&via=transform 854w"><img src="/.11ty/image/?src=docs%2Fimg%2F2026-01-17-A.jpg&width=854&format=jpeg&via=transform" alt="Libre Office Style's List" class="fifty" width="854" height="445"></picture>
 <h2>.lua Filter</h2>
 <p>A problem I encountered early on involved my use of Markdown’s horizontal rule feature. When exporting to an Office format, Pandoc, quite reasonably, renders the horizontal rule as a visible line. However, in my document this element is intended to mark a scene break, which follows specific formatting conventions in a manuscript.</p>
-<picture><source type="image/webp" srcset="/docs/markdown-to-manscript/SMy3Q-jc8m-1652.webp 1652w"><img src="/docs/markdown-to-manscript/SMy3Q-jc8m-1652.jpeg" alt="Libre Office Style's List" class="seventyFive" width="1652" height="498"></picture>
+<picture><source type="image/webp" srcset="/.11ty/image/?src=docs%2Fimg%2F2026-01-17-B.jpg&width=1652&format=webp&via=transform 1652w"><img src="/.11ty/image/?src=docs%2Fimg%2F2026-01-17-B.jpg&width=1652&format=jpeg&via=transform" alt="Libre Office Style's List" class="seventyFive" width="1652" height="498"></picture>
 <p>To avoid making changes to my Markdown documents, I created a <em>.lua</em> filter that can be run with Pandoc, and will convert the horizonal rule <em>(---)</em> in Markdown, to a <em>#</em> symbol, when exporting. In order for this filter to work properly, it is necessary to create a <em>SceneBreak</em> style in the <em>reference.odt</em> template.</p>
 <pre class="language-lua"><code class="language-lua"><span class="token comment">-- rule-to-scene-break.lua</span>
 
@@ -203,6 +203,54 @@ brew update <span class="token operator">&amp;&amp;</span> brew upgrade <span cl
 <pre class="language-bash"><code class="language-bash">pandoc INPUT.md <span class="token parameter variable">-o</span> OUTPUT.odt <span class="token punctuation">\</span>
 --reference-doc<span class="token operator">=</span>reference.odt <span class="token punctuation">\</span>
 --lua-filter<span class="token operator">=</span>/home/makc/.scripts/rule-to-scene-break.lua</code></pre>
+<h3>Converting to PDF</h3>
+<p>To create a PDF from the command line, we can use Libre Office in a headless manner. After creating the Open Office Document with Pandoc, run:</p>
+<pre class="language-bash"><code class="language-bash">libreoffice <span class="token parameter variable">--headless</span> --convert-to pdf FILENAME.odt</code></pre>
+<p>Or, simply create one bash script to handle everything in one motion.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token shebang important">#!/usr/bin/env bash</span>
+<span class="token builtin class-name">set</span> <span class="token parameter variable">-euo</span> pipefail
+
+<span class="token comment"># Resources</span>
+<span class="token assign-left variable">SCRIPTS_DIR</span><span class="token operator">=</span><span class="token string">"<span class="token environment constant">$HOME</span>/.scripts"</span>
+<span class="token assign-left variable">REFERENCE_DOC</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$SCRIPTS_DIR</span>/reference.odt"</span>
+<span class="token assign-left variable">LUA_FILTER</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$SCRIPTS_DIR</span>/rule-to-scene-break.lua"</span>
+
+<span class="token comment"># Arg check</span>
+<span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$#</span> <span class="token parameter variable">-ne</span> <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"Usage: <span class="token variable"><span class="token variable">$(</span><span class="token function">basename</span> <span class="token string">"<span class="token variable">$0</span>"</span><span class="token variable">)</span></span> FILE.md"</span>
+    <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+<span class="token keyword">fi</span>
+
+<span class="token assign-left variable">INPUT</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$1</span>"</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-f</span> <span class="token string">"<span class="token variable">$INPUT</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"Error: File not found: <span class="token variable">$INPUT</span>"</span>
+    <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+<span class="token keyword">fi</span>
+
+<span class="token comment"># Paths</span>
+<span class="token assign-left variable">INPUT_ABS</span><span class="token operator">=</span><span class="token string">"<span class="token variable"><span class="token variable">$(</span>realpath <span class="token string">"<span class="token variable">$INPUT</span>"</span><span class="token variable">)</span></span>"</span>
+<span class="token assign-left variable">BASENAME</span><span class="token operator">=</span><span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">basename</span> <span class="token string">"<span class="token variable">$INPUT_ABS</span>"</span> .md<span class="token variable">)</span></span>"</span>
+<span class="token assign-left variable">WORKDIR</span><span class="token operator">=</span><span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">dirname</span> <span class="token string">"<span class="token variable">$INPUT_ABS</span>"</span><span class="token variable">)</span></span>"</span>
+
+<span class="token assign-left variable">ODT</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$WORKDIR</span>/<span class="token variable">$BASENAME</span>.odt"</span>
+<span class="token assign-left variable">PDF</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$WORKDIR</span>/<span class="token variable">$BASENAME</span>.pdf"</span>
+
+<span class="token comment"># Converting and print to terminal</span>
+<span class="token builtin class-name">echo</span> <span class="token string">"→ Converting Markdown to ODT..."</span>
+pandoc <span class="token string">"<span class="token variable">$INPUT_ABS</span>"</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">-o</span> <span class="token string">"<span class="token variable">$ODT</span>"</span> <span class="token punctuation">\</span>
+    --reference-doc<span class="token operator">=</span><span class="token string">"<span class="token variable">$REFERENCE_DOC</span>"</span> <span class="token punctuation">\</span>
+    --lua-filter<span class="token operator">=</span><span class="token string">"<span class="token variable">$LUA_FILTER</span>"</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">"→ Converting ODT to PDF..."</span>
+libreoffice <span class="token punctuation">\</span>
+    <span class="token parameter variable">--headless</span> <span class="token punctuation">\</span>
+    --convert-to pdf <span class="token punctuation">\</span>
+    <span class="token parameter variable">--outdir</span> <span class="token string">"<span class="token variable">$WORKDIR</span>"</span> <span class="token punctuation">\</span>
+    <span class="token string">"<span class="token variable">$ODT</span>"</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">"✓ Done: <span class="token variable">$PDF</span>"</span></code></pre>
 
 </div> 
 
