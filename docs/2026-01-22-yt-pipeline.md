@@ -5,7 +5,7 @@ date: 2026-01-22
 tags: docs
 ---
 
-Some notes on setting up a custom display resolution on X11, transcoding H.264 media using ffmpeg, editing in Davinci Resolve, and then transcoding screen capture videos to the VP9 container for delivery to YouTube & other video platforms.
+Some notes on setting up a custom display resolution on X11, transcoding H.264 media using ffmpeg, editing in Davinci Resolve, and then transcoding screen capture videos to the VP9 codec for delivery to YouTube & other video platforms.
 
 ## Required Software
 * [ffmpeg](https://ffmpeg.org/): For transcoding media
@@ -64,12 +64,12 @@ xrandr --output DP-2 --mode 3840x2160 --scale 1x1
 ```
 
 ## Transcoding H.264
-Unless using a [custom *ffmpeg* output](https://obsproject.com/forum/threads/full-custom-ffmpeg-output.99064/), OBS will only output video using the H.264 container. This is a problem for a number of reasons when building a video creation pipeline on Linux: 
+Unless using a [custom *ffmpeg* output](https://obsproject.com/forum/threads/full-custom-ffmpeg-output.99064/), OBS will only output video using the H.264 codec. This is a problem for a number of reasons when building a video creation pipeline on Linux: 
 1. Fedora, Ubuntu & many other Linux distributions do not ship an iteration of *ffmpeg* that supports H.264 libraries.
 2. Kdenlive will not allow users to edit H.264 video without a transcode. 
 3. The free edition of Davinci Resolve will not work with H.264 at all when running on Linux.
 
-Much of this is due to a [licensing fee structure](https://www.zdnet.com/article/a-closer-look-at-the-costs-and-fine-print-of-h-264-licenses/) implemented by [Via-LA](https://via-la.com/)-- but the end result is that, the first step in any editing pipeline has to be a transcode to escape the limitations of the H.264 container. NLE friendly alternative containers include, but are not limited to, AVID's [DNxHR](https://en.wikipedia.org/wiki/DNxHR_codec), GoPro's [CineForm](https://gopro.github.io/cineform-sdk/) and Apple's [ProRes](https://support.apple.com/en-us/102207). All three have varying degrees of support across Linux distributions, but ProRes typically works *out of the box* and is what this documentation will recommend.
+Much of this is due to a [licensing fee structure](https://www.zdnet.com/article/a-closer-look-at-the-costs-and-fine-print-of-h-264-licenses/) implemented by [Via-LA](https://via-la.com/)-- but the end result is that, the first step in any editing pipeline has to be a transcode to escape the limitations of the H.264 codec. NLE friendly alternative codecs include, but are not limited to, AVID's [DNxHR](https://en.wikipedia.org/wiki/DNxHR_codec), GoPro's [CineForm](https://gopro.github.io/cineform-sdk/) and Apple's [ProRes](https://support.apple.com/en-us/102207). All three have varying degrees of support across Linux distributions, but ProRes typically works *out of the box* and is what this documentation will recommend.
 
 ```bash
 ffmpeg -i INPUT.MOV \ # Calls ffmpeg and selects file to transcode 
@@ -111,7 +111,7 @@ xrandr --output DP-2 --scale 1x1 # Restore native scale
 6. If there is any hissing or popping in narration, slightly lower the decibel level of Band 6.
 
 ## Transcoding for Delivery
-When exporting from Davinci Resolve, once again we run into issues, as Resolve does not support exporting to the H.264 container. Luckily, Google's [VP9](https://www.webmproject.org/vp9/) container has nearly all the same compression advantages as H.264 and none of the licensing issues. Unfortunately, Resolve also can't export to the VP9 codec. The easiest workaround is to export ProRes from Resolve and transcode to VP9 using *ffmpeg* for final delivery to a video sharing site:
+When exporting from Davinci Resolve, once again we run into issues, as Resolve does not support exporting to the H.264 codec. Luckily, Google's [VP9](https://www.webmproject.org/vp9/) codecs has nearly all the same compression advantages as H.264 and none of the licensing issues. Unfortunately, Resolve also can't export to the VP9 codec. The easiest workaround is to export ProRes from Resolve and transcode to VP9 using *ffmpeg* for final delivery to a video sharing site:
 
 ```bash
 ffmpeg -i INPUT.mov -c:v libvpx-vp9 -crf 35 -b:v 0 -c:a libopus -b:a 512k OUTPUT.webm
