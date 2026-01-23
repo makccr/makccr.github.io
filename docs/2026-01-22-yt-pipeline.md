@@ -17,7 +17,8 @@ Some notes on setting up a custom display resolution on X11, transcoding H.264 m
 * [Kdenlive](https://kdenlive.org/): A less than ideal, but usable NLE that is open-source
 
 ## Installation
-**Note**: Installing Davinci Resolve on Linux requires a fairly specific process, documentation for installing can be found [here](https://github.com/flolu/davinci-resolve-linux).<br>
+**Note**: Installing Davinci Resolve on Linux requires a fairly specific process, documentation for installing can be found [here](https://makc.co/docs/install-resolve-on-linux/).
+
 **Note**: *cvt* is used in this documentation and installed with the X11 utilities 
 
 ```bash
@@ -90,16 +91,6 @@ ffmpeg -i $1 -c:v prores_ks -profile:v 0 -c:a pcm_s16le "prefix-$(basename "%1")
 
 # Usage
 ./scriptname.sh FILENAME.mov # Outputs a transcoded file named, prefix-FILENAME.mov
-```
-
-## Fixing Davinci Resolve Display Scaling
-Once the transcode is complete, editing is straightforward regardless of NLE choice. If using Davinci Resolve however, additional display scaling issues may be encountered. This is due to the fact that Resolve uses [QT's GUI toolkit](https://www.qt.io/), but often ignores userspace environment variables to control QT apps. A quick workaround is to create a wrapper script that will change the display scaling when launching Resolve, and revert the scaling when Resolve is closed: 
-
-```bash
-#!/bin/bash
-xrandr --output DP-2 --scale 0.5x0.5 # Scale screen down by 2x
-/opt/resolve/bin/resolve # Launch Resolve
-xrandr --output DP-2 --scale 1x1 # Restore native scale
 ```
 
 #### Bonus: Quick Audio Cleanup in Resolve

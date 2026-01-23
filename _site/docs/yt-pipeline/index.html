@@ -85,7 +85,7 @@
     </script>
 
     <header>
-        <a href="/index"><picture><source type="image/webp" srcset="/img/wFNTedeVhW-1000.webp 1000w"><img class="logo" src="/img/wFNTedeVhW-1000.jpeg" alt="HOME" width="1000" height="1000"></picture></a>
+        <a href="/index"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fm.svg&width=1000&format=webp&via=transform 1000w"><img class="logo" src="/.11ty/image/?src=images%2Fm.svg&width=1000&format=jpeg&via=transform" alt="HOME" width="1000" height="1000"></picture></a>
             <div class="bars" onclick="mobileMenu()">
                 <i class="fas fa-bars"></i>
             </div>
@@ -161,8 +161,8 @@
 <li><a href="https://kdenlive.org/">Kdenlive</a>: A less than ideal, but usable NLE that is open-source</li>
 </ul>
 <h2>Installation</h2>
-<p><strong>Note</strong>: Installing Davinci Resolve on Linux requires a fairly specific process, documentation for installing can be found <a href="https://github.com/flolu/davinci-resolve-linux">here</a>.<br>
-<strong>Note</strong>: <em>cvt</em> is used in this documentation and installed with the X11 utilities</p>
+<p><strong>Note</strong>: Installing Davinci Resolve on Linux requires a fairly specific process, documentation for installing can be found <a href="https://makc.co/docs/install-resolve-on-linux/">here</a>.</p>
+<p><strong>Note</strong>: <em>cvt</em> is used in this documentation and installed with the X11 utilities</p>
 <pre class="language-bash"><code class="language-bash"><span class="token comment"># Arch Linux</span>
 <span class="token function">sudo</span> pacman <span class="token parameter variable">-Syu</span>
 <span class="token function">sudo</span> pacman <span class="token parameter variable">-S</span> obs-studio kdenlive ffmpeg xorg-xrandr
@@ -214,12 +214,6 @@ ffmpeg <span class="token parameter variable">-i</span> INPUT.MOV <span class="t
 
 <span class="token comment"># Usage</span>
 ./scriptname.sh FILENAME.mov <span class="token comment"># Outputs a transcoded file named, prefix-FILENAME.mov</span></code></pre>
-<h2>Fixing Davinci Resolve Display Scaling</h2>
-<p>Once the transcode is complete, editing is straightforward regardless of NLE choice. If using Davinci Resolve however, additional display scaling issues may be encountered. This is due to the fact that Resolve uses <a href="https://www.qt.io/">QT's GUI toolkit</a>, but often ignores userspace environment variables to control QT apps. A quick workaround is to create a wrapper script that will change the display scaling when launching Resolve, and revert the scaling when Resolve is closed:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
-xrandr <span class="token parameter variable">--output</span> DP-2 <span class="token parameter variable">--scale</span> <span class="token number">0</span>.5x0.5 <span class="token comment"># Scale screen down by 2x</span>
-/opt/resolve/bin/resolve <span class="token comment"># Launch Resolve</span>
-xrandr <span class="token parameter variable">--output</span> DP-2 <span class="token parameter variable">--scale</span> 1x1 <span class="token comment"># Restore native scale</span></code></pre>
 <h4>Bonus: Quick Audio Cleanup in Resolve</h4>
 <ol>
 <li>Drag audio onto timeline, select <em>Fairlight</em> panel.</li>
