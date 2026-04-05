@@ -1,5 +1,5 @@
 ---
-title: "On, Consequences"
+title: "Consequences"
 layout: essay.html
 image: img/2025-07-22.jpg
 date: 2025-07-22

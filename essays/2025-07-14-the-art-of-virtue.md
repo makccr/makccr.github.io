@@ -1,5 +1,5 @@
 ---
-title: On, the Art of Virtue
+title: "The Art of Virtue"
 layout: essay.html
 image: img/2025-07-14.jpg
 date: 2025-07-14

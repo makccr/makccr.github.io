@@ -1,6 +1,6 @@
 ---
 layout: essay.html
-title: "On, the Best Bargain in the History of Literature"
+title: "The Best Bargain in the History of Literature"
 image: img/2025-03-15.jpg
 date: 2025-03-15
 tags: essay 

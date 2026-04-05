@@ -1,5 +1,5 @@
 ---
-title: "On, Barge Haulers on the Volga"
+title: "Barge Haulers on the Volga"
 layout: essay.html
 image: img/2025-07-17.jpg
 date: 2025-07-17

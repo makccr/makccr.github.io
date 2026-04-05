@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>MAKC.CO - On, Custom Syntax Highlighting With 11ty</title>
+<title>MAKC.CO - Custom Syntax Highlighting With 11ty</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1 /modern-normalize.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/bundle.css">
@@ -67,7 +67,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@makccr">
-<meta name="twitter:title" content="MAKC.CO - On, Custom Syntax Highlighting With 11ty">
+<meta name="twitter:title" content="MAKC.CO - Custom Syntax Highlighting With 11ty">
 <meta name="twitter:description" content="Im a propagandist for pickled red onions, a rare meat activist, barely-monetizable YouTuber and Captain of the sailing vessel Knox. Ive been creating content online for well over a decade now, but delivering to a very small audience. Undoubtedly, youve discovered this website by mistake, but thanks for stopping by anyway-and, feel free to browse around.">
 <meta name="twitter:image" content="https://makc.co/images/bg-head.jpg">
 
@@ -146,12 +146,8 @@
 }
 </style>
     <picture><source type="image/webp" srcset="/essays/syntax-highlighting-in-11ty/NcCTASmlop-5805.webp 5805w"><img class="hero" src="/essays/syntax-highlighting-in-11ty/NcCTASmlop-5805.jpeg" alt="" width="5805" height="3020"></picture>
-    <h1>On, Custom Syntax Highlighting With 11ty</h1>
+    <h1>Custom Syntax Highlighting With 11ty</h1>
     <h3>December 30, 2025</h3>
-
-<div class="post-navigation" style="margin-top: 3em; text-align: center;">
-  <a href="https://makc.co/feed.xml" target="_blank"><button>RSS &nbsp;<i class="fa-solid fa-rss"></i></button></a>
-</div>
 
 <div class="essayContainer"> 
 <p>Unless you stalk my <a href="https://github.com/makccr">GitHub account</a> relentlessly, you are probably unaware of it, but <a href="https://makc.co">my website</a> was developed using the static site generator, <a href="https://www.11ty.dev/">Eleventy (11ty)</a>. 11ty offers incredibly easy web development, not only because of its capability to play nicely with a massive amount of different file formats, but also because of its massive library of NodeJS plugins. Throughout the process of developing and maintaining my website, I have found that adding a new feature to my site is often as simple as running <em>npm install X</em> and making a small change to the <em>eleventy.config.js</em> file in my root directory. Earlier this week, when I decided that I wanted to add syntax highlighting to HTML code blocks on my site, the process looked to be just that simple.</p>
@@ -286,11 +282,18 @@ console.log("some code");
     </div></main>
     <footer>
         <div class="socialIcons"> 
-            <a title="Github" target="_blank" href="https://github.com/makccr"><i class="fa-brands fa-github"></i></a>
-            <a title="YouTube" target="_blank" href="https://www.youtube.com/@makc"><i class="fa-brands fa-youtube"></i></a>
-            <a title="Odysee" target="_blank" href="https://odysee.com/@makc:a"><i class="fa-brands fa-odysee"></i></a>
-            <a title="Substack" target="_blank" href="https://makccr.substack.com/">&nbsp;<i class="bi bi-substack"></i>&nbsp;</a>
-            <a title="Unsplash" target="_blank" href="https://unsplash.com/@makccr"><i class="fa-brands fa-unsplash"></i></a>
+            <a title="Github" target="_blank" href="https://github.com/makccr">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a title="YouTube" target="_blank" href="https://www.youtube.com/@makc">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a title="Odysee" target="_blank" href="https://odysee.com/@makc:a">
+                <i class="fa-brands fa-odysee"></i>
+            </a>
+            <a title="Essay RSS" target="_blank" href="https://makc.co/feed.xml">
+                <i class="fa-solid fa-rss"></i>
+            </a>
         </div><br>
             <p class="links">
                 <a href="sitemap.xml">Sitemap</a>

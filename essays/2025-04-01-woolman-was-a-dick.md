@@ -1,5 +1,5 @@
 ---
-title: "On, John Woolman Was Kind of a Dick"
+title: "John Woolman was Kind of a Dick"
 layout: essay.html
 image: img/2025-04-01.jpg
 date: 2025-04-01

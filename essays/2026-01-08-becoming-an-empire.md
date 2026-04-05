@@ -1,5 +1,5 @@
 ---
-title: "On, Becoming an Empire"
+title: "Becoming an Empire"
 layout: essay.html
 image: img/2026-01-08.jpg
 date: 2026-01-08

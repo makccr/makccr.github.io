@@ -1,5 +1,5 @@
 ---
-title: "On, the Only Way Out Being Through"
+title: "The Only Way Out is Through"
 layout: essay.html
 image: img/2025-03-30.jpg
 date: 2025-03-30

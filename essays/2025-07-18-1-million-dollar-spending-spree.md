@@ -1,5 +1,5 @@
 ---
-title: "On, My Million Dollar Spending Spree"
+title: "My Two Million Dollar Spending Spree"
 layout: essay.html
 image: img/2025-07-18.jpg
 date: 2025-07-18

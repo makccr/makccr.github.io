@@ -1,5 +1,5 @@
 ---
-title: "On, the Ballad of a Bad Man"
+title: "Ballad of a Bad Man"
 layout: essay.html
 image: img/2025-07-20.jpg
 date: 2025-07-21

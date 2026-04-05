@@ -1,5 +1,5 @@
 ---
-title: "On, The Prisoner of Azkaban Being the Worst Movie"
+title: "Is “The Prisoner of Azkaban” the Best “Harry Potter” Movie"
 layout: essay.html
 image: img/2018-10-19.jpg
 date: 2018-10-19

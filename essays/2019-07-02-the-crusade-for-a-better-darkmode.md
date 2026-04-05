@@ -1,5 +1,5 @@
 ---
-title: "On, the Crusade for a Better Dark Mode"
+title: "The Crusade for a Better Dark Mode"
 layout: essay.html
 image: img/2019-07-02.jpg
 date: 2019-07-02
