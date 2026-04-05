@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
 
 .hero {
     width: 100%;
@@ -192,6 +193,11 @@ a:hover {
     text-decoration: underline .2em; 
     text-decoration-color: var(--link-hover);
     transition: .3s;
+}
+
+.socialIcons a {
+    margin-left: .3rem; 
+    margin-right: .3rem; 
 }
 
 header {
