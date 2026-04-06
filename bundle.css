@@ -291,21 +291,18 @@ footer div {
     padding-bottom: 1em;
 }
 
-footer a { text-transform: uppercase; }
+footer a { text-transform: capitalize; }
 footer a:link { text-decoration: none;}
 footer a:hover { color: var(--link-hover);}
 
-footer .links {
-    margin-bottom: 2em;
-} footer .links a { padding: 0em  .75em; }
-
-.fa-brands {
-    padding: .3em;
+footer ul li {
+    font-size: .9em;
+    display: inline;
+    list-style-type: none;
+    margin: 0rem .5rem;
 }
 
-.footer {
-    font-size: .8em;
-}
+footer ul { text-align: center; }
 
 .cardContainer { 
   text-align: center; 
@@ -808,5 +805,11 @@ code {
 }
 
 .rss button { margin: .5rem; }
+
+footer ul li {
+    font-size: .9em;
+    display: block ;
+    margin-bottom: .5rem;
+}
 
 }
