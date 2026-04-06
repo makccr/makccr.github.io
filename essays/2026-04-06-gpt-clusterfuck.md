@@ -1,5 +1,5 @@
 ---
-title: "A Tale of AI Betrayal & Snapshotting Vitories!"
+title: "A Tale of AI Betrayal & Snapshotting Victory!"
 layout: essay.html
 image: img/2024-01-06.jpg
 date: 2026-04-06
