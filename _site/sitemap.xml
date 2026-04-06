@@ -149,4 +149,11 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://makc.co/essays/gpt-clusterfuck/</loc>
+    <lastmod>April 5, 2026</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
