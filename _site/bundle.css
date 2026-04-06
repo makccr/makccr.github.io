@@ -244,9 +244,9 @@ header p {
   color: var(--fg2-color); 
 }
 
-.fa-bars {
+.nf-md-menu {
   font-size: 2rem;
-  opacity: .8;
+  opacity: 1;
 }
 
 #mobile-links {
