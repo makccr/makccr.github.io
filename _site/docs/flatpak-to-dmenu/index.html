@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>MAKC.CO - Welcome</title>
+<title>MAKC.CO - Launch Any Package via Dmenu</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1 /modern-normalize.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/bundle.css">
@@ -65,7 +65,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@makccr">
-<meta name="twitter:title" content="MAKC.CO - Welcome">
+<meta name="twitter:title" content="MAKC.CO - Launch Any Package via Dmenu">
 <meta name="twitter:description" content="Im a propagandist for pickled red onions, a rare meat activist, barely-monetizable YouTuber and Captain of the sailing vessel Knox. Ive been creating content online for well over a decade now, but delivering to a very small audience. Undoubtedly, youve discovered this website by mistake, but thanks for stopping by anyway-and, feel free to browse around.">
 <meta name="twitter:image" content="https://makc.co/images/bg-head.jpg">
 
@@ -107,130 +107,99 @@
 </div>
     
     <main>
-        <style>
-main { text-align: center; }
-#home { text-align: center; }
+        
+<style>
+    header p { 
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.1em;
+    } h1 { margin-top: 1em; }
 
-.card p {
-    padding: 0rem .5rem;
-    margin-bottom: 1.5rem;
+    p,ol,ul {
+        padding: 1em;
+        text-align: left;
+        width: 60%;
+        align: center; 
+        margin: auto; 
+    } h4 {text-align: center;}
+
+@media only screen and (max-width: 850px) { 
+    p,ol,ul {
+        margin-left: .5em; 
+        margin-right: .5em;
+        width: 90%;
+        align: center; 
+        margin: auto;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        margin-left: .5em; 
+        margin-right: .5em;
+    }
+
 }
 </style>
+    <img class="hero" src="" alt="">
+    <h1>Launch Any Package via Dmenu</h1>
+    <h3>Last Updated <br> April 6, 2026</h3>
 
-<h1>Welcome</h1>
+<div class="essayContainer"> 
+<p>Documentation for setting up Flatpack, Snap and other packages installed to non-standard locations to launch via dmenu and other minimal application launchers.</p>
+<h2>Issue</h2>
+<p>By default demnu (and most other minimal app launchers) look(s) for packages installed in <em>/usr/bin</em>. This is where most packages installed via <em>apt</em>, <em>pacman</em> or other package managers generally write to. However when installing apps with services like Flatpak or Canonical's Snap Store, the appImage is often placed elsewhere.</p>
+<p><strong>Note</strong>: I have found that Snap packages specifically often do launch via dmenu without issue, though not always. This fix will apply to any application that is installed to a non-standard location.</p>
+<h2>Steps</h2>
+<h4>Locate your newly installed package:</h4>
+<ul>
+<li><strong>Flatpak</strong> installs to <em>/var/lib/flatpak/exports/bin</em></li>
+<li><strong>Snap Store</strong> typically installs to either <em>/var/lib/snapd/snap</em> or <em>/snap</em></li>
+<li><strong>Blackmagic</strong> installs Davinci Resolve in <em>/opt/resolve/bin</em></li>
+</ul>
+<h4>Create a symlink to <em>/usr/bin</em>, where dmenu can find it:</h4>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">ln</span> <span class="token parameter variable">-s</span> /var/lib/flatpak/exports/bin/com.app.NAME /usr/bin/appNAME</code></pre>
+<p>Replace <em>appNAME</em> with whatever you want to type into dmenu to launch the app.</p>
+<h2>Examples</h2>
+<h4>PlexAMP (Flatpak)</h4>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">ln</span> <span class="token parameter variable">-s</span> /var/lib/flatpak/exports/bin/com.plexamp.Plexamp /usr/bin/plexAMP</code></pre>
+<h4>Davinci Resolve (Blackmagic installer)</h4>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">ln</span> <span class="token parameter variable">-s</span> /opt/resolve/bin/resolve /usr/bin/resolve</code></pre>
+<h2>Source</h2>
+<p>I found the original fix from <a href="https://gist.github.com/curioswati/668e9e120ddd4b6f8d07dc28b5780d22">a gist</a> written by <a href="https://github.com/curioswati">Swati Jaiswal</a>.</p>
 
-<h6> I'm a A propagandist for pickled red onions, rare meat activist, and Captain of the sailing vessel Knox. I've been creating content online for well over a decade now, but delivering to a very small audience. Undoubtedly, you've discovered this website by mistake, but thanks for stopping by anyway--and, feel free to browse around, odds are you might find something interesting. </h6>
+</div> 
 
-<hr>
 
-<h2>Recent Videos</h2>
 
-<div class="cardContainer">
-    
-    
-    <div data-category="Sys Admin" class="video-card">
-        <a href="https://youtu.be/TQdmp2P93cM" target="_blank" title="YouTube">
-            <picture><source type="image/webp" srcset="/39-HBgcdGT-1280.webp 1280w"><img src="/39-HBgcdGT-1280.jpeg" alt="Hero image" width="1280" height="720"></picture>
-        </a>
-        <p class="videos">Transferring Files Remotely with SSH and a V...</p><br>
-    </div>
-    
-    <div data-category="Command Line & Scripting" class="video-card">
-        <a href="https://youtu.be/8ORPbeFyzeU" target="_blank" title="YouTube">
-            <picture><source type="image/webp" srcset="/YHKJIAqEtq-1280.webp 1280w"><img src="/YHKJIAqEtq-1280.jpeg" alt="Hero image" width="1280" height="720"></picture>
-        </a>
-        <p class="videos">Exporting .md to .odt with Pandoc & Lua</p><br>
-    </div>
-    
-    <div data-category="Command Line & Scripting" class="video-card">
-        <a href="https://youtu.be/xjKU4qb4CN4" target="_blank" title="YouTube">
-            <picture><source type="image/webp" srcset="/ONivuWeGg7-1280.webp 1280w"><img src="/ONivuWeGg7-1280.jpeg" alt="Hero image" width="1280" height="720"></picture>
-        </a>
-        <p class="videos">Vim2tor: The next step in learning for the w...</p><br>
-    </div>
-    
-</div>
+  
 
-<hr>
+  
 
-<h2>Recent Essays</h2>
+  
 
-    
-    
-    <div class="essay-card">
-        <picture><source type="image/webp" srcset="/img/ngxwocfEw5-2400.webp 2400w"><img src="/img/ngxwocfEw5-2400.jpeg" alt="" width="2400" height="1350"></picture>
-        <h3> A Tale of AI Betrayal & Snapshotting Victory! </h3>
-        <h6> April 5, 2026 </h6>
-        <br>
-        <a href="/essays/gpt-clusterfuck/">
-            <button>Read Now &nbsp;<i class="nf nf-fa-arrow_right"></i></button>
-        </a>
-    </div>
-    
-    <div class="essay-card">
-        <picture><source type="image/webp" srcset="/img/MwxlQwJKkm-3000.webp 3000w"><img src="/img/MwxlQwJKkm-3000.jpeg" alt="" width="3000" height="2001"></picture>
-        <h3> Becoming an Empire </h3>
-        <h6> January 7, 2026 </h6>
-        <br>
-        <a href="/essays/becoming-an-empire/">
-            <button>Read Now &nbsp;<i class="nf nf-fa-arrow_right"></i></button>
-        </a>
-    </div>
-    
+  
 
-<hr>
+  
 
-<h2>New Documentation</h2>
+  
 
-    
-    
-    <h4> 
-        <a href="/docs/flatpak-to-dmenu/">
-            Launch Any Package via Dmenu
-        </a>
-    </h4>
-    <h6>
-        Last Updated: April 6, 2026
-    </h6>
-    
-    <h4> 
-        <a href="/docs/install-resolve-on-linux/">
-            Install Davinci Resolve on Linux
-        </a>
-    </h4>
-    <h6>
-        Last Updated: January 22, 2026
-    </h6>
-    
-    <h4> 
-        <a href="/docs/simple-tailscale-setup/">
-            Remotely Accesing a File Server with Tailscale
-        </a>
-    </h4>
-    <h6>
-        Last Updated: January 22, 2026
-    </h6>
-    
-    <h4> 
-        <a href="/docs/yt-pipeline/">
-            Recording & Transcoding 2:1 Screen-caps on Linux
-        </a>
-    </h4>
-    <h6>
-        Last Updated: January 21, 2026
-    </h6>
-    
-    <h4> 
-        <a href="/docs/markdown-to-manscript/">
-            Converting a Markdown File to a Manuscript
-        </a>
-    </h4>
-    <h6>
-        Last Updated: January 16, 2026
-    </h6>
-    
+  
 
-<br><br><br>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
     </main>
     <footer>

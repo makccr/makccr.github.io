@@ -87,8 +87,8 @@ xrandr --output DP-2 --scale 1x1 # Restore native scale
 ```
 
 # Launching
-When installing Davinci Resolve in a full Desktop environment, Resolve will most likely add an entry to the default application launcher. When installing and using with a window manager, users may need to launch Resolve via: 
+When installing Davinci Resolve in a full Desktop environment, Resolve will most likely not launch. The easiest solution is to [add an entry](http://makc.co/docs/flatpak-to-dmenu/) in _/usr/bin_ for Resolve.
 
-```sudo
-/opt/resolve/bin/resolve
+```bash
+sudo ln -s /opt/resolve/bin/resolve /usr/bin/resolve
 ```

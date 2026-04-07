@@ -207,8 +207,8 @@ xrandr <span class="token parameter variable">--output</span> DP-2 <span class="
 /opt/resolve/bin/resolve <span class="token comment"># Launch Resolve</span>
 xrandr <span class="token parameter variable">--output</span> DP-2 <span class="token parameter variable">--scale</span> 1x1 <span class="token comment"># Restore native scale</span></code></pre>
 <h1>Launching</h1>
-<p>When installing Davinci Resolve in a full Desktop environment, Resolve will most likely add an entry to the default application launcher. When installing and using with a window manager, users may need to launch Resolve via:</p>
-<pre class="language-sudo"><code class="language-sudo">/opt/resolve/bin/resolve</code></pre>
+<p>When installing Davinci Resolve in a full Desktop environment, Resolve will most likely not launch. The easiest solution is to <a href="http://makc.co/docs/flatpak-to-dmenu/">add an entry</a> in <em>/usr/bin</em> for Resolve.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">ln</span> <span class="token parameter variable">-s</span> /opt/resolve/bin/resolve /usr/bin/resolve</code></pre>
 
 </div> 
 
