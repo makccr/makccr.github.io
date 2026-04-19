@@ -89,7 +89,7 @@ img {
   --link-hover: #cc241d;
   --mid-accent: #404040;
   --bg-color: #000000;
-  --bg-color-lighter: #231109;
+  --bg-color-lighter: #181818;
   --button-color: #dc3232;
   --button-hover: #cc241d;
   --code-aqua: #8ec07c; 
@@ -677,6 +677,7 @@ blockquote { font-size: 1.1rem; }
     --button-color: #eee;
     --button-hover: #ccc;
   --mid-accent: #eee;
+  --bg-color-lighter: #e8e8e8;
   }
 
   .rss button {
