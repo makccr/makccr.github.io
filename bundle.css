@@ -88,7 +88,8 @@ img {
   --link-color: #fb4934;
   --link-hover: #cc241d;
   --mid-accent: #404040;
-  --bg-color: #09090B;
+  --bg-color: #000000;
+  --bg-color-lighter: #231109;
   --button-color: #dc3232;
   --button-hover: #cc241d;
   --code-aqua: #8ec07c; 
@@ -513,7 +514,7 @@ code {
     color: var(--fg-color);
     font-family: 'Inconsolata', monospace; 
     font-size: .8em; 
-    background-color: var(--button-color);
+    background-color: var(--bg-color-lighter);
     padding: 1em; 
     border-radius: .3em;
     border: 1px solid var(--mid-accent);
