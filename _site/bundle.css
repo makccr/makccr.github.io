@@ -308,7 +308,10 @@ footer ul li {
     margin: 0rem .5rem;
 }
 
-footer ul { text-align: center; }
+footer ul { 
+    text-align: center; 
+    margin-bottom: 1rem;
+}
 
 .cardContainer { 
   text-align: center; 
