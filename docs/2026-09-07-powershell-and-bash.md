@@ -71,11 +71,11 @@ Way better than the powershell set-up (or at least less weird). Some examples fo
     * `grep -c "America is doomed" Documents/journal/*.md` - would just brake down how mnay times I've used the phrase in a journal.
         * Example Output: 
         ```bash
-        Documents//journal/volume-03.md:20
-        Documents//journal/volume-04.md:122
-        Documents/writing/journal/volume-05.md:36
-        Documents/writing/journal/volume-06.md:79
-        Documents/writing/journal/volume-07.md:22
+        Documents/journal/volume-03.md:20
+        Documents/journal/volume-04.md:122
+        Documents/journal/volume-05.md:36
+        Documents/journal/volume-06.md:79
+        Documents/journal/volume-07.md:22
         ```
     * `grep -i` - case insensitive  
     * `grep -n pattern` - show line numbers with output
