@@ -544,7 +544,7 @@ pre code {
     margin: 1em 1em;
 }
 
-table, th, td {
+th, td {
     border: 1px solid var(--mid-accent);
     padding: 1rem;
     color: var(--fg-color);
@@ -552,12 +552,17 @@ table, th, td {
     background-color: var(--bg-color-lighter);
 }
 
+th { background-color: var(--button-color); }
+
 table {
    border-collapse: collapse;
    overflow: visible; 
    margin: auto; 
    text-align: center;
    margin-top: 2rem;
+   max-width: 100%; 
+   overflow-x: auto; 
+   -webkit-overflow-scrolling: touch; 
 }
 
 td {
@@ -822,6 +827,8 @@ code {
     font-size: 1.1em;
     margin: 1em;
 }
+
+table { display: block; }
 
 .essay-preview {
     color: var(--fg2-color);
