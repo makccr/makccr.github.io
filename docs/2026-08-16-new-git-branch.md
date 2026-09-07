@@ -32,3 +32,13 @@ git checkout -b NEW-BRANCH HASH
 ```bash
 git checkout BRANCH-NAME
 ```
+
+# Merge Changes to master/main Branch
+1. Change back to main branch: 
+```bash
+git checkout master
+```
+2. Merge it: 
+```bash
+git merge branchNAME
+```
